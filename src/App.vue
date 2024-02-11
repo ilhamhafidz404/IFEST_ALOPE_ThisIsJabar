@@ -1,7 +1,5 @@
 <template>
-  <header>
-    <h1 class="font-bold text-3xl">Lets Build Something AWESOME!</h1>
-  </header>
+  <router-view></router-view>
 </template>
 
 <script>

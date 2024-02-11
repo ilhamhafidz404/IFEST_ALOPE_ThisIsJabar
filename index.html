@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jabar Tour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      .font-waterbrush {
+        font-family: "Water Brush", cursive;
+      }
+
+      .hoverCard:hover .contentHoverCard {
+        display: block;
+      }
+
+      .hoverCard:hover .titleHoverCard {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        const body = document.querySelector("nav");
+        // body.classList.toggle('active', window.scrollY>1800)
+        body.classList.toggle("bg-white", window.scrollY > 50);
+        body.classList.toggle("shadow", window.scrollY > 50);
+        // if (document.body.clientWidth > 20) {
+        // } else {
+        //   body.classList.toggle("dark", window.scrollY > 3000);
+        // }
+      });
+    </script>
   </body>
 </html>
