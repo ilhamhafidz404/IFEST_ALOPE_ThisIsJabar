@@ -6,276 +6,49 @@
   <Header />
 
   <main class="lg:px-20 md:px-10 px-5 pt-20">
-    <section class="grid lg:grid-cols-4 items-center lg:gap-20 gap-10">
-      <div class="md:col-span-1">
-        <h3 class="font-waterbrush text-4xl">Wisata Budaya</h3>
-        <h4 class="text-2xl">PROGRAM</h4>
-        <p class="text-sm mt-5">
-          Mari kenali budaya-budaya yang ada di jawa barat
-        </p>
-
-        <button class="flex text-sm mt-5 items-center gap-2">
-          <span
-            class="bg-[#34e0a1] w-[30px] h-[30px] rounded-full flex items-center justify-center"
-          >
-            <arrowRightIcon myClass="w-6" />
-          </span>
-          Lihat Lebih Lengkap
-        </button>
-      </div>
-      <div class="md:col-span-3">
-        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5">
-          <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/40"
-          >
-            <img
-              src="./../assets/images/header/1.jpg"
-              alt=""
-              class="w-full h-[300px] object-cover"
-            />
-
-            <h5 class="titleHoverCard absolute bottom-5 left-5 font-semibold">
-              Waduk Darma
-            </h5>
-
-            <div
-              class="contentHoverCard hidden text-xs absolute bottom-0 p-5 z-10"
-            >
-              <h5 class="font-semibold text-base">WADUK DARMA</h5>
-              <p class="mt-2 mb-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-
-              <span class="flex items-center gap-3">
-                Lihat
-                <arrowRightIcon myClass="w-5" />
-              </span>
-            </div>
-          </div>
-          <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/40"
-          >
-            <img
-              src="./../assets/images/header/1.jpg"
-              alt=""
-              class="w-full h-[300px] object-cover"
-            />
-
-            <h5 class="titleHoverCard absolute bottom-5 left-5 font-semibold">
-              Waduk Darma
-            </h5>
-
-            <div
-              class="contentHoverCard hidden text-xs absolute bottom-0 p-5 z-10"
-            >
-              <h5 class="font-semibold text-base">WADUK DARMA</h5>
-              <p class="mt-2 mb-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-
-              <span class="flex items-center gap-3">
-                Lihat
-                <arrowRightIcon myClass="w-5" />
-              </span>
-            </div>
-          </div>
-          <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/40"
-          >
-            <img
-              src="./../assets/images/header/1.jpg"
-              alt=""
-              class="w-full h-[300px] object-cover"
-            />
-
-            <h5 class="titleHoverCard absolute bottom-5 left-5 font-semibold">
-              Waduk Darma
-            </h5>
-
-            <div
-              class="contentHoverCard hidden text-xs absolute bottom-0 p-5 z-10"
-            >
-              <h5 class="font-semibold text-base">WADUK DARMA</h5>
-              <p class="mt-2 mb-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-
-              <span class="flex items-center gap-3">
-                Lihat
-                <arrowRightIcon myClass="w-5" />
-              </span>
-            </div>
-          </div>
-          <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/40 lg:block md:hidden"
-          >
-            <img
-              src="./../assets/images/header/1.jpg"
-              alt=""
-              class="w-full h-[300px] object-cover"
-            />
-
-            <h5 class="titleHoverCard absolute bottom-5 left-5 font-semibold">
-              Waduk Darma
-            </h5>
-
-            <div
-              class="contentHoverCard hidden text-xs absolute bottom-0 p-5 z-10"
-            >
-              <h5 class="font-semibold text-base">WADUK DARMA</h5>
-              <p class="mt-2 mb-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-
-              <span class="flex items-center gap-3">
-                Lihat
-                <arrowRightIcon myClass="w-5" />
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="grid md:grid-cols-4 items-center gap-20 mt-10">
-      <div class="md:col-span-1">
-        <h3 class="font-waterbrush text-4xl">Wisata Budaya</h3>
-        <h4 class="text-2xl">PROGRAM</h4>
-        <p class="text-sm mt-5">
-          Mari kenali budaya-budaya yang ada di jawa barat
-        </p>
-
-        <button class="flex text-sm mt-5 items-center gap-2">
-          <span
-            class="bg-[#34e0a1] w-[30px] h-[30px] rounded-full flex items-center justify-center"
-          >
-            <arrowRightIcon myClass="w-6" />
-          </span>
-          Lihat Lebih Lengkap
-        </button>
-      </div>
-      <div class="md:col-span-3">
-        <div class="grid grid-cols-3 gap-5">
-          <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/40"
-          >
-            <img
-              src="./../assets/images/header/1.jpg"
-              alt=""
-              class="w-full h-[300px] object-cover"
-            />
-
-            <h5 class="titleHoverCard absolute bottom-5 left-5 font-semibold">
-              Waduk Darma
-            </h5>
-
-            <div
-              class="contentHoverCard hidden text-xs absolute bottom-0 p-5 z-10"
-            >
-              <h5 class="font-semibold text-base">WADUK DARMA</h5>
-              <p class="mt-2 mb-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-
-              <span class="flex items-center gap-3">
-                Lihat
-                <arrowRightIcon myClass="w-5" />
-              </span>
-            </div>
-          </div>
-          <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/40"
-          >
-            <img
-              src="./../assets/images/header/1.jpg"
-              alt=""
-              class="w-full h-[300px] object-cover"
-            />
-
-            <h5 class="titleHoverCard absolute bottom-5 left-5 font-semibold">
-              Waduk Darma
-            </h5>
-
-            <div
-              class="contentHoverCard hidden text-xs absolute bottom-0 p-5 z-10"
-            >
-              <h5 class="font-semibold text-base">WADUK DARMA</h5>
-              <p class="mt-2 mb-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-
-              <span class="flex items-center gap-3">
-                Lihat
-                <arrowRightIcon myClass="w-5" />
-              </span>
-            </div>
-          </div>
-          <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/40"
-          >
-            <img
-              src="./../assets/images/header/1.jpg"
-              alt=""
-              class="w-full h-[300px] object-cover"
-            />
-
-            <h5 class="titleHoverCard absolute bottom-5 left-5 font-semibold">
-              Waduk Darma
-            </h5>
-
-            <div
-              class="contentHoverCard hidden text-xs absolute bottom-0 p-5 z-10"
-            >
-              <h5 class="font-semibold text-base">WADUK DARMA</h5>
-              <p class="mt-2 mb-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-
-              <span class="flex items-center gap-3">
-                Lihat
-                <arrowRightIcon myClass="w-5" />
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--  -->
+    <Category />
+    <TrendActivities />
   </main>
-  <section class="mt-20 text-center bg-[#34e0a1] py-20 px-20">
-    <h2 class="font-waterbrush text-5xl">Tentang Jabar</h2>
-    <h3 class="text-5xl">KATA MEREKA</h3>
 
-    <div class="grid grid-cols-2 mt-20 gap-20">
+  <!--  -->
+  <section class="mt-20 text-center bg-[#34e0a1] py-20 lg:px-20 md:px-10 px-5">
+    <h2 class="font-waterbrush md:text-5xl text-3xl text-white">
+      Tentang Jabar
+    </h2>
+    <h3 class="md:text-5xl text-3xl text-white">KATA MEREKA</h3>
+
+    <div class="grid md:grid-cols-2 mt-20 lg:gap-20 gap-10">
       <div class="bg-white text-left p-10 rounded relative shadow">
         <p class="text-sm">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum
-          quisquam maiores quidem voluptatum, accusantium fugiat quae architecto
-          delectus velit, at non numquam error labore adipisci ducimus quo quam
-          voluptas?
+          Jawa Barat memiliki lanskap alam yang memukau, mulai dari gunung yang
+          menjulang tinggi hingga pantai yang indah. Gunung Gede Pangrango,
+          Gunung Tangkuban Perahu, dan Gunung Papandayan adalah destinasi
+          populer bagi para pendaki dan pecinta alam
         </p>
-        <h6 class="text-bold mt-5">Ilham Hafidz</h6>
-        <span class="text-sm">Warga Kuningan</span>
+        <h6 class="text-xl font-semibold mt-5">Ilham Hafidz</h6>
+        <span class="text-xs">Pecinta Alam asal Kuningan</span>
 
         <img
-          src="./../assets/images/header/1.jpg"
+          src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
           class="w-[100px] h-[100px] rounded-full object-cover absolute right-10 bottom-0 translate-y-1/3 border-[5px] border-white"
         />
       </div>
-      <div class="bg-white text-left p-10 rounded relative shadow">
+      <div
+        class="bg-white text-left p-10 rounded relative shadow md:block hidden"
+      >
         <p class="text-sm">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum
-          quisquam maiores quidem voluptatum, accusantium fugiat quae architecto
-          delectus velit, at non numquam error labore adipisci ducimus quo quam
-          voluptas?
+          Saya turis asal Amerika, berkunjung ke Indonesia untuk liburan. Saya
+          berkunjung ke Bandung yang merupakan ibu kota provinsi Jawa Barat dan
+          saya sangat terkesima dengan budaya, dan juga keramahan orang-orang
+          yang ada disana. Kulinernyapun saya nikmati dengan lahap. Saya tidak
+          sabar menantikan berkunjung ke daerah Jawa Barat lainnya.
         </p>
-        <h6 class="text-bold mt-5">Ilham Hafidz</h6>
-        <span class="text-sm">Warga Kuningan</span>
+        <h6 class="text-xl font-semibold mt-5">Eveline Chopper</h6>
+        <span class="text-xs">Turis asal Amerika</span>
 
         <img
-          src="./../assets/images/header/1.jpg"
+          src="https://images.unsplash.com/photo-1699729589505-d1791e32d925?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
           class="w-[100px] h-[100px] rounded-full object-cover absolute right-10 bottom-0 translate-y-1/3 border-[5px] border-white"
         />
@@ -322,6 +95,96 @@
         class="w-full h-[200px] object-cover rounded"
       />
     </div> -->
+  </section>
+
+  <!--  -->
+
+  <section class="px-20 mt-20">
+    <h4 class="text-3xl text-center">ALASAN</h4>
+    <h4 class="font-waterbrush text-5xl font-bold text-center">
+      Kenapa Jabar?
+    </h4>
+
+    <div class="grid grid-cols-11">
+      <div class="col-span-5 py-10">
+        <div class="flex gap-5 justify-end items-center mb-3">
+          <div class="w-2/3 text-right">
+            <h5 class="text-xl font-semibold">Keindahan Alam yang Memikat</h5>
+            <p class="text-sm mt-2">
+              Jawa Barat memiliki lanskap alam yang memukau, mulai dari gunung
+              yang menjulang tinggi hingga pantai yang indah.
+            </p>
+          </div>
+          <div class="w-1/3">
+            <img
+              src="./../assets/images/gallery/8.jpg"
+              alt=""
+              class="w-full h-[200px] object-cover rounded"
+            />
+          </div>
+        </div>
+        <div class="flex gap-5 justify-end items-center mb-3">
+          <div class="w-2/3 text-right">
+            <h5 class="text-xl font-semibold">Keanekaragaman Budaya</h5>
+            <p class="text-sm mt-2">
+              Kota Bandung yang kosmopolitan menawarkan pengalaman belanja dan
+              kuliner yang tak tertandingi, sementara kota-kota bersejarah
+              seperti Bogor dan Cirebon menyuguhkan warisan budaya berupa istana
+              dan keraton yang megah.
+            </p>
+          </div>
+          <div class="w-1/3">
+            <img
+              src="./../assets/images/wisataBudaya/gedungSate.jpg"
+              alt=""
+              class="w-full h-[200px] object-cover rounded"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-span-1 text-center">
+        <span
+          class="relative inline-block w-[2px] h-full bg-[#34e0a1] after:content-[''] after:w-[20px] after:h-[20px] after:absolute after:bg-[#34e0a1] after:rounded-full after:-translate-x-1/2 after:top-1/4 after:-translate-y-1/2 before:content-[''] before:w-[20px] before:h-[20px] before:absolute before:bg-[#34e0a1] before:rounded-full before:-translate-x-1/2 before:top-3/4 before:-translate-y-1/2"
+        ></span>
+      </div>
+      <div class="col-span-5 py-10">
+        <div class="flex gap-5 justify-end items-center mb-3">
+          <div class="w-1/3">
+            <img
+              src="./../assets/images/makananKhas/nasiTimbel.jpg"
+              alt=""
+              class="w-full h-[200px] object-cover rounded"
+            />
+          </div>
+          <div class="w-2/3 text-left">
+            <h5 class="text-xl font-semibold">Kuliner yang Lezat</h5>
+            <p class="text-sm mt-2">
+              Sajian makanan khas seperti sate, soto, nasi liwet, dan makanan
+              khas sunda lainnya dapat dinikmati di berbagai tempat. Jajanan
+              tradisional seperti peuyeum dan surabi juga menjadi daya tarik
+              tersendiri.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-5 justify-end items-center mb-3">
+          <div class="w-1/3">
+            <img
+              src="./../assets/images/activities/terjunPayung.jpg"
+              alt=""
+              class="w-full h-[200px] object-cover rounded"
+            />
+          </div>
+          <div class="w-2/3 text-left">
+            <h5 class="text-xl font-semibold">Aktivitas Seru</h5>
+            <p class="text-sm mt-2">
+              Jawa Barat juga menawarkan berbagai aktivitas seru seperti arung
+              jeram di Sungai Citarik, berkuda di Ranca Upas, atau bermain
+              paralayang di Puncak.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section
@@ -439,7 +302,7 @@
     </div>
     <div class="lg:order-11 lg:block hidden">
       <img
-        src="./../assets/images/gallery/1.jpg"
+        src="./../assets/images/gallery/10.jpg"
         alt="gallery8"
         class="w-full h-full object-cover"
         data-aos-once="true"
@@ -449,7 +312,7 @@
     </div>
     <div class="lg:order-12 lg:block hidden">
       <img
-        src="./../assets/images/gallery/2.jpg"
+        src="./../assets/images/gallery/11.jpg"
         alt="gallery9"
         class="w-full h-full object-cover"
         data-aos-once="true"
@@ -469,59 +332,25 @@
     </div>
   </section>
 
-  <footer class="px-20 grid grid-cols-7 mt-20 gap-10">
-    <div class="col-span-3">
-      <h4 class="text-xl font-bold">JABAR TOUR</h4>
-      <p class="text-sm mt-5">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquid,
-        rerum ipsum voluptates nesciunt quibusdam eaque, iusto itaque nobis non
-        hic consequatur deserunt porro tenetur optio ad voluptate et corporis!
-      </p>
-    </div>
-    <div>
-      <h5 class="text-xl font-semibold">Support</h5>
-    </div>
-    <div>
-      <h5 class="text-xl font-semibold">Links</h5>
-    </div>
-    <div class="col-span-2">
-      <h5 class="text-xl font-semibold mb-5">Kontak Kami</h5>
-      <p class="flex gap-4 mb-3">
-        <solidPhoneIcon myClass="w-5 text-[#34e0a1]" />
-        083871352030
-      </p>
-      <p class="flex gap-4 mb-3">
-        <solidEnvelopeIcon myClass="w-5 text-[#34e0a1]" />
-        ilhamhafidz@gmail.com
-      </p>
-    </div>
-
-    <div class="col-span-7 text-center border-t-2 py-5 border-[#34e0a1]">
-      <p class="text-sm">Copyright by ALOPE Team 2023</p>
-    </div>
-  </footer>
+  <Footer />
 </template>
 
 <script>
-// icons
-
-import arrowRightIcon from "./../components/icons/arrowRight.vue";
-import solidPhoneIcon from "./../components/icons/solidPhone.vue";
-import solidEnvelopeIcon from "./../components/icons/solidEnvelope.vue";
-
 // components
 import Navbar from "./../components/Navbar.vue";
 import Header from "./../components/Header.vue";
+import Category from "./../components/Category.vue";
+import TrendActivities from "./../components/TrendActivities.vue";
+import Footer from "./../components/Footer.vue";
 
 export default {
   components: {
-    arrowRightIcon,
-    solidPhoneIcon,
-    solidEnvelopeIcon,
-
     //
     Navbar,
     Header,
+    Category,
+    TrendActivities,
+    Footer,
   },
 };
 </script>

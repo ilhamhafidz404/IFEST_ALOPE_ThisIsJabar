@@ -1,17 +1,14 @@
 <template>
   <header class="grid lg:grid-cols-2 h-screen relative items-center">
     <div
-      class="lg:p-20 lg:pb-20 lg:mt-32 lg:static absolute lg:w-auto md:w-1/2 bg-white/40 md:p-10 md:pb-10 md:bottom-auto bottom-[100px] p-5 pb-20"
+      class="lg:p-16 lg:pb-20 lg:mt-32 lg:static absolute lg:w-auto md:w-1/2 bg-white/40 md:p-10 md:pb-10 md:bottom-auto bottom-[100px] p-5 pb-20"
     >
       <h1 class="md:text-5xl text-4xl font-[500]">
-        WADUK DARMA, <br />
-        KUNINGAN
+        {{ header.title1 }} <br />
+        {{ header.title2 }}
       </h1>
       <p class="text-sm mt-5">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
-        earum harum doloremque doloribus distinctio. In nesciunt inventore esse
-        magnam reiciendis tempore minima cumque architecto nihil, sint tempora!
-        Alias, placeat mollitia!
+        {{ header.subtitle }}
       </p>
       <a href="" class="text-[#34e0a1] mt-7 inline-block font-semibold">
         Lihat Lebih Lengkap
@@ -19,13 +16,12 @@
 
       <!-- desktop -->
       <div
-        class="gap-10 mt-32 bg-[#34e0a1] text-white py-5 px-10 relative lg:flex hidden"
+        class="gap-10 mt-16 bg-[#34e0a1] text-white py-5 px-10 relative lg:flex hidden"
       >
         <div class="w-2/3">
           <h4 class="text-xl font-semibold mb-3">Lokasi</h4>
           <p class="text-sm">
-            Jl. Pramuka No.67, Purwawinangun, Kec. Kuningan, Kabupaten Kuningan,
-            Jawa Barat 45512
+            {{ header.address }}
           </p>
         </div>
         <div class="w-1/3">
@@ -98,34 +94,50 @@ export default {
   },
   data() {
     return {
-      headerActive: 1,
+      header: {
+        title1: "PANTAI PANGANDARAN, ",
+        title2: "PANGANDARAN",
+        subtitle:
+          "Pantai Pangandaran merupakan sebuah objek wisata andalan Kabupaten Pangandaran yang terletak di sebelah tenggara Jawa Barat, tepatnya di Desa Pangandaran dan Pananjung, sekitar 222 km dari selatan Bandung, Kecamatan Pangandaran, Kabupaten Pangandaran, Provinsi Jawa Barat.",
+        address:
+          "Jl. Pramuka No.67, Purwawinangun, Kec. Kuningan, Kabupaten Kuningan, Jawa Barat 45512",
+        active: 1,
+      },
     };
   },
   methods: {
     nextHeader() {
       const headerImage = document.getElementById("headerImage");
 
-      if (this.headerActive == 1) {
+      if (this.header.active == 1) {
         headerImage.src = "/src/assets/images/header/2.jpg";
-      } else if (this.headerActive == 2) {
+        this.header.title1 = "CURUG LEUWI HEJO, ";
+        this.header.title2 = "BOGOR";
+      } else if (this.header.active == 2) {
         headerImage.src = "/src/assets/images/header/3.jpg";
+        this.header.title1 = "PANTAI UJUNG GENTENG, ";
+        this.header.title2 = "SUKABUMI";
       }
 
-      if (this.headerActive <= 2) {
-        this.headerActive += 1;
+      if (this.header.active <= 2) {
+        this.header.active += 1;
       }
     },
     prevHeader() {
       const headerImage = document.getElementById("headerImage");
 
-      if (this.headerActive == 3) {
+      if (this.header.active == 3) {
         headerImage.src = "/src/assets/images/header/2.jpg";
-      } else if (this.headerActive == 2) {
+        this.header.title1 = "CURUG LEUWI HEJO, ";
+        this.header.title2 = "BOGOR";
+      } else if (this.header.active == 2) {
         headerImage.src = "/src/assets/images/header/1.jpg";
+        this.header.title1 = "PANTAI PANGANDARAN, ";
+        this.header.title2 = "PANGANDARAN";
       }
 
-      if (this.headerActive >= 2) {
-        this.headerActive -= 1;
+      if (this.header.active >= 2) {
+        this.header.active -= 1;
       }
     },
   },

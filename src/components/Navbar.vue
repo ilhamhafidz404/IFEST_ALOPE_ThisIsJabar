@@ -2,7 +2,7 @@
   <nav
     class="fixed flex left-0 right-0 justify-between py-5 lg:px-20 md:px-10 px-5 z-20"
   >
-    <div class="flex items-center gap-5">
+    <router-link to="/" class="flex items-center gap-5">
       <span
         class="bg-[#34e0a1] w-[40px] h-[40px] flex items-center justify-center rounded-full"
       >
@@ -22,7 +22,7 @@
         </svg>
       </span>
       <h1>JABAR TOUR</h1>
-    </div>
+    </router-link>
     <div class="flex gap-10">
       <button
         class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 p-2 rounded-full w-[40px] h-[40px] flex items-center justify-center"
@@ -54,28 +54,56 @@
     id="searchModal"
     class="fixed inset-0 z-20 hidden items-center justify-center bg-green-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100"
   >
-    <div class="bg-white rounded p-10 shadow w-2/3 z-50">
+    <div class="bg-white rounded p-5 shadow md:w-2/3 w-full md:mx-0 mx-5 z-50">
       <div class="flex items-center gap-5">
         <magnifyingGlassIcon myClass="w-6" />
         <input
           type="text"
           placeholder="Cari sesuatu..."
           class="py-2 focus:outline-none w-full"
-          @keypress.enter="console.log('enter')"
+          @keypress.enter="redirectToSearch()"
         />
         <button @click="toggleSearch()">
           <xMarkIcon myClass="w-6" />
         </button>
+      </div>
+      <hr class="my-5" />
+      <div class="flex items-center flex-wrap gap-5">
+        <h4 class="font-bold mr-5 flex items-center gap-2">
+          <solidTagIcon myClass="w-5 text-[#34e0a1]" /> Tag :
+        </h4>
+        <span
+          @click="redirectToSearch()"
+          class="text-sm font-semibold bg-[#34e0a1]/40 hover:bg-[#34e0a1] cursor-pointer px-5 py-2 rounded-full"
+        >
+          Destinasi Favorit
+        </span>
+        <span
+          @click="redirectToSearch()"
+          class="text-sm font-semibold bg-[#34e0a1]/40 hover:bg-[#34e0a1] cursor-pointer px-5 py-2 rounded-full"
+        >
+          Kuliner Terbaik
+        </span>
+        <span
+          @click="redirectToSearch()"
+          class="text-sm font-semibold bg-[#34e0a1]/40 hover:bg-[#34e0a1] cursor-pointer px-5 py-2 rounded-full"
+        >
+          Kekayaan Tradisi
+        </span>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import router from "@/router";
+
+// icons
 import bars3Icon from "./icons/bars3.vue";
 import bars3BottomRightIcon from "./icons/bars3BottomRight.vue";
 import magnifyingGlassIcon from "./icons/magnifyingGlass.vue";
 import xMarkIcon from "./icons/xMark.vue";
+import solidTagIcon from "@/components/icons/solidTag.vue";
 
 export default {
   components: {
@@ -83,6 +111,7 @@ export default {
     bars3BottomRightIcon,
     magnifyingGlassIcon,
     xMarkIcon,
+    solidTagIcon,
   },
   methods: {
     toggleSidebar() {
@@ -94,6 +123,9 @@ export default {
       const searchModal = document.querySelector("#searchModal");
       searchModal.classList.toggle("hidden");
       searchModal.classList.toggle("flex");
+    },
+    redirectToSearch() {
+      router.push({ path: "/search" });
     },
   },
 };
