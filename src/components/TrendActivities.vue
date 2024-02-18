@@ -42,12 +42,13 @@
         </button>
       </div>
       <div>
-        <button
+        <router-link
+          to="/activity"
           class="text-[#34e0a1] font-semibold px-5 py-2 text-sm rounded mx-auto lg:col-span-4 md:col-span-3 lg:mt-0 mt-20 flex items-center gap-3"
         >
           Lihat Semua Aktifitas Seru
           <chevronRightIcon myClass="w-6" />
-        </button>
+        </router-link>
       </div>
     </div>
 

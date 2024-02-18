@@ -39,14 +39,11 @@
 
     <script type="text/javascript">
       window.addEventListener("scroll", function () {
-        const body = document.querySelector("nav");
-        // body.classList.toggle('active', window.scrollY>1800)
-        body.classList.toggle("bg-white", window.scrollY > 50);
-        body.classList.toggle("shadow", window.scrollY > 50);
-        // if (document.body.clientWidth > 20) {
-        // } else {
-        //   body.classList.toggle("dark", window.scrollY > 3000);
-        // }
+        const nav = document.querySelector("nav");
+        nav.classList.toggle("bg-white", window.scrollY > 50);
+        nav.classList.toggle("shadow", window.scrollY > 50);
+        nav.classList.toggle("py-3", window.scrollY > 50);
+        nav.classList.toggle("py-7", window.scrollY < 50);
       });
     </script>
   </body>

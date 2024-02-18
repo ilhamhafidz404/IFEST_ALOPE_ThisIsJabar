@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed flex left-0 right-0 justify-between py-5 lg:px-20 md:px-10 px-5 z-20"
+    class="fixed flex left-0 right-0 justify-between py-7 duration-300 lg:px-20 md:px-10 px-5 z-20"
   >
     <router-link to="/" class="flex items-center gap-5">
       <span
