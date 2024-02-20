@@ -1,6 +1,6 @@
 <template>
-  <section class="grid lg:grid-cols-4 items-center lg:gap-20 gap-10">
-    <div class="md:col-span-1">
+  <section class="grid xl:grid-cols-4 items-center xl:gap-20 gap-10">
+    <div class="lg:col-span-1">
       <h4 class="text-xl">Kategori</h4>
       <h3 class="font-waterbrush text-5xl">Wisata Budaya</h3>
       <p class="text-sm mt-5 text-gray-800">
@@ -17,8 +17,10 @@
         Lihat Lebih Lengkap
       </button>
     </div>
-    <div class="md:col-span-3">
-      <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5">
+    <div class="lg:col-span-3">
+      <div
+        class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 md:gap-5 gap-2"
+      >
         <div
           class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
         >
@@ -35,7 +37,7 @@
           </h5>
 
           <div
-            class="contentHoverCard hidden text-xs absolute bottom-0 md:p-5 p-3 z-10 text-white"
+            class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
           >
             <h5 class="font-semibold text-base">Gedung Sate</h5>
             <p class="mt-2 mb-4">
@@ -65,7 +67,7 @@
           </h5>
 
           <div
-            class="contentHoverCard hidden text-xs absolute bottom-0 md:p-5 p-3 z-10 text-white"
+            class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
           >
             <h5 class="font-semibold text-base">KAMPUNG NAGA</h5>
             <p class="mt-2 mb-4">
@@ -80,7 +82,7 @@
           </div>
         </div>
         <div
-          class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
+          class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90 xl:block hidden"
         >
           <img
             src="./../assets/images/wisataBudaya/keratonKasepuhanCirebon.jpg"
@@ -95,7 +97,7 @@
           </h5>
 
           <div
-            class="contentHoverCard hidden text-xs absolute bottom-0 md:p-5 p-3 z-10 text-white"
+            class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
           >
             <h5 class="font-semibold text-base">Keraton Kasepuhan</h5>
             <p class="mt-2 mb-4">
@@ -126,7 +128,7 @@
           </h5>
 
           <div
-            class="contentHoverCard hidden text-xs absolute bottom-0 md:p-5 p-3 z-10 text-white"
+            class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
           >
             <h5 class="font-semibold text-base">Saung Angklung Udjo</h5>
             <p class="mt-2 mb-4">
@@ -145,9 +147,9 @@
   </section>
 
   <section
-    class="grid lg:grid-cols-4 md:grid-cols-3 items-center lg:gap-20 md:gap-5 lg:mt-10 mt-20"
+    class="grid xl:grid-cols-4 lg:grid-cols-3 items-center xl:gap-20 lg:gap-5 xl:mt-10 mt-20"
   >
-    <div class="lg:col-span-1 md:col-span-3">
+    <div class="xl:col-span-1 lg:col-span-3">
       <h4 class="text-xl">Kategori</h4>
       <h3 class="font-waterbrush text-5xl">Kuliner Khas</h3>
       <p class="text-sm mt-5 text-gray-800">
@@ -165,8 +167,8 @@
       </button>
     </div>
 
-    <div class="md:col-span-3">
-      <div class="grid md:grid-cols-3 grid-cols-1 gap-5">
+    <div class="lg:col-span-3 lg:mt-0 mt-10">
+      <div class="grid lg:grid-cols-3 sm:grid-cols-2 md:gap-5 gap-2">
         <div
           class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
         >
@@ -183,7 +185,7 @@
           </h5>
 
           <div
-            class="contentHoverCard hidden text-xs absolute bottom-0 md:p-5 p-3 z-10 text-white"
+            class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
           >
             <h5 class="font-semibold text-base">Nasi Timbel</h5>
             <p class="mt-2 mb-4">
@@ -213,7 +215,7 @@
           </h5>
 
           <div
-            class="contentHoverCard hidden text-xs absolute bottom-0 md:p-5 p-3 z-10 text-white"
+            class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
           >
             <h5 class="font-semibold text-base">Surabi</h5>
             <p class="mt-2 mb-4">
@@ -228,7 +230,7 @@
           </div>
         </div>
         <div
-          class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
+          class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90 lg:block hidden"
         >
           <img
             src="./../assets/images/makananKhas/batagor.jpg"
@@ -243,7 +245,7 @@
           </h5>
 
           <div
-            class="contentHoverCard hidden text-xs absolute bottom-0 md:p-5 p-3 z-10 text-white"
+            class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
           >
             <h5 class="font-semibold text-base">Batagor</h5>
             <p class="mt-2 mb-4">
@@ -261,7 +263,7 @@
     </div>
 
     <button
-      class="bg-[#34e0a1] hover:bg-[#34e0a1]/80 text-white font-semibold px-5 py-2 text-sm rounded mx-auto lg:col-span-4 md:col-span-3 lg:mt-0 mt-20"
+      class="bg-[#34e0a1] hover:bg-[#34e0a1]/80 text-white font-semibold px-5 py-2 text-sm rounded mx-auto xl:col-span-4 lg:col-span-3 xl:mt-0 mt-10"
     >
       Lihat Kategori Lainnya
     </button>

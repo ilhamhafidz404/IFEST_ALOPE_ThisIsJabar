@@ -1,10 +1,15 @@
+<script setup>
+import { useRoute, useRouter } from "vue-router";
+const location = useRoute();
+const router = useRouter();
+</script>
 <template>
   <nav
-    class="fixed flex left-0 right-0 justify-between py-7 duration-300 lg:px-20 md:px-10 px-5 z-20"
+    class="fixed flex left-0 right-0 justify-between py-7 duration-300 xl:px-20 md:px-10 px-5 z-20"
   >
     <router-link to="/" class="flex items-center gap-5">
       <span
-        class="bg-[#34e0a1] w-[40px] h-[40px] flex items-center justify-center rounded-full"
+        class="bg-[#34e0a1] w-[40px] h-[40px] md:flex hidden items-center justify-center rounded-full"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,33 +26,64 @@
           />
         </svg>
       </span>
-      <h1>JABAR TOUR</h1>
+      <h1
+        class="font-bold"
+        :style="location.path === '/search' ? 'color: white' : ''"
+      >
+        JABAR TOUR
+      </h1>
     </router-link>
-    <div class="flex gap-10">
+    <div class="flex md:gap-10 gap-5">
       <button
-        class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 p-2 rounded-full w-[40px] h-[40px] flex items-center justify-center"
+        class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center"
         @click="toggleSearch()"
       >
-        <magnifyingGlassIcon myClass="w-6" />
+        <magnifyingGlassIcon myClass="md:w-7 w-4" />
       </button>
       <button
-        class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 p-2"
+        class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center"
         @click="toggleSidebar()"
       >
-        <bars3Icon myClass="w-7" />
+        <bars3Icon myClass="md:w-7 w-4" />
       </button>
     </div>
   </nav>
 
   <aside
-    class="fixed md:w-1/3 w-2/3 bg-white h-screen -right-[1000px] top-0 z-20 shadow transition-all duration-300"
+    class="fixed xl:w-1/3 md:w-2/3 w-screen bg-white h-screen -right-[1000px] top-0 z-20 shadow transition-all duration-300"
   >
     <button
-      class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 p-2 absolute right-0 md:mr-20 md:mt-5 mr-5 mt-5"
+      class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center absolute right-0 xl:mr-20 md:mr-10 mr-5 mt-5"
       @click="toggleSidebar()"
     >
       <bars3BottomRightIcon myClass="w-7" />
     </button>
+
+    <ul
+      class="absolute top-1/2 left-1/2 text-center -translate-x-1/2 -translate-y-1/2"
+    >
+      <li class="mb-5">
+        <router-link
+          to="/"
+          class="text-2xl hover:text-3xl duration-300 hover:text-[#34e0a1]"
+          >Beranda</router-link
+        >
+      </li>
+      <li class="mb-5">
+        <router-link
+          to="/search"
+          class="text-2xl hover:text-3xl duration-300 hover:text-[#34e0a1]"
+          >Search</router-link
+        >
+      </li>
+      <li class="mb-5">
+        <router-link
+          to="/search"
+          class="text-2xl hover:text-3xl duration-300 hover:text-[#34e0a1]"
+          >Search</router-link
+        >
+      </li>
+    </ul>
   </aside>
 
   <section
@@ -76,19 +112,20 @@
           @click="redirectToSearch()"
           class="text-sm font-semibold bg-[#34e0a1]/40 hover:bg-[#34e0a1] cursor-pointer px-5 py-2 rounded-full"
         >
-          Destinasi Favorit
+          <span class="md:inline hidden">Destinasi</span>
+          Favorit
         </span>
         <span
           @click="redirectToSearch()"
           class="text-sm font-semibold bg-[#34e0a1]/40 hover:bg-[#34e0a1] cursor-pointer px-5 py-2 rounded-full"
         >
-          Kuliner Terbaik
+          Kuliner <span class="md:inline hidden">Terbaik</span>
         </span>
         <span
           @click="redirectToSearch()"
           class="text-sm font-semibold bg-[#34e0a1]/40 hover:bg-[#34e0a1] cursor-pointer px-5 py-2 rounded-full"
         >
-          Kekayaan Tradisi
+          <span class="md:inline hidden">Kekayaan</span> Tradisi
         </span>
       </div>
     </div>

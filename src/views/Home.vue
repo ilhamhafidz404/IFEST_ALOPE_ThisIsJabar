@@ -5,19 +5,21 @@
 
   <Header />
 
-  <main class="lg:px-20 md:px-10 px-5 pt-20">
+  <main class="xl:px-20 md:px-10 px-5 pt-20">
     <Category />
     <TrendActivities />
   </main>
 
   <!--  -->
-  <section class="mt-20 text-center bg-[#34e0a1] py-20 lg:px-20 md:px-10 px-5">
-    <h2 class="font-waterbrush md:text-5xl text-3xl text-white">
+  <section
+    class="mt-20 text-center bg-[#34e0a1] sm:py-20 py-10 xl:px-20 md:px-10 px-5"
+  >
+    <h2 class="font-waterbrush md:text-5xl text-4xl text-white">
       Tentang Jabar
     </h2>
-    <h3 class="md:text-5xl text-3xl text-white">KATA MEREKA</h3>
+    <h3 class="md:text-5xl text-2xl text-white">KATA MEREKA</h3>
 
-    <div class="grid md:grid-cols-2 mt-20 lg:gap-20 gap-10">
+    <div class="grid lg:grid-cols-2 md:mt-20 mt-10 xl:gap-20 gap-10">
       <div class="bg-white text-left p-10 rounded relative shadow">
         <p class="text-sm">
           Jawa Barat memiliki lanskap alam yang memukau, mulai dari gunung yang
@@ -54,68 +56,29 @@
         />
       </div>
     </div>
-
-    <!-- <div class="mt-28 relative">
-      <hr class="border border-white" />
-      <span
-        class="bg-[#34e0a1] absolute left-1/2 -translate-x-1/2 -translate-y-1/2 px-10 text-white"
-      >
-        DESTINASI PILIHAN
-      </span>
-    </div>
-    <div class="grid grid-cols-6 mt-10 gap-10">
-      <img
-        src="./../assets/images/header/1.jpg"
-        alt=""
-        class="w-full h-[200px] object-cover rounded"
-      />
-      <img
-        src="./../assets/images/header/1.jpg"
-        alt=""
-        class="w-full h-[200px] object-cover rounded"
-      />
-      <img
-        src="./../assets/images/header/1.jpg"
-        alt=""
-        class="w-full h-[200px] object-cover rounded"
-      />
-      <img
-        src="./../assets/images/header/1.jpg"
-        alt=""
-        class="w-full h-[200px] object-cover rounded"
-      />
-      <img
-        src="./../assets/images/header/1.jpg"
-        alt=""
-        class="w-full h-[200px] object-cover rounded"
-      />
-      <img
-        src="./../assets/images/header/1.jpg"
-        alt=""
-        class="w-full h-[200px] object-cover rounded"
-      />
-    </div> -->
   </section>
 
   <!--  -->
 
-  <section class="px-20 mt-20">
-    <h4 class="text-3xl text-center">ALASAN</h4>
-    <h4 class="font-waterbrush text-5xl font-bold text-center">
+  <section class="xl:px-20 px-10 mt-20">
+    <h4 class="sm:text-3xl text-2xl text-center">ALASAN</h4>
+    <h4
+      class="font-waterbrush sm:text-5xl text-4xl font-bold text-center md:mb-0 mb-16"
+    >
       Kenapa Jabar?
     </h4>
 
-    <div class="grid grid-cols-11">
-      <div class="col-span-5 py-10">
-        <div class="flex gap-5 justify-end items-center mb-3">
-          <div class="w-2/3 text-right">
+    <div class="grid md:grid-cols-11 grid-cols-12">
+      <div class="md:col-span-5 col-span-11 md:py-10 md:order-1 order-2">
+        <div class="flex gap-5 justify-end items-center xl:mb-3 mb-7">
+          <div class="xl:w-2/3 w-full md:text-right text-left md:pl-0 pl-4">
             <h5 class="text-xl font-semibold">Keindahan Alam yang Memikat</h5>
             <p class="text-sm mt-2">
               Jawa Barat memiliki lanskap alam yang memukau, mulai dari gunung
               yang menjulang tinggi hingga pantai yang indah.
             </p>
           </div>
-          <div class="w-1/3">
+          <div class="w-1/3 xl:block hidden">
             <img
               src="./../assets/images/gallery/8.jpg"
               alt=""
@@ -123,8 +86,8 @@
             />
           </div>
         </div>
-        <div class="flex gap-5 justify-end items-center mb-3">
-          <div class="w-2/3 text-right">
+        <div class="flex gap-5 justify-end items-center xl:mb-3 mb-7">
+          <div class="xl:w-2/3 w-full md:text-right text-left md:pl-0 pl-4">
             <h5 class="text-xl font-semibold">Keanekaragaman Budaya</h5>
             <p class="text-sm mt-2">
               Kota Bandung yang kosmopolitan menawarkan pengalaman belanja dan
@@ -133,7 +96,7 @@
               dan keraton yang megah.
             </p>
           </div>
-          <div class="w-1/3">
+          <div class="w-1/3 xl:block hidden">
             <img
               src="./../assets/images/wisataBudaya/gedungSate.jpg"
               alt=""
@@ -142,21 +105,26 @@
           </div>
         </div>
       </div>
-      <div class="col-span-1 text-center">
+      <div class="col-span-1 text-center md:order-2 order-1">
         <span
           class="relative inline-block w-[2px] h-full bg-[#34e0a1] after:content-[''] after:w-[20px] after:h-[20px] after:absolute after:bg-[#34e0a1] after:rounded-full after:-translate-x-1/2 after:top-1/4 after:-translate-y-1/2 before:content-[''] before:w-[20px] before:h-[20px] before:absolute before:bg-[#34e0a1] before:rounded-full before:-translate-x-1/2 before:top-3/4 before:-translate-y-1/2"
         ></span>
       </div>
-      <div class="col-span-5 py-10">
-        <div class="flex gap-5 justify-end items-center mb-3">
-          <div class="w-1/3">
+      <div class="md:hidden block col-span-1 text-center order-3">
+        <span
+          class="relative inline-block w-[2px] h-full bg-[#34e0a1] after:content-[''] after:w-[20px] after:h-[20px] after:absolute after:bg-[#34e0a1] after:rounded-full after:-translate-x-1/2 after:top-1/4 after:-translate-y-1/2 before:content-[''] before:w-[20px] before:h-[20px] before:absolute before:bg-[#34e0a1] before:rounded-full before:-translate-x-1/2 before:top-3/4 before:-translate-y-1/2"
+        ></span>
+      </div>
+      <div class="md:col-span-5 col-span-11 md:py-10 md:order-3 order-4">
+        <div class="flex gap-5 justify-end items-center xl:mb-3 mb-7">
+          <div class="w-1/3 xl:block hidden">
             <img
               src="./../assets/images/makananKhas/nasiTimbel.jpg"
               alt=""
               class="w-full h-[200px] object-cover rounded"
             />
           </div>
-          <div class="w-2/3 text-left">
+          <div class="xl:w-2/3 w-full text-left md:pl-0 pl-4">
             <h5 class="text-xl font-semibold">Kuliner yang Lezat</h5>
             <p class="text-sm mt-2">
               Sajian makanan khas seperti sate, soto, nasi liwet, dan makanan
@@ -166,15 +134,15 @@
             </p>
           </div>
         </div>
-        <div class="flex gap-5 justify-end items-center mb-3">
-          <div class="w-1/3">
+        <div class="flex gap-5 justify-end items-center xl:mb-3 mb-7">
+          <div class="w-1/3 xl:block hidden">
             <img
               src="./../assets/images/activities/terjunPayung.jpg"
               alt=""
               class="w-full h-[200px] object-cover rounded"
             />
           </div>
-          <div class="w-2/3 text-left">
+          <div class="xl:w-2/3 w-full text-left md:pl-0 pl-4">
             <h5 class="text-xl font-semibold">Aktivitas Seru</h5>
             <p class="text-sm mt-2">
               Jawa Barat juga menawarkan berbagai aktivitas seru seperti arung
@@ -188,16 +156,13 @@
   </section>
 
   <section
-    class="grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 gap-2 relative mt-20"
+    class="grid xl:grid-cols-5 md:grid-cols-4 grid-cols-2 gap-2 relative mt-20"
   >
     <div class="row-span-2 md:order-1 md:block hidden">
       <img
         src="./../assets/images/gallery/1.jpg"
         alt="gallery11"
         class="w-full h-full object-cover"
-        data-aos-once="true"
-        data-aos="flip-left"
-        data-aos-delay="100"
       />
     </div>
     <div class="md:order-2 md:block hidden">
@@ -205,9 +170,6 @@
         src="./../assets/images/gallery/2.jpg"
         alt="gallery1"
         class="w-full h-full object-cover"
-        data-aos-once="true"
-        data-aos="flip-left"
-        data-aos-delay="200"
       />
     </div>
     <div class="md:order-3 md:block hidden">
@@ -215,9 +177,6 @@
         src="./../assets/images/gallery/3.jpg"
         alt="gallery2"
         class="w-full h-full object-cover"
-        data-aos-once="true"
-        data-aos="flip-left"
-        data-aos-delay="300"
       />
     </div>
     <div class="md:order-4 order-1">
@@ -225,39 +184,27 @@
         src="./../assets/images/gallery/4.jpg"
         alt="gallery3"
         class="w-full h-full object-cover"
-        data-aos-once="true"
-        data-aos="flip-left"
-        data-aos-delay="400"
       />
     </div>
-    <div class="lg:order-5 md:order-7 order-2">
+    <div class="xl:order-5 md:order-7 order-2">
       <img
         src="./../assets/images/gallery/5.jpg"
         alt="gallery4"
         class="w-full h-full object-cover"
-        data-aos-once="true"
-        data-aos="flip-down"
-        data-aos-delay="500"
       />
     </div>
 
     <!-- {/* */} -->
 
-    <div class="lg:order-6 md:order-8 md:block hidden">
+    <div class="xl:order-6 md:order-8 md:block hidden">
       <img
         src="./../assets/images/gallery/6.jpg"
         alt="gallery5"
         class="w-full h-full object-cover"
-        data-aos-once="true"
-        data-aos="flip-right"
-        data-aos-delay="800"
       />
     </div>
     <div
-      class="border-2 border-[#34e0a1] border-dashed p-5 flex flex-col justify-center lg:order-7 md:order-5 order-3 lg:col-span-1 md:col-span-2"
-      data-aos-once="true"
-      data-aos="zoom-in"
-      data-aos-delay="800"
+      class="border-2 border-[#34e0a1] border-dashed p-5 flex flex-col justify-center xl:order-7 md:order-5 order-3 xl:col-span-1 md:col-span-2"
     >
       <h2 class="font-semibold text-xl text-[#34e0a1] uppercase">
         MARI bERKUNJUNG DAN LEBIH DEKAT DENGAN JABAR
@@ -267,67 +214,49 @@
         anda!
       </p>
     </div>
-    <div class="lg:order-8 order-5 lg:block md:hidden">
+    <div class="xl:order-8 order-5 xl:block md:hidden">
       <img
         src="./../assets/images/gallery/7.jpg"
         alt="gallery6"
         class="w-full h-full object-cover"
-        data-aos-once="true"
-        data-aos="flip-right"
-        data-aos-delay="700"
       />
     </div>
-    <div class="row-span-2 lg:order-9 md:order-6 order-4">
+    <div class="row-span-2 xl:order-9 md:order-6 order-4">
       <img
         src="./../assets/images/gallery/8.jpg"
         alt="gallery12"
         class="w-full h-full object-cover"
-        data-aos-once="true"
-        data-aos="flip-right"
-        data-aos-delay="600"
       />
     </div>
 
     <!-- {/* */} -->
 
-    <div class="lg:order-10 md:block hidden order-9">
+    <div class="xl:order-10 md:block hidden order-9">
       <img
         src="./../assets/images/gallery/9.jpg"
         alt="gallery7"
         class="w-full h-full object-cover"
-        data-aos-once="true"
-        data-aos="flip-left"
-        data-aos-delay="300"
       />
     </div>
-    <div class="lg:order-11 lg:block hidden">
+    <div class="xl:order-11 xl:block hidden">
       <img
         src="./../assets/images/gallery/10.jpg"
         alt="gallery8"
         class="w-full h-full object-cover"
-        data-aos-once="true"
-        data-aos="flip-left"
-        data-aos-delay="400"
       />
     </div>
-    <div class="lg:order-12 lg:block hidden">
+    <div class="xl:order-12 xl:block hidden">
       <img
         src="./../assets/images/gallery/11.jpg"
         alt="gallery9"
         class="w-full h-full object-cover"
-        data-aos-once="true"
-        data-aos="flip-left"
-        data-aos-delay="500"
       />
     </div>
-    <div class="lg:order-last lg:block hidden">
+    <div class="xl:order-last xl:block hidden">
       <img
         src="./../assets/images/gallery/12.jpg"
         alt="gallery10"
         class="w-full h-full object-cover"
-        data-aos-once="true"
-        data-aos="flip-left"
-        data-aos-delay="600"
       />
     </div>
   </section>
@@ -351,6 +280,9 @@ export default {
     Category,
     TrendActivities,
     Footer,
+  },
+  mounted() {
+    window.scrollTo(0, 0);
   },
 };
 </script>

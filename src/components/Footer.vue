@@ -1,6 +1,8 @@
 <template>
-  <footer class="px-20 grid grid-cols-7 mt-20 gap-10">
-    <div class="col-span-3">
+  <footer
+    class="lg:px-20 px-10 grid lg:grid-cols-7 md:grid-cols-3 grid-cols-2 mt-20 gap-10"
+  >
+    <div class="md:col-span-3 col-span-2 md:text-left text-center">
       <h4 class="text-4xl font-bold font-waterbrush">Jabar Tour</h4>
       <p class="text-sm mt-5">
         Mari kita eksplorasi keindahan alam, kekayaan budaya dan ragam kultur
@@ -19,25 +21,29 @@
     <div>
       <h5 class="text-xl font-semibold">Links</h5>
       <ul class="mt-2">
-        <li>Kategoru</li>
+        <li>Kategori</li>
         <li>Aktifitas</li>
         <li>Ulasan</li>
         <li>Alasan</li>
       </ul>
     </div>
-    <div class="col-span-2">
+    <div
+      class="lg:col-span-2 md:col-span-1 col-span-2 md:text-left text-center"
+    >
       <h5 class="text-xl font-semibold mb-5">Kontak Kami</h5>
-      <p class="flex gap-4 mb-3">
+      <p class="flex gap-4 mb-3 md:justify-start justify-center">
         <solidPhoneIcon myClass="w-5 text-[#34e0a1]" />
         083871352030
       </p>
-      <p class="flex gap-4 mb-3">
+      <p class="flex gap-4 mb-3 md:justify-start justify-center">
         <solidEnvelopeIcon myClass="w-5 text-[#34e0a1]" />
         ilhamhafidz@gmail.com
       </p>
     </div>
 
-    <div class="col-span-7 text-center border-t-2 py-5 border-[#34e0a1]">
+    <div
+      class="lg:col-span-7 md:col-span-3 col-span-2 text-center border-t-2 py-5 border-[#34e0a1]"
+    >
       <p class="text-sm">Copyright by ALOPE Team 2023</p>
     </div>
   </footer>

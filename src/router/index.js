@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 // search
 import Home from "../views/Home.vue";
 import Search from "../views/Search.vue";
+import Detail from "../views/Detail.vue";
 import Activity from "../views/Activity.vue";
 
 const router = createRouter({
@@ -17,6 +18,11 @@ const router = createRouter({
       path: "/search",
       name: "search",
       component: Search,
+    },
+    {
+      path: "/detail",
+      name: "detail",
+      component: Detail,
     },
     {
       path: "/activity",

@@ -1,22 +1,27 @@
 <template>
-  <header class="grid lg:grid-cols-2 h-screen relative items-center">
+  <header
+    class="grid xl:grid-cols-2 xl:h-screen lg:max-h-[800px] h-screen relative items-center"
+  >
     <div
-      class="lg:p-16 lg:pb-20 lg:mt-32 lg:static absolute lg:w-auto md:w-1/2 bg-white/40 md:p-10 md:pb-10 md:bottom-auto bottom-[100px] p-5 pb-20"
+      class="xl:p-16 xl:pb-20 xl:mt-32 xl:static absolute xl:w-auto md:w-2/3 bg-white/40 md:p-10 md:pb-10 md:bottom-auto bottom-[100px] p-5 pb-20"
     >
-      <h1 class="md:text-5xl text-4xl font-[500]">
+      <h1 class="xl:text-5xl md:text-4xl text-2xl font-[500]">
         {{ header.title1 }} <br />
         {{ header.title2 }}
       </h1>
-      <p class="text-sm mt-5">
+      <p class="md:text-sm text-xs md:mt-5 mt-2">
         {{ header.subtitle }}
       </p>
-      <a href="" class="text-[#34e0a1] mt-7 inline-block font-semibold">
+      <a
+        href=""
+        class="text-[#34e0a1] mt-7 inline-block font-semibold md:text-base text-sm"
+      >
         Lihat Lebih Lengkap
       </a>
 
       <!-- desktop -->
       <div
-        class="gap-10 mt-16 bg-[#34e0a1] text-white py-5 px-10 relative lg:flex hidden"
+        class="gap-10 mt-16 bg-[#34e0a1] text-white py-5 px-10 relative xl:flex hidden"
       >
         <div class="w-2/3">
           <h4 class="text-xl font-semibold mb-3">Lokasi</h4>
@@ -42,7 +47,7 @@
 
     <!-- tablet -->
     <div
-      class="lg:hidden grid md:grid-cols-4 gap-10 mt-32 bg-[#34e0a1] text-white md:py-5 md:px-10 p-5 absolute bottom-0 left-0 right-0"
+      class="xl:hidden grid md:grid-cols-4 gap-10 mt-32 bg-[#34e0a1] text-white md:py-5 md:px-10 p-5 absolute bottom-0 left-0 right-0"
     >
       <div class="md:col-span-2">
         <h4 class="text-xl font-semibold mb-3">Lokasi</h4>
@@ -66,17 +71,17 @@
         id="headerImage"
         src="./../assets/images/header/1.jpg"
         alt=""
-        class="h-screen w-full object-cover"
+        class="xl:h-screen lg:h-[800px] h-screen w-full object-cover"
       />
     </div>
 
     <div
-      class="absolute flex items-center justify-center lg:right-10 right-0 bottom-[128px] bg-white"
+      class="absolute flex items-center justify-center lg:right-10 right-0 bottom-[150px] bg-white"
     >
-      <button class="p-5 hover:bg-[#34e0a1]" @click="prevHeader()">
+      <button class="md:p-5 p-3 hover:bg-[#34e0a1]" @click="prevHeader()">
         <chevronLeftIcon myClass="w-6" />
       </button>
-      <button class="p-5 hover:bg-[#34e0a1]" @click="nextHeader()">
+      <button class="md:p-5 p-3 hover:bg-[#34e0a1]" @click="nextHeader()">
         <chevronRightIcon myClass="w-6" />
       </button>
     </div>
