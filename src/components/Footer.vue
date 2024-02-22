@@ -13,18 +13,18 @@
     <div>
       <h5 class="text-xl font-semibold">Support</h5>
       <ul class="mt-2">
-        <li>FAQ</li>
-        <li>Kontak Kami</li>
-        <li>Bantuan Liburan</li>
+        <li class="text-sm mb-1">FAQ</li>
+        <li class="text-sm mb-1">Kontak Kami</li>
+        <li class="text-sm mb-1">Bantuan Liburan</li>
       </ul>
     </div>
     <div>
       <h5 class="text-xl font-semibold">Links</h5>
       <ul class="mt-2">
-        <li>Kategori</li>
-        <li>Aktifitas</li>
-        <li>Ulasan</li>
-        <li>Alasan</li>
+        <li class="text-sm mb-1">Kategori</li>
+        <li class="text-sm mb-1">Aktifitas</li>
+        <li class="text-sm mb-1">Ulasan</li>
+        <li class="text-sm mb-1">Alasan</li>
       </ul>
     </div>
     <div

@@ -8,20 +8,26 @@
       alt="header"
       class="w-full h-full object-cover object-center"
     />
-    <section class="absolute bottom-16 w-1/2 left-1/2 -translate-x-1/2">
-      <h2 class="text-4xl text-center font-semibold mb-5 text-white">
+    <section
+      class="absolute bottom-16 xl:w-1/2 md:w-3/4 w-full left-1/2 -translate-x-1/2 md:p-0 p-5"
+    >
+      <h2
+        class="md:text-4xl text-2xl text-center font-semibold mb-5 text-white"
+      >
         Cari Destinasi Pilihan
       </h2>
-      <div class="bg-white flex items-center gap-5 py-3 px-5 rounded shadow">
+      <div
+        class="bg-white flex items-center gap-5 xl:py-3 xl:px-5 py-2 md:px-3 px-2 rounded shadow"
+      >
         <magnifyingGlassIcon myClass="w-6" />
         <input
           type="text"
           placeholder="Cari berdasarkan kota..."
-          class="py-2 focus:outline-none w-full"
+          class="py-2 focus:outline-none w-full md:text-base text-xs"
           @keypress.enter="redirectToSearch()"
         />
         <button
-          class="bg-[#48e3aa] px-5 py-3 rounded text-white hover:bg-[#48e3aa]/90"
+          class="bg-[#48e3aa] px-5 py-3 rounded text-white hover:bg-[#48e3aa]/90 md:text-base text-xs"
         >
           Cari
         </button>
@@ -29,8 +35,8 @@
     </section>
   </header>
 
-  <main class="mt-10 grid grid-cols-4 gap-10 px-20">
-    <div class="relative">
+  <main class="mt-10 grid xl:grid-cols-4 gap-10 xl:px-20 md:px-10 px-5">
+    <div class="relative xl:order-1 order-2">
       <div
         class="border-2 border-[#34e0a1] bg-[#34e0a1]/20 pl-5 pr-10 py-7 rounded sticky top-20"
       >
@@ -120,32 +126,37 @@
       </div>
     </div>
 
-    <div class="col-span-3">
-      <div class="mt-3 gap-3 flex items-center">
+    <div class="xl:col-span-3 xl:order-2 order-1">
+      <div class="mt-3 gap-3 md:flex items-center">
         <p class="mr-5 text-sm">
           <span class="font-semibold text-xl">542</span> Destinasi terpilih
         </p>
-        <span
-          class="bg-gray-300 px-5 py-2 rounded-full text-black text-sm inline-flex gap-3 items-center"
-          >Budaya
-          <xMarkIcon myClass="w-4 cursor-pointer hover:text-red-500" />
-        </span>
-        <span
-          class="bg-gray-300 px-5 py-2 rounded-full text-black text-sm inline-flex gap-3 items-center"
-          >Pedesaan
-          <xMarkIcon myClass="w-4 cursor-pointer hover:text-red-500" />
-        </span>
-        <span
-          class="bg-gray-300 px-5 py-2 rounded-full text-black text-sm inline-flex gap-3 items-center"
-          >Keluarga
-          <xMarkIcon myClass="w-4 cursor-pointer hover:text-red-500" />
-        </span>
+        <div class="flex md:gap-5 gap-3 md:mt-0 mt-2">
+          <span
+            class="bg-gray-300 md:px-5 px-3 py-2 rounded-full text-black md:text-sm text-xs inline-flex md:gap-3 gap-1 items-center"
+            >Budaya
+            <xMarkIcon myClass="w-4 cursor-pointer hover:text-red-500" />
+          </span>
+          <span
+            class="bg-gray-300 md:px-5 px-3 py-2 rounded-full text-black md:text-sm text-xs inline-flex md:gap-3 gap-1 items-center"
+            >Pedesaan
+            <xMarkIcon myClass="w-4 cursor-pointer hover:text-red-500" />
+          </span>
+          <span
+            class="bg-gray-300 md:px-5 px-3 py-2 rounded-full text-black md:text-sm text-xs inline-flex md:gap-3 gap-1 items-center"
+            >Keluarga
+            <xMarkIcon myClass="w-4 cursor-pointer hover:text-red-500" />
+          </span>
+        </div>
       </div>
 
-      <div class="flex items-center gap-5 mt-10">
+      <div class="flex md:flex-row flex-col items-center gap-5 mt-10">
         <div>
           <a href="">
-            <img src="./../assets/img/a1.jpg" class="w-[350px] rounded" />
+            <img
+              src="./../assets/img/a1.jpg"
+              class="md:w-[350px] w-full rounded"
+            />
           </a>
         </div>
         <div class="text-box">
@@ -168,24 +179,27 @@
             Kabupaten Kuningan
           </p>
 
-          <div class="flex gap-3 mt-10">
+          <div class="flex gap-3 md:mt-10 mt-5">
             <button
-              class="px-10 py-2 rounded bg-[#34e0a1] border border-[#34e0a1] hover:bg-[#34e0a1]/80 text-white text-sm"
+              class="xl:px-10 px-5 py-2 rounded bg-[#34e0a1] border border-[#34e0a1] hover:bg-[#34e0a1]/80 text-white xl:text-sm text-xs"
             >
               Lihat Detail
             </button>
             <button
-              class="px-10 py-2 rounded border border-[#34e0a1] text-[#34e0a1] hover:bg-[#34e0a1] hover:text-white text-sm"
+              class="xl:px-10 px-5 py-2 rounded border border-[#34e0a1] text-[#34e0a1] hover:bg-[#34e0a1] hover:text-white xl:text-sm text-xs"
             >
               Lihat Lokasi Map
             </button>
           </div>
         </div>
       </div>
-      <div class="flex items-center gap-5 mt-10">
+      <div class="flex md:flex-row flex-col items-center gap-5 mt-10">
         <div>
           <a href="">
-            <img src="./../assets/img/a1.jpg" class="w-[350px] rounded" />
+            <img
+              src="./../assets/img/a1.jpg"
+              class="md:w-[350px] w-full rounded"
+            />
           </a>
         </div>
         <div class="text-box">
@@ -208,24 +222,27 @@
             Kabupaten Kuningan
           </p>
 
-          <div class="flex gap-3 mt-10">
+          <div class="flex gap-3 md:mt-10 mt-5">
             <button
-              class="px-10 py-2 rounded bg-[#34e0a1] border border-[#34e0a1] hover:bg-[#34e0a1]/80 text-white text-sm"
+              class="xl:px-10 px-5 py-2 rounded bg-[#34e0a1] border border-[#34e0a1] hover:bg-[#34e0a1]/80 text-white xl:text-sm text-xs"
             >
               Lihat Detail
             </button>
             <button
-              class="px-10 py-2 rounded border border-[#34e0a1] text-[#34e0a1] hover:bg-[#34e0a1] hover:text-white text-sm"
+              class="xl:px-10 px-5 py-2 rounded border border-[#34e0a1] text-[#34e0a1] hover:bg-[#34e0a1] hover:text-white xl:text-sm text-xs"
             >
               Lihat Lokasi Map
             </button>
           </div>
         </div>
       </div>
-      <div class="flex items-center gap-5 mt-10">
+      <div class="flex md:flex-row flex-col items-center gap-5 mt-10">
         <div>
           <a href="">
-            <img src="./../assets/img/a1.jpg" class="w-[350px] rounded" />
+            <img
+              src="./../assets/img/a1.jpg"
+              class="md:w-[350px] w-full rounded"
+            />
           </a>
         </div>
         <div class="text-box">
@@ -248,14 +265,14 @@
             Kabupaten Kuningan
           </p>
 
-          <div class="flex gap-3 mt-10">
+          <div class="flex gap-3 md:mt-10 mt-5">
             <button
-              class="px-10 py-2 rounded bg-[#34e0a1] border border-[#34e0a1] hover:bg-[#34e0a1]/80 text-white text-sm"
+              class="xl:px-10 px-5 py-2 rounded bg-[#34e0a1] border border-[#34e0a1] hover:bg-[#34e0a1]/80 text-white xl:text-sm text-xs"
             >
               Lihat Detail
             </button>
             <button
-              class="px-10 py-2 rounded border border-[#34e0a1] text-[#34e0a1] hover:bg-[#34e0a1] hover:text-white text-sm"
+              class="xl:px-10 px-5 py-2 rounded border border-[#34e0a1] text-[#34e0a1] hover:bg-[#34e0a1] hover:text-white xl:text-sm text-xs"
             >
               Lihat Lokasi Map
             </button>
