@@ -35,7 +35,7 @@
     </section>
   </header>
 
-  <main class="mt-10 grid xl:grid-cols-4 gap-10 xl:px-20 md:px-10 px-5">
+  <main class="mt-10 grid xl:grid-cols-4 gap-10 xl:px-20 md:px-10 px-5 mb-20">
     <div class="relative xl:order-1 order-2">
       <div
         class="border-2 border-[#34e0a1] bg-[#34e0a1]/20 pl-5 pr-10 py-7 rounded sticky top-20"

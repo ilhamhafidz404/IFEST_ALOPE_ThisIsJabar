@@ -1,6 +1,6 @@
 <template>
   <section
-    class="lg:px-20 md:px-10 px-3 md:py-14 py-10 lg:flex lg:justify-between lg:items-center bg-gradient-to-r from-[#48e3aa]/90 to-[#48e3aa]/90 text-white relative overflow-hidden -mb-10 mt-20"
+    class="lg:px-20 md:px-10 px-3 md:py-14 py-10 lg:flex lg:justify-between lg:items-center bg-gradient-to-r from-[#48e3aa]/90 to-[#48e3aa]/90 text-white relative overflow-hidden -mb-10"
   >
     <span
       id="blink"

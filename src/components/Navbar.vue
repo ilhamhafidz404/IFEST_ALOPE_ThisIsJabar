@@ -78,9 +78,23 @@ const router = useRouter();
       </li>
       <li class="mb-5">
         <router-link
-          to="/search"
+          to="/news"
           class="text-2xl hover:text-3xl duration-300 hover:text-[#34e0a1]"
-          >Search</router-link
+          >Berita</router-link
+        >
+      </li>
+      <li class="mb-5">
+        <router-link
+          to="/map"
+          class="text-2xl hover:text-3xl duration-300 hover:text-[#34e0a1]"
+          >Peta Interaktif</router-link
+        >
+      </li>
+      <li class="mb-5">
+        <router-link
+          to="/subscription"
+          class="text-2xl hover:text-3xl duration-300 hover:text-[#34e0a1]"
+          >Subscription</router-link
         >
       </li>
     </ul>

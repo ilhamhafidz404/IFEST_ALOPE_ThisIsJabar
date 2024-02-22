@@ -19,7 +19,7 @@
     </section>
   </header>
 
-  <main class="lg:px-20 md:px-10 px-5 pt-20">
+  <main class="lg:px-20 md:px-10 px-5 pt-20 mb-20">
     <section class="grid grid-cols-3 gap-20 mb-20 relative">
       <div class="col-span-2">
         <h1 class="font-semibold text-5xl mb-10 leading-[60px]">
