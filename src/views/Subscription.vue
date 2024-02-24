@@ -38,27 +38,27 @@
         </h3>
         <div className="flex md:justify-start justify-center gap-10">
           <div className="flex flex-col md:items-start items-center">
-            <img
+            <!-- <img
               src="/images/icons/gmail.png"
               alt="gmailIcon"
               className="w-[30px]"
-            />
+            /> -->
             <p className="mt-2 dark:text-gray-300 text-sm">Gmail</p>
           </div>
           <div className="flex flex-col md:items-start items-center">
-            <img
+            <!-- <img
               src="/images/icons/instagram.png"
               alt="instagramIcon"
               className="w-[30px]"
-            />
+            /> -->
             <p className="mt-2 dark:text-gray-300 text-sm">Instagram</p>
           </div>
           <div className="flex flex-col md:items-start items-center">
-            <img
+            <!-- <img
               src="/images/icons/facebook.png"
               alt="facebookIcon"
               className="w-[30px]"
-            />
+            /> -->
             <p className="mt-2 dark:text-gray-300 text-sm">Facebook</p>
           </div>
         </div>
@@ -67,13 +67,14 @@
       <p
         className="flex gap-3 items-center mt-5 text-gray-700 dark:text-gray-300 md:text-sm text-[12px] md:text-left text-center"
       >
-        <FaBell /> Mendapatkan notifikasi ketika ada berita baru.
+        <SolidBellAlertIcon myClass="w-6" /> Mendapatkan notifikasi ketika ada
+        berita baru.
       </p>
     </div>
     <div className="h-[450px] lg:flex hidden lg:justify-start gap-5">
       <div className="h-full w-[40%] -translate-y-10">
         <img
-          src="/images/explore/2.jpg"
+          src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
           className="h-full w-full object-cover"
           data-aos="fade-up"
@@ -82,7 +83,7 @@
       </div>
       <div className="h-full w-[40%] translate-y-10">
         <img
-          src="/images/explore/1.jpg"
+          src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
           className="h-full w-full object-cover"
           data-aos="fade-down"
@@ -91,22 +92,25 @@
       </div>
     </div>
   </header>
-  <!-- <main className="grid lg:grid-cols-3 gap-10 md:px-20 px-5 mb-20">
-        <div>
-          <h2 className="text-3xl font-bold mb-5 dark:text-gray-100">
-            Frequently <br /> Asked Question
-            <span className="text-red-500">.</span>
-          </h2>
-          <p className="text-sm text-gray-800 dark:text-gray-300 mb-10">
-            Jika ada pertanyaan lainnya, silahkan hubungi <br /> tim kami di
-            support@alope.com
-          </p>
-          <button className="text-sm border-2 z-10 after:transition-all text-gray-50  px-5 py-3 border-red-500 after:content-[''] after:absolute relative after:inset-0 after:bg-red-500 after:-translate-x-1 after:-translate-y-1 after:-z-10 hover:after:translate-x-0 hover:after:translate-y-0">
-            Lihat semua FAQ
-          </button>
-        </div>
-        <div className="lg:col-span-2">
-          <Accordion atomic={true}>
+  <main className="grid lg:grid-cols-3 gap-10 md:px-20 px-5 mb-20">
+    <div>
+      <h2 className="text-3xl font-bold mb-5 dark:text-gray-100">
+        Frequently <br />
+        Asked Question
+        <span className="text-red-500">.</span>
+      </h2>
+      <p className="text-sm text-gray-800 dark:text-gray-300 mb-10">
+        Jika ada pertanyaan lainnya, silahkan hubungi <br />
+        tim kami di support@alope.com
+      </p>
+      <button
+        className="text-sm border-2 z-10 after:transition-all text-gray-50  px-5 py-3 border-red-500 after:content-[''] after:absolute relative after:inset-0 after:bg-red-500 after:-translate-x-1 after:-translate-y-1 after:-z-10 hover:after:translate-x-0 hover:after:translate-y-0"
+      >
+        Lihat semua FAQ
+      </button>
+    </div>
+    <div className="lg:col-span-2">
+      <!-- <Accordion atomic={true}>
             <AccordionItem title="Apa benefit dari berlangganan?">
               <p className="p-5 text-sm text-gray-800 dark:text-gray-200">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perferendis voluptatum accusantium maiores ipsa. Debitis repudiandae dolorum obcaecati delectus. Provident suscipit officia eum enim modi, veniam pariatur distinctio sapiente animi.
@@ -139,13 +143,20 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perferendis voluptatum accusantium maiores ipsa. Debitis repudiandae dolorum obcaecati delectus. Provident suscipit officia eum enim modi, veniam pariatur distinctio sapiente animi.
               </p>
             </AccordionItem>
-          </Accordion>
-        </div>
-      </main> -->
+          </Accordion> -->
+    </div>
+  </main>
 </template>
 
 <script>
-export default {};
+// icons
+import SolidBellAlertIcon from "@/components/icons/solidBellAlert.vue";
+export default {
+  components: {
+    //
+    SolidBellAlertIcon,
+  },
+};
 </script>
 
 <style>

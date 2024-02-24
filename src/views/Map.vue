@@ -2,7 +2,7 @@
   <Navbar />
 
   <section
-    class="lg:px-20 md:px-10 px-3 md:pb-14 pb-10 pt-32 lg:flex lg:justify-between lg:items-center bg-gradient-to-r from-[#48e3aa]/90 to-[#48e3aa]/90 text-white relative overflow-hidden"
+    class="lg:px-20 md:px-10 px-3 md:pb-14 pb-10 pt-32 lg:flex lg:justify-between lg:items-center bg-[#34e0a1] text-white relative overflow-hidden"
   >
     <div class="relative z-10 xl:w-1/2 md:w-2/3 w-full mx-auto">
       <div class="flex gap-3 items-center justify-center">
@@ -254,7 +254,7 @@
 
 <script>
 // components
-import Navbar from "./../components/Navbar.vue";
+import Navbar from "./../components/GreenNavbar.vue";
 import TopFooter from "./../components/TopFooter.vue";
 import Footer from "./../components/Footer.vue";
 

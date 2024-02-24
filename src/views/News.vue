@@ -1,83 +1,86 @@
 <template>
   <Navbar />
 
+  <br /><br /><br />
+
   <header
-    class="mx-auto grid lg:grid-cols-4 gap-10 pt-20 lg:px-20 md:px-5 px-3"
+    class="mx-auto grid xl:grid-cols-4 gap-10 pt-20 xl:px-20 md:px-5 px-3"
   >
-    <span
+    <!-- <span
       class="w-[1000px] h-[1000px] rounded-full absolute -left-[500px] -top-[500px] -rotate-[60deg]"
       style="
         background-image: radial-gradient(
           169.4% 89.55% at 94.76% 6.29%,
-          rgba(239, 68, 68, 0.7) 0%,
+          #34e0a1 0%,
           rgba(239, 68, 68, 0) 100%
         );
       "
-    ></span>
+    ></span> -->
 
     <div
-      class="lg:col-span-3 lg:h-[600px] md:h-[400px] h-[300px] bg-cover relative z-10 flex items-end md:p-10 p-4 after:content-[''] after:absolute after:inset-0 after:bg-black/40 after:-z-10 bg-bottom rounded overflow-hidden"
-      style="background-image: 'url(./../assets/img/a1.jpg)'"
+      class="xl:col-span-3 xl:h-[600px] md:h-[400px] h-[300px] bg-cover relative z-10 flex items-end md:p-10 p-4 after:content-[''] after:absolute after:inset-0 after:bg-black/40 after:-z-10 bg-bottom rounded overflow-hidden"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1567320032761-8d7fb7a5aa4e?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      "
     >
       <div class="w-[80%]">
         <h6
-          class="text-red-500 md:mb-3 mb-1 font-semibold md:text-base text-sm"
+          class="text-[#34e0a1] md:mb-3 mb-1 font-semibold md:text-base text-sm"
         >
-          UPACARA
+          ALAM
         </h6>
         <router-link to="/search">
-          <h2 class="lg:text-3xl md:text-2xl font-bold text-white">
-            UPACARA SEREN TAUN DI CIGUGUR UNTUK MENSYUKURI HASIL PANEN
+          <h2 class="xl:text-3xl md:text-2xl font-bold text-white">
+            Gunung Ciremai Menjadi Daya Tarik Pendaki Gunung Indonesia
           </h2>
         </router-link>
-        <p class="text-gray-200 mt-3 text-sm lg:block hidden">
-          Seren Taun adalah upacara adat panen padi masyarakat Sunda yang
-          dilakukan setiap tahun. Upacara ini berlangsung khidmat dan semarak di
-          berbagai desa adat Sunda. Upacara adat sebagai syukuran masyarakat
-          agraris.
+        <p class="text-gray-200 mt-3 text-sm xl:block hidden">
+          Gunung Ceremai adalah gunung berapi kerucut yang secara administratif
+          termasuk dalam wilayah dua kabupaten, yakni Kabupaten Kuningan dan
+          Kabupaten Majalengka, Provinsi Jawa Barat.
         </p>
       </div>
     </div>
-    <div class="md:grid hidden lg:grid-cols-1 grid-cols-2 lg:gap-0 gap-10">
+    <div class="md:grid hidden xl:grid-cols-1 grid-cols-2 xl:gap-0 gap-10">
       <div>
         <div
-          class="lg:h-[250px] h-[230px] after:rounded relative after:ontent-[''] after:bg-black/40 after:absolute after:inset-0"
+          class="xl:h-[250px] h-[230px] after:rounded relative after:ontent-[''] after:bg-black/40 after:absolute after:inset-0"
         >
           <img
-            src="./../assets/img/a1.jpg"
-            class="w-full lg:h-[250px] h-[230px] rounded object-cover"
+            src="https://images.unsplash.com/photo-1513415756790-2ac1db1297d0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="w-full xl:h-[250px] h-[230px] rounded object-cover"
           />
         </div>
       </div>
 
       <div>
-        <div class="lg:my-5 my-3">
-          <small class="text-red-500">UPACARA</small>
+        <div class="xl:my-5 my-3">
+          <small class="text-[#34e0a1]">UPACARA</small>
           <router-link to="/search">
             <h5
-              class="font-semibold lg:text-2xl text-base text-gray-800 dark:text-gray-200"
+              class="font-semibold xl:text-2xl text-base text-gray-800 dark:text-gray-200"
             >
               Peringati 32 Tahun Candi Borobudur
             </h5>
           </router-link>
         </div>
-        <div class="lg:my-5 my-3">
+        <div class="xl:my-5 my-3">
           <small class="text-indigo-500">FUN EVENT</small>
           <router-link to="/search">
             <h5
-              class="font-semibold lg:text-2xl tex-base text-gray-800 dark:text-gray-200"
+              class="font-semibold xl:text-2xl tex-base text-gray-800 dark:text-gray-200"
             >
               2.000 Pelari Meriahkan "Borobudur Fun Run"
             </h5>
           </router-link>
         </div>
-        <div class="lg:my-5 my-3">
+        <div class="xl:my-5 my-3">
           <small class="text-yellow-500 uppercase">
             Indonesia Dimata Dunia
           </small>
           <router-link to="/search">
             <h5
-              class="font-semibold lg:text-2xl tex-base text-gray-800 dark:text-gray-200"
+              class="font-semibold xl:text-2xl tex-base text-gray-800 dark:text-gray-200"
             >
               Candi Borobudur Situs Warisan Dunia
             </h5>
@@ -87,30 +90,40 @@
     </div>
   </header>
 
-  <main class="mx-auto mt-20 lg:px-20 md:px-10 px-3">
+  <main class="mx-auto mt-20 xl:px-20 md:px-10 px-3">
     <section>
-      <div class="grid lg:grid-cols-4 md:gap-10">
-        <div class="lg:col-span-3">
+      <div class="grid xl:grid-cols-4 md:gap-10">
+        <div class="xl:col-span-3">
           <div class="flex justify-between items-center mb-5">
             <span
-              class="flex gap-2 items-center text-red-500 text-xl font-semibold"
+              class="flex gap-2 items-center text-red-500 text-xl font-bold"
             >
-              <FaFire />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-7"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
               <h2>TRENDING</h2>
             </span>
             <span
               class="flex items-center gap-2 text-sm hover:underline dark:text-gray-200"
             >
               <a href="#">View More</a>
-              <FaArrowRight size="{13}" />
             </span>
           </div>
-          <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
+          <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-10">
             <div>
               <img
-                src="./../assets/img/a1.jpg"
+                src="https://images.unsplash.com/photo-1513415756790-2ac1db1297d0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="subheader1"
-                class="h-[200px] object-cover"
+                class="w-full h-[200px] object-cover rounded"
               />
               <router-link to="/search">
                 <h3 class="font-bold mt-2 dark:text-gray-200">
@@ -120,9 +133,9 @@
             </div>
             <div class="md:block hidden">
               <img
-                src="./../assets/img/a1.jpg"
+                src="https://images.unsplash.com/photo-1664551577638-9a212d646b9b?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="subheader2"
-                class="h-[200px] object-cover"
+                class="w-full h-[200px] object-cover rounded"
               />
               <router-link to="/search">
                 <h3 class="font-bold mt-2 dark:text-gray-200">
@@ -130,11 +143,11 @@
                 </h3>
               </router-link>
             </div>
-            <div class="lg:block hidden">
+            <div class="xl:block hidden">
               <img
-                src="./../assets/img/a1.jpg"
+                src="https://images.unsplash.com/photo-1523952578875-e6bb18b26645?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="subheader3"
-                class="h-[200px] object-cover"
+                class="w-full h-[200px] rounded object-cover"
               />
               <router-link to="/search">
                 <h3 class="font-bold mt-2 dark:text-gray-200">
@@ -146,11 +159,11 @@
         </div>
         <div class="border p-7 relative dark:border-gray-800 md:block hidden">
           <div
-            class="bg-red-500 w-[50px] h-[50px] text-white flex items-center justify-center absolute top-0 left-[20px] lg:-translate-y-1/2"
+            class="bg-[#34e0a1] w-[50px] h-[50px] text-white flex items-center justify-center absolute top-0 left-[20px] xl:-translate-y-1/2"
           >
-            <FaEnvelope size="{20}" />
+            <SolidEnvelopeIcon myClass="w-6" />
           </div>
-          <h3 class="mb-5 lg:mt-6 mt-12 dark:text-gray-300">
+          <h3 class="mb-5 xl:mt-6 mt-12 dark:text-gray-300">
             Berlangganan untuk mendapatkan notifikasi saat ada berita baru!
           </h3>
           <input
@@ -160,7 +173,7 @@
           />
           <router-link to="/search">
             <button
-              class="bg-red-500 px-10 py-2 rounded-full text-white mt-5 text-sm"
+              class="bg-[#34e0a1] px-10 py-2 rounded-full text-white mt-5 text-sm"
             >
               Subscribe
             </button>
@@ -169,189 +182,136 @@
       </div>
     </section>
     <hr class="my-10 dark:border-gray-800" />
-    <section class="grid lg:grid-cols-4 gap-20 mt-10">
-      <div class="lg:col-span-3 md:w-auto w-[95%]">
+    <section class="grid xl:grid-cols-4 gap-20 mt-10">
+      <div class="xl:col-span-3 md:w-auto w-[95%]">
         <div
-          class="md:grid md:grid-cols-5 items-center lg:gap-10 md:gap-5 md:mb-5 mb-16"
+          class="md:grid md:grid-cols-5 items-center xl:gap-10 md:gap-5 md:mb-5 mb-16"
         >
           <div class="md:col-span-2">
             <img
-              src="./../assets/img/a1.jpg"
+              src="https://images.unsplash.com/photo-1542897643-8158da5b4607?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               class="w-full h-[250px] rounded object-cover"
             />
           </div>
-          <div class="md:col-span-3">
-            <small class="text-yellow-500 font-semibold">
-              INDONESIA DI MATA DUNIA
-            </small>
+          <div class="md:col-span-3 md:mt-0 mt-3">
+            <small class="text-[#34e0a1] font-semibold"> BUDAYA </small>
 
             <router-link to="/search">
               <h3 class="text-xl font-bold mb-3 dark:text-gray-200">
-                Pertunjukkan Budaya Indonesia Pukau Warga Turki{" "}
+                Upacara Seren Taun Akan Diadakan Tanggal 20 Maret Mendatang!
               </h3>
             </router-link>
             <p
-              class="text-gray-700 dark:text-gray-300 lg:text-base md:text-sm text-[12px]"
+              class="text-gray-700 dark:text-gray-300 xl:text-base md:text-sm text-[12px]"
             >
-              Acara yang dimulai pada jam 6 sore hingga 10 malam waktu Turki
-              menyita perhatian ratusan penonton dari berbagai kalangan,
-              termasuk dosen-dosen dari Sakarya University, mahasiswa Turki,
-              mahasiswa Indonesia, dan sejumlah tamu undangan.
+              Seren Taun adalah upacara adat panen padi masyarakat Sunda yang
+              dilakukan setiap tahun. Upacara ini berlangsung khidmat dan
+              semarak di berbagai desa adat Sunda.
             </p>
 
-            <div class="mt-5 md:flex gap-10">
+            <div class="mt-5 lg:flex gap-10">
               <p
                 class="flex md:mb-0 mb-2 md:text-base text-[12px] gap-2 text-sm text-gray-600 dark:text-gray-400 items-center"
               >
-                <FaMapMarkedAlt />
-                <span>Sakarya University, Turki</span>
+                <SolidMapIcon myClass="w-5" />
+                <span>Cigugur, Kuningan</span>
               </p>
               <p
                 class="flex gap-2 text-sm text-gray-600 dark:text-gray-400 items-center"
               >
-                <FaCalendar />
-                <span>17 Oktober 2023</span>
+                <CalendarDaysIcon myClass="w-5" />
+                <span>1 Maret 2024</span>
               </p>
             </div>
           </div>
         </div>
         <div
-          class="md:grid md:grid-cols-5 items-center lg:gap-10 md:gap-5 md:mb-5 mb-16"
+          class="md:grid md:grid-cols-5 items-center xl:gap-10 md:gap-5 md:mb-5 mb-16"
         >
           <div class="md:col-span-2">
             <img
-              src="./../assets/img/a1.jpg"
+              src="https://images.unsplash.com/photo-1517842810619-e7163c0010bd?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               class="w-full h-[250px] rounded object-cover"
             />
           </div>
-          <div class="md:col-span-3">
-            <small class="text-emerald-500 font-semibold uppercase">
-              Musik dan Lagu
+          <div class="md:col-span-3 md:mt-0 mt-3">
+            <small class="text-[#34e0a1] font-semibold uppercase">
+              ATRAKSI
             </small>
             <router-link to="/search">
               <h3 class="text-xl font-bold mb-3 dark:text-gray-200">
-                Fungsi Gordang Sambilan Sebelum Masyarakat Mandailing Kenal
-                Islam
+                Selancar di Pinggir Pantai Pangandatan
               </h3>
             </router-link>
             <p
-              class="text-gray-700 dark:text-gray-300 lg:text-base md:text-sm text-[12px]"
+              class="text-gray-700 dark:text-gray-300 xl:text-base md:text-sm text-[12px]"
             >
-              Gordang Sambilan saat itu juga dipergunakan untuk menggelar
-              upacara mangido udan (meminta hujan) untuk mengatasi kekeringan
-              yang melanda di daerah tersebut.
+              Pantai Pangandaran merupakan sebuah objek wisata andalan Kabupaten
+              Pangandaran yang terletak di sebelah tenggara Jawa Barat, tepatnya
+              di Desa Pangandaran dan Pananjung, sekitar 222 km dari selatan
+              Bandung.
             </p>
 
-            <div class="mt-5 md:flex gap-10">
+            <div class="mt-5 lg:flex gap-10">
               <p
                 class="flex md:mb-0 mb-2 md:text-base text-[12px] gap-2 text-sm text-gray-600 dark:text-gray-400 items-center"
               >
-                <FaMapMarkedAlt />
-                <span>Mandailing, Sumatra Utara</span>
+                <SolidMapIcon myClass="w-5" />
+                <span>Pangandaran, Pangandaran</span>
               </p>
               <p
                 class="flex gap-2 text-sm text-gray-600 dark:text-gray-400 items-center"
               >
-                <FaCalendar />
-                <span>17 Oktober 2023</span>
+                <CalendarDaysIcon myClass="w-5" />
+                <span>22 Februari 2024</span>
               </p>
             </div>
           </div>
         </div>
         <div
-          class="md:grid md:grid-cols-5 items-center lg:gap-10 md:gap-5 md:mb-5 mb-16"
+          class="md:grid md:grid-cols-5 items-center xl:gap-10 md:gap-5 md:mb-5 mb-16"
         >
           <div class="md:col-span-2">
             <img
-              src="./../assets/img/a1.jpg"
+              src="https://images.unsplash.com/photo-1509861336350-714f2cf2af44?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               class="w-full h-[250px] rounded object-cover"
             />
           </div>
-          <div class="md:col-span-3">
-            <small class="text-purple-500 font-semibold">PAKAIAN</small>
+          <div class="md:col-span-3 md:mt-0 mt-3">
+            <small class="text-[#34e0a1] font-semibold">ALAM</small>
             <router-link to="/search">
               <h3 class="text-xl font-bold mb-3 dark:text-gray-200">
-                Hari Batik Nasional 2 Oktober, Mari Lebih Mengenal Batik
+                Curug Leuwi Hejo, Curug dengan Nuansa Alam Memukau
               </h3>
             </router-link>
             <p
-              class="text-gray-700 dark:text-gray-300 lg:text-base md:text-sm text-[12px]"
+              class="text-gray-700 dark:text-gray-300 xl:text-base md:text-sm text-[12px]"
             >
-              Batik merupakan salah satu jenis karya seni rupa yang berkembang
-              di Indonesia. Batik sendiri dipercaya sudah ada sejak zaman
-              Majapahit dan populer pada akhir abad XVIII atau permulaan abad
-              XIX.
+              Dikenal juga sebagai Curug Bengkok, Curug Leuwi Hejo dikenal
+              karena keindahan pemandangan alamnya yang memesona karena aliran
+              kecil dengan kolam cukup luas.
             </p>
 
-            <div class="mt-5 md:flex gap-10">
+            <div class="mt-5 lg:flex gap-10">
               <p
                 class="flex md:mb-0 mb-2 md:text-base text-[12px] gap-2 text-sm text-gray-600 dark:text-gray-400 items-center"
               >
-                <FaMapMarkedAlt />
-                <span>Bandung, Jawa Barat</span>
+                <SolidMapIcon myClass="w-5" />
+                <span>Sukamakmur, Bogor</span>
               </p>
               <p
                 class="flex gap-2 text-sm text-gray-600 dark:text-gray-400 items-center"
               >
-                <FaCalendar />
-                <span>17 Oktober 2023</span>
+                <CalendarDaysIcon myClass="w-5" />
+                <span>24 Februari 2024</span>
               </p>
             </div>
           </div>
         </div>
 
-        <div class="flex gap-1 justify-center mt-10">
-          <a
-            href="#"
-            class="text-black py-1 md:px-4 px-3 md:text-base text-sm rounded hover:text-white hover:bg-red-400 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-red-400"
-          >
-            &laquo;
-          </a>
-          <a
-            href="#"
-            class="text-white bg-red-500 py-1 md:px-4 px-3 md:text-base text-sm rounded"
-          >
-            1
-          </a>
-          <a
-            href="#"
-            class="text-black py-1 md:px-4 px-3 md:text-base text-sm rounded hover:text-white hover:bg-red-400 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-red-400"
-          >
-            2
-          </a>
-          <a
-            href="#"
-            class="text-black py-1 md:px-4 px-3 md:text-base text-sm rounded hover:text-white hover:bg-red-400 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-red-400"
-          >
-            3
-          </a>
-          <a
-            href="#"
-            class="text-black py-1 md:px-4 px-3 md:text-base text-sm rounded hover:text-white hover:bg-red-400 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-red-400"
-          >
-            4
-          </a>
-          <a
-            href="#"
-            class="text-black py-1 md:px-4 px-3 md:text-base text-sm rounded hover:text-white hover:bg-red-400 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-red-400"
-          >
-            5
-          </a>
-          <a
-            href="#"
-            class="text-black py-1 md:px-4 px-3 md:text-base text-sm rounded hover:text-white hover:bg-red-400 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-red-400"
-          >
-            6
-          </a>
-          <a
-            href="#"
-            class="text-black py-1 md:px-4 px-3 md:text-base text-sm rounded hover:text-white hover:bg-red-400 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-red-400"
-          >
-            &raquo;
-          </a>
-        </div>
+        <Pagination />
       </div>
-      <div class="lg:block hidden">
+      <div class="xl:block hidden">
         <img
           src="./../assets/img/a1.jpg"
           alt="kabarBudayaBanner"
@@ -367,15 +327,30 @@
 
 <script>
 // components
-import Navbar from "./../components/Navbar.vue";
+import Navbar from "./../components/GreenNavbar.vue";
 import TopFooter from "./../components/TopFooter.vue";
 import Footer from "./../components/Footer.vue";
+import Pagination from "./../components/Pagination.vue";
+
+// icons
+import SolidMapIcon from "@/components/icons/solidMap.vue";
+import CalendarDaysIcon from "@/components/icons/calendarDays.vue";
+import SolidEnvelopeIcon from "@/components/icons/solidEnvelope.vue";
 
 export default {
   components: {
     Navbar,
     TopFooter,
     Footer,
+    Pagination,
+
+    //
+    SolidMapIcon,
+    CalendarDaysIcon,
+    SolidEnvelopeIcon,
+  },
+  mounted() {
+    window.scrollTo(0, 0);
   },
 };
 </script>

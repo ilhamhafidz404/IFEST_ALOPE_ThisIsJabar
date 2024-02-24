@@ -5,11 +5,11 @@ const router = useRouter();
 </script>
 <template>
   <nav
-    class="fixed flex left-0 right-0 justify-between py-7 duration-300 xl:px-20 md:px-10 px-5 z-20"
+    class="fixed flex left-0 right-0 justify-between py-7 duration-300 xl:px-20 md:px-10 px-5 z-20 bg-[#34e0a1]"
   >
     <router-link to="/" class="flex items-center gap-5">
       <span
-        class="bg-[#34e0a1] w-[40px] h-[40px] md:flex hidden items-center justify-center rounded-full"
+        class="bg-white w-[40px] h-[40px] md:flex hidden items-center justify-center rounded-full"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -26,22 +26,17 @@ const router = useRouter();
           />
         </svg>
       </span>
-      <h1
-        class="font-bold"
-        :style="location.path === '/search' ? 'color: white' : ''"
-      >
-        JABAR TOUR
-      </h1>
+      <h1 class="font-bold text-white">JABAR TOUR</h1>
     </router-link>
     <div class="flex md:gap-10 gap-5">
       <button
-        class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center"
+        class="bg-white hover:bg-white/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center"
         @click="toggleSearch()"
       >
         <magnifyingGlassIcon myClass="md:w-7 w-4" />
       </button>
       <button
-        class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center"
+        class="bg-white hover:bg-white/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center"
         @click="toggleSidebar()"
       >
         <bars3Icon myClass="md:w-7 w-4" />
@@ -53,7 +48,7 @@ const router = useRouter();
     class="fixed xl:w-1/3 md:w-2/3 w-screen bg-white h-screen -right-[1000px] top-0 z-20 shadow transition-all duration-300"
   >
     <button
-      class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center absolute right-0 xl:mr-20 md:mr-10 mr-5 mt-5"
+      class="bg-white hover:bg-white/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center absolute right-0 xl:mr-20 md:mr-10 mr-5 mt-5"
       @click="toggleSidebar()"
     >
       <bars3BottomRightIcon myClass="w-7" />

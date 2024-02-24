@@ -43,10 +43,14 @@
     <script type="text/javascript">
       window.addEventListener("scroll", function () {
         const nav = document.querySelector("nav");
+        const navHeader = document.querySelector("nav h1");
+
         nav.classList.toggle("bg-white", window.scrollY > 50);
         nav.classList.toggle("shadow", window.scrollY > 50);
         nav.classList.toggle("py-3", window.scrollY > 50);
         nav.classList.toggle("py-7", window.scrollY < 50);
+
+        navHeader.classList.toggle("!text-gray-800", window.scrollY > 50);
       });
     </script>
   </body>
