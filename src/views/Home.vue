@@ -20,7 +20,9 @@
     <h3 class="md:text-5xl text-2xl text-white">KATA MEREKA</h3>
 
     <div class="grid lg:grid-cols-2 md:mt-20 mt-10 xl:gap-20 gap-10">
-      <div class="bg-white text-left p-10 rounded relative shadow">
+      <div
+        class="bg-white dark:bg-slate-800 dark:text-gray-200 text-left p-10 rounded relative shadow"
+      >
         <p class="text-sm">
           Jawa Barat memiliki lanskap alam yang memukau, mulai dari gunung yang
           menjulang tinggi hingga pantai yang indah. Gunung Gede Pangrango,
@@ -33,11 +35,11 @@
         <img
           src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
-          class="w-[100px] h-[100px] rounded-full object-cover absolute right-10 bottom-0 translate-y-1/3 border-[5px] border-white"
+          class="w-[100px] h-[100px] rounded-full object-cover absolute right-10 bottom-0 translate-y-1/3 border-[5px] border-white dark:border-slate-800"
         />
       </div>
       <div
-        class="bg-white text-left p-10 rounded relative shadow md:block hidden"
+        class="bg-white dark:bg-slate-800 dark:text-gray-200 text-left p-10 rounded relative shadow md:block hidden"
       >
         <p class="text-sm">
           Saya turis asal Amerika, berkunjung ke Indonesia untuk liburan. Saya
@@ -52,7 +54,7 @@
         <img
           src="https://images.unsplash.com/photo-1699729589505-d1791e32d925?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
-          class="w-[100px] h-[100px] rounded-full object-cover absolute right-10 bottom-0 translate-y-1/3 border-[5px] border-white"
+          class="w-[100px] h-[100px] rounded-full object-cover absolute right-10 bottom-0 translate-y-1/3 border-[5px] border-white dark:border-slate-800"
         />
       </div>
     </div>
@@ -61,9 +63,9 @@
   <!--  -->
 
   <section class="xl:px-20 px-10 mt-20">
-    <h4 class="sm:text-3xl text-2xl text-center">ALASAN</h4>
+    <h4 class="sm:text-3xl text-2xl text-center dark:text-gray-100">ALASAN</h4>
     <h4
-      class="font-waterbrush sm:text-5xl text-4xl font-bold text-center md:mb-0 mb-16"
+      class="font-waterbrush sm:text-5xl text-4xl font-bold text-center md:mb-0 mb-16 dark:text-gray-100"
     >
       Kenapa Jabar?
     </h4>
@@ -72,8 +74,10 @@
       <div class="md:col-span-5 col-span-11 md:py-10 md:order-1 order-2">
         <div class="flex gap-5 justify-end items-center xl:mb-3 mb-7">
           <div class="xl:w-2/3 w-full md:text-right text-left md:pl-0 pl-4">
-            <h5 class="text-xl font-semibold">Keindahan Alam yang Memikat</h5>
-            <p class="text-sm mt-2">
+            <h5 class="text-xl font-semibold dark:text-gray-100">
+              Keindahan Alam yang Memikat
+            </h5>
+            <p class="text-sm mt-2 dark:text-gray-200">
               Jawa Barat memiliki lanskap alam yang memukau, mulai dari gunung
               yang menjulang tinggi hingga pantai yang indah.
             </p>
@@ -88,8 +92,10 @@
         </div>
         <div class="flex gap-5 justify-end items-center xl:mb-3 mb-7">
           <div class="xl:w-2/3 w-full md:text-right text-left md:pl-0 pl-4">
-            <h5 class="text-xl font-semibold">Keanekaragaman Budaya</h5>
-            <p class="text-sm mt-2">
+            <h5 class="text-xl font-semibold dark:text-gray-100">
+              Keanekaragaman Budaya
+            </h5>
+            <p class="text-sm mt-2 dark:text-gray-200">
               Kota Bandung yang kosmopolitan menawarkan pengalaman belanja dan
               kuliner yang tak tertandingi, sementara kota-kota bersejarah
               seperti Bogor dan Cirebon menyuguhkan warisan budaya berupa istana
@@ -125,8 +131,10 @@
             />
           </div>
           <div class="xl:w-2/3 w-full text-left md:pl-0 pl-4">
-            <h5 class="text-xl font-semibold">Kuliner yang Lezat</h5>
-            <p class="text-sm mt-2">
+            <h5 class="text-xl font-semibold dark:text-gray-100">
+              Kuliner yang Lezat
+            </h5>
+            <p class="text-sm mt-2 dark:text-gray-200">
               Sajian makanan khas seperti sate, soto, nasi liwet, dan makanan
               khas sunda lainnya dapat dinikmati di berbagai tempat. Jajanan
               tradisional seperti peuyeum dan surabi juga menjadi daya tarik
@@ -143,8 +151,10 @@
             />
           </div>
           <div class="xl:w-2/3 w-full text-left md:pl-0 pl-4">
-            <h5 class="text-xl font-semibold">Aktivitas Seru</h5>
-            <p class="text-sm mt-2">
+            <h5 class="text-xl font-semibold dark:text-gray-100">
+              Aktivitas Seru
+            </h5>
+            <p class="text-sm mt-2 dark:text-gray-200">
               Jawa Barat juga menawarkan berbagai aktivitas seru seperti arung
               jeram di Sungai Citarik, berkuda di Ranca Upas, atau bermain
               paralayang di Puncak.

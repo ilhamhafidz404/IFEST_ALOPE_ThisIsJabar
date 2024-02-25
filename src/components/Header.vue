@@ -3,13 +3,15 @@
     class="grid xl:grid-cols-2 xl:h-screen lg:max-h-[800px] h-screen relative items-center"
   >
     <div
-      class="xl:p-16 xl:pb-20 xl:mt-32 xl:static absolute xl:w-auto md:w-2/3 bg-white/40 md:p-10 md:pb-10 md:bottom-auto bottom-[100px] p-5 pb-20"
+      class="xl:p-16 xl:pb-20 xl:mt-32 xl:static absolute xl:w-auto md:w-2/3 xl:bg-transparent bg-white/40 dark:bg-[#0f172a]/40 md:p-10 md:pb-10 md:bottom-auto bottom-[100px] p-5 pb-20"
     >
-      <h1 class="xl:text-5xl md:text-4xl text-2xl font-[500]">
+      <h1
+        class="xl:text-5xl md:text-4xl text-2xl font-[500] dark:text-gray-100"
+      >
         {{ header.title1 }} <br />
         {{ header.title2 }}
       </h1>
-      <p class="md:text-sm text-xs md:mt-5 mt-2">
+      <p class="md:text-sm text-xs md:mt-5 mt-2 dark:text-gray-200">
         {{ header.subtitle }}
       </p>
       <a
@@ -76,7 +78,7 @@
     </div>
 
     <div
-      class="absolute flex items-center justify-center lg:right-10 right-0 bottom-[150px] bg-white"
+      class="absolute flex items-center justify-center lg:right-10 right-0 bottom-[150px] bg-white dark:bg-slate-900 dark:text-gray-200"
     >
       <button class="md:p-5 p-3 hover:bg-[#34e0a1]" @click="prevHeader()">
         <chevronLeftIcon myClass="w-6" />

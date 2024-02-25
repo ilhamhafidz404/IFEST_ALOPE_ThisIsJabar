@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="lg:px-20 px-10 grid lg:grid-cols-7 md:grid-cols-3 grid-cols-2 mt-20 gap-10"
+    class="lg:px-20 px-10 grid lg:grid-cols-7 md:grid-cols-3 grid-cols-2 mt-20 gap-10 dark:text-gray-100"
   >
     <div class="md:col-span-3 col-span-2 md:text-left text-center">
       <h4 class="text-4xl font-bold font-waterbrush">Ini Jabar</h4>

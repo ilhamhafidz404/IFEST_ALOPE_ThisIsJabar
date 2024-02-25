@@ -1,9 +1,11 @@
 <template>
-  <section class="grid xl:grid-cols-4 items-center xl:gap-20 gap-10">
+  <section
+    class="grid xl:grid-cols-4 items-center xl:gap-20 gap-10 dark:text-gray-100"
+  >
     <div class="lg:col-span-1">
       <h4 class="text-xl">Kategori</h4>
       <h3 class="font-waterbrush text-5xl">Wisata Budaya</h3>
-      <p class="text-sm mt-5 text-gray-800">
+      <p class="text-sm mt-5 text-gray-800 dark:text-gray-200">
         Budaya Jawa Barat yang kaya dan terjaga dari nenek moyang hingga
         sekarang.
       </p>
@@ -147,12 +149,12 @@
   </section>
 
   <section
-    class="grid xl:grid-cols-4 lg:grid-cols-3 items-center xl:gap-20 lg:gap-5 xl:mt-10 mt-20"
+    class="grid xl:grid-cols-4 lg:grid-cols-3 items-center xl:gap-20 lg:gap-5 xl:mt-10 mt-20 dark:text-gray-100"
   >
     <div class="xl:col-span-1 lg:col-span-3">
       <h4 class="text-xl">Kategori</h4>
       <h3 class="font-waterbrush text-5xl">Kuliner Khas</h3>
-      <p class="text-sm mt-5 text-gray-800">
+      <p class="text-sm mt-5 text-gray-800 dark:text-gray-200">
         Kuliner yang menggoda dan menggiurkan untuk disantap. Makanan khas
         dengan resep turun termurun.
       </p>

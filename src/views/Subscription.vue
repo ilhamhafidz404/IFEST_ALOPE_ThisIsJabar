@@ -27,7 +27,7 @@
       </div>
       <div className="mt-10">
         <h3
-          className="font-semibold mb-3 md:text-base text-sm md:text-left text-center"
+          className="font-semibold mb-3 md:text-base text-sm md:text-left text-center dark:text-gray-100"
         >
           Subscribe lewat :
         </h3>
@@ -105,10 +105,15 @@
       </button>
     </div>
     <div className="lg:col-span-2">
-      <button class="accordion rounded-t" @click="toggleAccordion()">
+      <button
+        class="accordion hover:bg-gray-300 dark:hover:bg-slate-600 bg-gray-200 dark:bg-slate-800 dark:text-gray-200 text-gray-800 rounded-t"
+        @click="toggleAccordion()"
+      >
         Apa Keuntungan dari Berlangganan?
       </button>
-      <div class="panel border rounded p-4 text-sm">
+      <div
+        class="panel bg-white dark:bg-slate-700 dark:text-gray-200 dark:border-slate-800 border rounded p-4 text-sm"
+      >
         <p>
           Berlangganan bukan hanya soal akses eksklusif ke konten keren, tapi
           juga tentang keuntungan eksklusif. Kamu bisa dapetin info terkini
@@ -120,20 +125,30 @@
         </p>
       </div>
 
-      <button class="accordion" @click="toggleAccordion()">
+      <button
+        class="accordion hover:bg-gray-300 dark:hover:bg-slate-600 bg-gray-200 dark:bg-slate-800 dark:text-gray-200 text-gray-800"
+        @click="toggleAccordion()"
+      >
         Apakah Subcription Berbayar?
       </button>
-      <div class="panel border rounded p-4 text-sm">
+      <div
+        class="panel bg-white dark:bg-slate-700 dark:text-gray-200 dark:border-slate-800 border rounded p-4 text-sm"
+      >
         <p>
           Tidak, Tentu saja ini gratis. Tetapi jika anda ingin support kami
           silahkan noaktifkan adsblock anda. Terimakasih!
         </p>
       </div>
 
-      <button class="accordion" @click="toggleAccordion()">
+      <button
+        class="accordion hover:bg-gray-300 dark:hover:bg-slate-600 bg-gray-200 dark:bg-slate-800 dark:text-gray-200 text-gray-800"
+        @click="toggleAccordion()"
+      >
         Saya Ingin Berhenti Berlangganan
       </button>
-      <div class="panel border rounded p-4 text-sm">
+      <div
+        class="panel bg-white dark:bg-slate-700 dark:text-gray-200 dark:border-slate-800 border rounded p-4 text-sm"
+      >
         <p>
           Berlangganan bukan hanya soal akses eksklusif ke konten keren, tapi
           juga tentang keuntungan eksklusif. Kamu bisa dapetin info terkini
@@ -145,10 +160,15 @@
         </p>
       </div>
 
-      <button class="accordion rounded-b" @click="toggleAccordion()">
+      <button
+        class="accordion hover:bg-gray-300 dark:hover:bg-slate-600 bg-gray-200 dark:bg-slate-800 dark:text-gray-200 text-gray-800 rounded-b"
+        @click="toggleAccordion()"
+      >
         Bagaimana Cara Mengganti Email Subcription
       </button>
-      <div class="panel border rounded p-4 text-sm">
+      <div
+        class="panel bg-white dark:bg-slate-700 dark:text-gray-200 dark:border-slate-800 border rounded p-4 text-sm"
+      >
         <p>
           Berlangganan bukan hanya soal akses eksklusif ke konten keren, tapi
           juga tentang keuntungan eksklusif. Kamu bisa dapetin info terkini
@@ -208,8 +228,6 @@ export default {
 
 <style scoped>
 .accordion {
-  background-color: #eee;
-  color: #444;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -220,14 +238,8 @@ export default {
   transition: 0.4s;
 }
 
-.active,
-.accordion:hover {
-  background-color: #ccc;
-}
-
 .panel {
   display: none;
-  background-color: white;
   overflow: hidden;
 }
 </style>

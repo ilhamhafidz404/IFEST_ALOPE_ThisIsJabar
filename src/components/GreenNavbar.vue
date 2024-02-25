@@ -1,7 +1,11 @@
 <script setup>
 import { useRoute, useRouter } from "vue-router";
+import { useDark, useToggle } from "@vueuse/core";
+
 const location = useRoute();
 const router = useRouter();
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
 </script>
 <template>
   <nav
@@ -30,6 +34,23 @@ const router = useRouter();
     </router-link>
     <div class="flex md:gap-10 gap-5">
       <button
+        @click="toggleDark()"
+        class="bg-white hover:bg-white/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
         class="bg-white hover:bg-white/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center"
         @click="toggleSearch()"
       >
@@ -45,7 +66,7 @@ const router = useRouter();
   </nav>
 
   <aside
-    class="fixed xl:w-1/3 md:w-2/3 w-screen bg-white h-screen -right-[1000px] top-0 z-20 shadow transition-all duration-300"
+    class="fixed xl:w-1/3 md:w-2/3 w-screen dark:bg-slate-900 bg-white h-screen -right-[1000px] top-0 z-20 shadow transition-all duration-300 dark:text-gray-100"
   >
     <button
       class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center absolute right-0 xl:mr-20 md:mr-10 mr-5 mt-5"

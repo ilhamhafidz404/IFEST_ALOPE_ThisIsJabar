@@ -1,12 +1,12 @@
 <template>
   <section class="mt-20">
-    <div class="md:flex items-center gap-10 xl:mb-16 mb-0">
+    <div class="md:flex items-center gap-10 xl:mb-16 mb-0 dark:text-gray-100">
       <div>
         <h4 class="text-3xl">Aktivitas</h4>
         <h4 class="font-waterbrush text-5xl font-bold">Trending</h4>
       </div>
       <div>
-        <p class="text-sm mt-5 text-gray-800">
+        <p class="text-sm mt-5 text-gray-800 dark:text-gray-200">
           Apa yang banyak dilakukan oleh orang lain di Jawa Barat? <br />
           apa yang sedang tren dan jadi perbincangan hangat?
         </p>
@@ -55,7 +55,7 @@
 
     <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-5 mt-5">
       <div
-        class="rounded overflow-hidden relative shadow-md"
+        class="rounded overflow-hidden relative shadow-md dark:bg-slate-800 pb-4"
         v-for="activity in activities"
         :key="activity.title"
       >
@@ -72,18 +72,18 @@
           <div class="px-5 py-3">
             <div class="flex gap-2 mb-2">
               <span
-                class="text-xs bg-gray-200 px-5 py-1 rounded-full"
+                class="text-xs bg-gray-200 dark:bg-slate-600 dark:text-gray-300 px-5 py-1 rounded-full"
                 v-for="tag in activity.tags"
                 :key="tag"
               >
                 {{ tag }}
               </span>
             </div>
-            <h5 class="font-semibold mb-2">
+            <h5 class="font-semibold mb-2 dark:text-gray-100">
               {{ activity.title }}
             </h5>
 
-            <p class="text-xs mt-4">
+            <p class="text-xs mt-4 dark:text-gray-200">
               {{ activity.description }}
             </p>
           </div>

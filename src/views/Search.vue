@@ -17,13 +17,13 @@
         Cari Destinasi Pilihan
       </h2>
       <div
-        class="bg-white flex items-center gap-5 xl:py-3 xl:px-5 py-2 md:px-3 px-2 rounded shadow"
+        class="bg-white dark:bg-slate-800 flex items-center gap-5 xl:py-3 xl:px-5 py-2 md:px-3 px-2 rounded shadow"
       >
         <magnifyingGlassIcon myClass="w-6" />
         <input
           type="text"
           placeholder="Cari berdasarkan kota..."
-          class="py-2 focus:outline-none w-full md:text-base text-xs"
+          class="py-2 focus:outline-none w-full md:text-base text-xs dark:bg-slate-800 dark:text-gray-200"
           @keypress.enter="redirectToSearch()"
         />
         <button
@@ -38,10 +38,10 @@
   <main class="mt-10 grid xl:grid-cols-4 gap-10 xl:px-20 md:px-10 px-5 mb-20">
     <div class="relative xl:order-1 order-2">
       <div
-        class="border-2 border-[#34e0a1] bg-[#34e0a1]/20 pl-5 pr-10 py-7 rounded sticky top-20"
+        class="border-2 border-[#34e0a1] bg-[#34e0a1]/20 pl-5 pr-10 py-7 rounded sticky top-20 dark:text-gray-200"
       >
         <div>
-          <h3 class="font-bold text-xl flex gap-3 mb-4">
+          <h3 class="font-bold text-xl flex gap-3 mb-4 dark:text-gray-100">
             <span
               class="flex items-center justify-center w-[30px] h-[30px] rounded-full bg-[#48e3aa] text-white"
             >
@@ -69,7 +69,7 @@
         </div>
 
         <div class="mt-10">
-          <h3 class="font-bold text-xl flex gap-3 mb-4">
+          <h3 class="font-bold text-xl flex gap-3 mb-4 dark:text-gray-100">
             <span
               class="flex items-center justify-center w-[30px] h-[30px] rounded-full bg-[#48e3aa] text-white"
             >
@@ -92,7 +92,7 @@
         </div>
 
         <div class="mt-10">
-          <h3 class="font-bold text-xl flex gap-3 mb-4">
+          <h3 class="font-bold text-xl flex gap-3 mb-4 dark:text-gray-100">
             <span
               class="flex items-center justify-center w-[30px] h-[30px] rounded-full bg-[#48e3aa] text-white"
             >
@@ -127,30 +127,32 @@
     </div>
 
     <div class="xl:col-span-3 xl:order-2 order-1">
-      <div class="mt-3 gap-3 md:flex items-center">
+      <div class="mt-3 gap-3 md:flex items-center dark:text-gray-200">
         <p class="mr-5 text-sm">
           <span class="font-semibold text-xl">542</span> Destinasi terpilih
         </p>
         <div class="flex md:gap-5 gap-3 md:mt-0 mt-2">
           <span
-            class="bg-gray-300 md:px-5 px-3 py-2 rounded-full text-black md:text-sm text-xs inline-flex md:gap-3 gap-1 items-center"
+            class="bg-gray-300 dark:bg-slate-700 dark:text-gray-200 md:px-5 px-3 py-2 rounded-full text-black md:text-sm text-xs inline-flex md:gap-3 gap-1 items-center"
             >Budaya
             <xMarkIcon myClass="w-4 cursor-pointer hover:text-red-500" />
           </span>
           <span
-            class="bg-gray-300 md:px-5 px-3 py-2 rounded-full text-black md:text-sm text-xs inline-flex md:gap-3 gap-1 items-center"
+            class="bg-gray-300 dark:bg-slate-700 dark:text-gray-200 md:px-5 px-3 py-2 rounded-full text-black md:text-sm text-xs inline-flex md:gap-3 gap-1 items-center"
             >Pedesaan
             <xMarkIcon myClass="w-4 cursor-pointer hover:text-red-500" />
           </span>
           <span
-            class="bg-gray-300 md:px-5 px-3 py-2 rounded-full text-black md:text-sm text-xs inline-flex md:gap-3 gap-1 items-center"
+            class="bg-gray-300 dark:bg-slate-700 dark:text-gray-200 md:px-5 px-3 py-2 rounded-full text-black md:text-sm text-xs inline-flex md:gap-3 gap-1 items-center"
             >Keluarga
             <xMarkIcon myClass="w-4 cursor-pointer hover:text-red-500" />
           </span>
         </div>
       </div>
 
-      <div class="flex md:flex-row flex-col items-center gap-5 mt-10">
+      <div
+        class="flex md:flex-row flex-col items-center gap-5 mt-10 dark:text-gray-100"
+      >
         <div>
           <a href="">
             <img
@@ -168,7 +170,9 @@
             <solidStarIcon myClass="w-4 text-yellow-500" />
             <solidStarIcon myClass="w-4 text-yellow-500" />
           </div>
-          <span class="text-xs bg-gray-200 px-5 py-1 rounded-full">
+          <span
+            class="text-xs bg-gray-200 dark:bg-slate-700 px-5 py-1 rounded-full"
+          >
             Taman Air
           </span>
           <p class="flex mt-5 gap-2 text-xs items-center">
@@ -193,7 +197,9 @@
           </div>
         </div>
       </div>
-      <div class="flex md:flex-row flex-col items-center gap-5 mt-10">
+      <div
+        class="flex md:flex-row flex-col items-center gap-5 mt-10 dark:text-gray-100"
+      >
         <div>
           <a href="">
             <img
@@ -211,7 +217,9 @@
             <solidStarIcon myClass="w-4 text-yellow-500" />
             <solidStarIcon myClass="w-4 text-yellow-500" />
           </div>
-          <span class="text-xs bg-gray-200 px-5 py-1 rounded-full">
+          <span
+            class="text-xs bg-gray-200 dark:bg-slate-700 px-5 py-1 rounded-full"
+          >
             Taman Air
           </span>
           <p class="flex mt-5 gap-2 text-xs items-center">
@@ -236,7 +244,9 @@
           </div>
         </div>
       </div>
-      <div class="flex md:flex-row flex-col items-center gap-5 mt-10">
+      <div
+        class="flex md:flex-row flex-col items-center gap-5 mt-10 dark:text-gray-100"
+      >
         <div>
           <a href="">
             <img
@@ -254,7 +264,9 @@
             <solidStarIcon myClass="w-4 text-yellow-500" />
             <solidStarIcon myClass="w-4 text-yellow-500" />
           </div>
-          <span class="text-xs bg-gray-200 px-5 py-1 rounded-full">
+          <span
+            class="text-xs bg-gray-200 dark:bg-slate-700 px-5 py-1 rounded-full"
+          >
             Taman Air
           </span>
           <p class="flex mt-5 gap-2 text-xs items-center">
