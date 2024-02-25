@@ -12,12 +12,12 @@
 
     <div class="relative z-10">
       <h3 class="font-bold md:text-2xl text-xl lg:text-left text-center">
-        ALOPE | Jabar Tour
+        ALOPE | INI JABAR
       </h3>
       <p
         class="text-gray-100 mt-2 md:md:text-base text-[13px] text-sm md:mb-0 mb-10 lg:text-left text-center"
       >
-        Mari kenali ragam budaya hasil dari warisan nusantara.
+        Mari kenali wisata dan ragam budaya Jawa Barat yang memesona.
       </p>
     </div>
     <div class="relative z-10 lg:mt-0 mt-10 flex justify-center">

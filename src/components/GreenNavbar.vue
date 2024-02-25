@@ -26,7 +26,7 @@ const router = useRouter();
           />
         </svg>
       </span>
-      <h1 class="font-bold text-white">JABAR TOUR</h1>
+      <h1 class="font-bold text-white">INI JABAR</h1>
     </router-link>
     <div class="flex md:gap-10 gap-5">
       <button
@@ -48,7 +48,7 @@ const router = useRouter();
     class="fixed xl:w-1/3 md:w-2/3 w-screen bg-white h-screen -right-[1000px] top-0 z-20 shadow transition-all duration-300"
   >
     <button
-      class="bg-white hover:bg-white/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center absolute right-0 xl:mr-20 md:mr-10 mr-5 mt-5"
+      class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center absolute right-0 xl:mr-20 md:mr-10 mr-5 mt-5"
       @click="toggleSidebar()"
     >
       <bars3BottomRightIcon myClass="w-7" />

@@ -26,12 +26,7 @@ const router = useRouter();
           />
         </svg>
       </span>
-      <h1
-        class="font-bold"
-        :style="location.path === '/search' ? 'color: white' : ''"
-      >
-        JABAR TOUR
-      </h1>
+      <h1 class="font-bold">INI JABAR</h1>
     </router-link>
     <div class="flex md:gap-10 gap-5">
       <button

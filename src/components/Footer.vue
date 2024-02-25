@@ -3,7 +3,7 @@
     class="lg:px-20 px-10 grid lg:grid-cols-7 md:grid-cols-3 grid-cols-2 mt-20 gap-10"
   >
     <div class="md:col-span-3 col-span-2 md:text-left text-center">
-      <h4 class="text-4xl font-bold font-waterbrush">Jabar Tour</h4>
+      <h4 class="text-4xl font-bold font-waterbrush">Ini Jabar</h4>
       <p class="text-sm mt-5">
         Mari kita eksplorasi keindahan alam, kekayaan budaya dan ragam kultur
         yang ada di Jawa Barat. Rasakan aneka ragam makanan khas nya yang sudah
