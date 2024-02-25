@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-// search
 import Home from "../views/Home.vue";
 import Search from "../views/Search.vue";
 import Detail from "../views/Detail.vue";
 import Activity from "../views/Activity.vue";
 import News from "../views/News.vue";
 import Map from "../views/Map.vue";
+import Component from "../views/Components.vue";
 // import Subscription from "../views/Subscription.vue";
 
 const router = createRouter({
@@ -46,6 +46,11 @@ const router = createRouter({
       path: "/map",
       name: "map",
       component: Map,
+    },
+    {
+      path: "/component",
+      name: "component",
+      component: Component,
     },
   ],
 });

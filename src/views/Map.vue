@@ -351,6 +351,133 @@ export default defineComponent({
             lng: 106.398406,
           },
         },
+        {
+          name: "Pantai Pangandaran",
+          keyword: "pantai",
+          location: "Desa Pangandaran dan Pananjung",
+          position: {
+            lat: -7.6875308,
+            lng: 108.6386711,
+          },
+        },
+        //
+        {
+          name: "Curug Putri",
+          keyword: "alam",
+          location:
+            "Jl. Palutungan, Cisantana, Kec. Cigugur, Kabupaten Kuningan",
+          position: {
+            lat: -6.9472503,
+            lng: 108.4314316,
+          },
+        },
+        {
+          name: "Kebun Raya Kuningan",
+          keyword: "alam",
+          location: "Desa Padabeunghar, Pasawahan, Kuningan.",
+          position: {
+            lat: -6.8134092,
+            lng: 108.4001782,
+          },
+        },
+        {
+          name: "Curug Bangkong",
+          keyword: "alam",
+          location:
+            "Kertawirama, Kec. Nusaherang, Kabupaten Kuningan, Jawa Barat 45563",
+          position: {
+            lat: -7.0070558,
+            lng: 108.4234702,
+          },
+        },
+        {
+          name: "Sanggar Tri Tunggal Budaya",
+          keyword: "budaya",
+          location: "Tegalwangi, Kec. Weru, Kabupaten Cirebon",
+          position: {
+            lat: -6.7070876,
+            lng: 108.4857529,
+          },
+        },
+        {
+          name: "Paseban Tri Panca Tunggal",
+          keyword: "budaya",
+          location: "Jalan, Sukamulya, Cigugur, Kuningan",
+          position: {
+            lat: -6.9694539,
+            lng: 108.4541347,
+          },
+        },
+        {
+          name: "Sanggar Seni Putra Budaya",
+          keyword: "budaya",
+          location:
+            "Muara Karang Anyar, Mertasinga, Kec. Gunungjati, Kabupaten Cirebon",
+          position: {
+            lat: -6.6517489,
+            lng: 108.5366788,
+          },
+        },
+        {
+          name: "Rujak Kangkung Dan Tutut",
+          keyword: "kuliner",
+          location:
+            "Jl. RE. Martadinata No.111, Ciporang, Kec. Kuningan, Kabupaten Kuningan",
+          position: {
+            lat: -6.9697439,
+            lng: 108.4852507,
+          },
+        },
+        {
+          name: "Nasi Jamblang Ibu Nur",
+          keyword: "kuliner",
+          location:
+            "Jl. Cangkring 2 No.34, Kejaksan, Kec. Kejaksan, Kota Cirebon",
+          position: {
+            lat: -6.7144909,
+            lng: 108.5369415,
+          },
+        },
+        {
+          name: "Batagor Bandung",
+          keyword: "kuliner",
+          location:
+            "Jl. Ir. H. Juanda No.91, Dago, Kec. Cimenyan, Kota Bandung",
+          position: {
+            lat: -6.8978494,
+            lng: 107.6010729,
+          },
+        },
+        {
+          name: "Taman Kota Kuningan",
+          keyword: "taman",
+          location:
+            "Jl. Veteran No.36, Kuningan, Kec. Kuningan, Kabupaten Kuningan",
+          position: {
+            lat: -6.982588,
+            lng: 108.4746496,
+          },
+        },
+        {
+          name: "Taman Cisantana",
+          keyword: "taman",
+          location:
+            "Cisantana, Kec. Cigugur, Kabupaten Kuningan, Jawa Barat 45552",
+          position: {
+            lat: -6.9464258,
+            lng: 108.4424489,
+          },
+        },
+        {
+          name: "Pantai Jayanti",
+          keyword: "pantai",
+          location:
+            "Jl. Pantai Jayanti, Cidamar, Kec. Cidaun, Kabupaten Cianjur",
+          position: {
+            lat: -7.4445871,
+            lng: 107.0491292,
+          },
+        },
       ],
       mapOptions: {
         zoom: 10,
