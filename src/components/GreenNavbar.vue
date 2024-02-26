@@ -35,13 +35,14 @@ const toggleDark = useToggle(isDark);
     <div class="flex md:gap-10 gap-5">
       <button
         @click="toggleDark()"
-        class="bg-white hover:bg-white/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center"
+        class="bg-white dark:bg-slate-800 dark:text-gray-200 hover:bg-white/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center dark:hidden"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
           class="w-6 h-6"
+          @click="toggleDarkMap()"
         >
           <path
             fill-rule="evenodd"
@@ -51,13 +52,29 @@ const toggleDark = useToggle(isDark);
         </svg>
       </button>
       <button
-        class="bg-white hover:bg-white/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center"
+        @click="toggleDark()"
+        class="bg-white dark:bg-slate-800 dark:text-gray-200 hover:bg-white/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] dark:flex hidden items-center justify-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="w-6 h-6"
+          @click="toggleDarkMap()"
+        >
+          <path
+            d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+          />
+        </svg>
+      </button>
+      <button
+        class="bg-white dark:bg-slate-800 dark:text-gray-200 hover:bg-white/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center"
         @click="toggleSearch()"
       >
         <magnifyingGlassIcon myClass="md:w-7 w-4" />
       </button>
       <button
-        class="bg-white hover:bg-white/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center"
+        class="bg-white dark:bg-slate-800 dark:text-gray-200 hover:bg-white/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center"
         @click="toggleSidebar()"
       >
         <bars3Icon myClass="md:w-7 w-4" />
@@ -180,6 +197,9 @@ export default {
     xMarkIcon,
     solidTagIcon,
   },
+  data() {
+    darkMode: false;
+  },
   methods: {
     toggleSidebar() {
       const aside = document.querySelector("aside");
@@ -193,6 +213,10 @@ export default {
     },
     redirectToSearch() {
       router.push({ path: "/search" });
+    },
+    toggleDarkMap() {
+      this.darkMode = !this.darkMode;
+      localStorage.setItem("darkMode", JSON.stringify(this.darkMode));
     },
   },
 };

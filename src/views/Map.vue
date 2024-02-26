@@ -2,7 +2,7 @@
   <Navbar />
 
   <section
-    class="lg:px-20 md:px-10 px-3 md:pb-14 pb-10 pt-32 lg:flex lg:justify-between lg:items-center bg-[#34e0a1] text-white relative overflow-hidden"
+    class="lg:px-20 md:px-10 px-3 md:pb-14 pb-10 pt-32 lg:flex lg:justify-between lg:items-center bg-[#34e0a1] dark:bg-slate-900 text-white relative overflow-hidden border-b-2 border-[#34e0a1]"
   >
     <div class="relative z-10 xl:w-1/2 md:w-2/3 w-full mx-auto">
       <div class="flex gap-3 items-center justify-center">
@@ -19,12 +19,12 @@
         <div class="flex mt-5 items-center gap-2">
           <input
             type="text"
-            class="bg-white px-3 py-3 rounded w-full text-gray-800 md:text-base text-xs"
+            class="bg-white dark:bg-slate-700 dark:text-gray-200 px-3 py-3 rounded w-full text-gray-800 md:text-base text-xs"
             placeholder="Cari Destinasi..."
             v-model="filterSearch"
           />
           <button
-            class="bg-white hover:opacity-85 text-gray-800 py-3 rounded px-5 md:flex hidden gap-2 items-center"
+            class="bg-white dark:bg-slate-800 hover:opacity-85 text-gray-800 dark:text-gray-200 py-3 rounded px-5 md:flex hidden gap-2 items-center"
           >
             <MagnifyingGlassIcon myClass="w-5" />
             Cari
@@ -35,13 +35,13 @@
           class="mt-5 md:flex hidden justify-center gap-2"
         >
           <span
-            class="bg-white text-black px-3 py-1 rounded-full text-sm cursor-pointer inline-flex gap-1 items-center"
+            class="bg-white dark:bg-slate-700 text-black dark:text-gray-200 px-3 py-1 rounded-full text-sm cursor-pointer inline-flex gap-1 items-center"
             @click="this.filterCategory = 'all'"
           >
             Semua
           </span>
           <span
-            class="bg-white text-black pl-3 pr-4 py-1 rounded-full md:text-sm text-xs cursor-pointer inline-flex gap-1 items-center"
+            class="bg-white dark:bg-slate-700 text-black dark:text-gray-200 pl-3 pr-4 py-1 rounded-full md:text-sm text-xs cursor-pointer inline-flex gap-1 items-center"
             @click="this.filterCategory = 'pantai'"
           >
             <svg
@@ -59,7 +59,7 @@
             Pantai
           </span>
           <span
-            class="bg-white text-black pl-3 pr-4 py-1 rounded-full md:text-sm text-xs cursor-pointer inline-flex gap-1 items-center"
+            class="bg-white dark:bg-slate-700 text-black dark:text-gray-200 pl-3 pr-4 py-1 rounded-full md:text-sm text-xs cursor-pointer inline-flex gap-1 items-center"
             @click="this.filterCategory = 'alam'"
           >
             <svg
@@ -77,7 +77,7 @@
             Alam
           </span>
           <span
-            class="bg-white text-black pl-3 pr-4 py-1 rounded-full md:text-sm text-xs cursor-pointer inline-flex gap-1 items-center"
+            class="bg-white dark:bg-slate-700 text-black dark:text-gray-200 pl-3 pr-4 py-1 rounded-full md:text-sm text-xs cursor-pointer inline-flex gap-1 items-center"
             @click="this.filterCategory = 'kuliner'"
           >
             <svg
@@ -93,7 +93,7 @@
             Kuliner
           </span>
           <span
-            class="bg-white text-black pl-3 pr-4 py-1 rounded-full md:text-sm text-xs cursor-pointer inline-flex gap-1 items-center"
+            class="bg-white dark:bg-slate-700 text-black dark:text-gray-200 pl-3 pr-4 py-1 rounded-full md:text-sm text-xs cursor-pointer inline-flex gap-1 items-center"
             @click="this.filterCategory = 'budaya'"
           >
             <svg
@@ -111,7 +111,7 @@
             Budaya
           </span>
           <span
-            class="bg-white text-black pl-3 pr-4 py-1 rounded-full md:text-sm text-xs cursor-pointer inline-flex gap-1 items-center"
+            class="bg-white dark:bg-slate-700 text-black dark:text-gray-200 pl-3 pr-4 py-1 rounded-full md:text-sm text-xs cursor-pointer inline-flex gap-1 items-center"
             @click="this.filterCategory = 'taman'"
           >
             <svg
@@ -131,7 +131,7 @@
         </div>
         <div
           v-if="filterSearch"
-          class="bg-white text-gray-800 md:mt-5 mt-3 rounded shadow max-h-[250px] overflow-hidden"
+          class="bg-white dark:bg-slate-800 text-gray-800 dark:text-gray-200 md:mt-5 mt-3 rounded shadow max-h-[250px] overflow-hidden"
         >
           <span
             class="inline-block md:my-4 md:ml-7 my-3 ml-4 md:text-sm text-xs"
@@ -142,13 +142,13 @@
               href="#interactive"
               v-for="marker in filteredDestination"
               :key="marker.name"
-              class="hover:bg-[#5ae6b3]/20 md:py-5 md:px-7 px-4 my-4 cursor-pointer inline-block w-full"
+              class="hover:bg-[#5ae6b3]/20 md:py-5 md:px-7 px-4 cursor-pointer inline-block w-full"
               @click="setFocus(marker.position)"
             >
               <h6 class="md:text-xl text-base font-semibold">
                 {{ marker.name }}
               </h6>
-              <p class="md:text-sm text-xs text-gray-600">
+              <p class="md:text-sm text-xs text-gray-600 dark:text-gray-300">
                 {{ marker.location }}
               </p>
             </a>
@@ -171,6 +171,7 @@
       :mapTypeControl="false"
       :streetViewControl="false"
       :disableDefaultUI="true"
+      :styles="mapStyles"
     >
       <Marker
         v-for="marker in filteredDestinationByCategory"
@@ -254,7 +255,7 @@
 
 <script>
 // components
-import Navbar from "./../components/GreenNavbar.vue";
+import Navbar from "./../components/MapNavbar.vue";
 import TopFooter from "./../components/TopFooter.vue";
 import Footer from "./../components/Footer.vue";
 
@@ -291,6 +292,8 @@ export default defineComponent({
         title: "",
         body: "",
       },
+
+      mapStyles: [],
 
       markers: [
         {
@@ -515,6 +518,98 @@ export default defineComponent({
     hiddenDetail() {
       this.detail.title = "";
     },
+  },
+  mounted() {
+    window.scrollTo(0, 0);
+
+    // L
+    const gmapdark = localStorage.getItem("vueuse-color-scheme");
+
+    if (gmapdark != "light") {
+      this.mapStyles = [
+        { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+        {
+          elementType: "labels.text.stroke",
+          stylers: [{ color: "#242f3e" }],
+        },
+        { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+        {
+          featureType: "administrative.locality",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#d59563" }],
+        },
+        {
+          featureType: "poi",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#d59563" }],
+        },
+        {
+          featureType: "poi.park",
+          elementType: "geometry",
+          stylers: [{ color: "#263c3f" }],
+        },
+        {
+          featureType: "poi.park",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#6b9a76" }],
+        },
+        {
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [{ color: "#38414e" }],
+        },
+        {
+          featureType: "road",
+          elementType: "geometry.stroke",
+          stylers: [{ color: "#212a37" }],
+        },
+        {
+          featureType: "road",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#9ca5b3" }],
+        },
+        {
+          featureType: "road.highway",
+          elementType: "geometry",
+          stylers: [{ color: "#746855" }],
+        },
+        {
+          featureType: "road.highway",
+          elementType: "geometry.stroke",
+          stylers: [{ color: "#1f2835" }],
+        },
+        {
+          featureType: "road.highway",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#f3d19c" }],
+        },
+        {
+          featureType: "transit",
+          elementType: "geometry",
+          stylers: [{ color: "#2f3948" }],
+        },
+        {
+          featureType: "transit.station",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#d59563" }],
+        },
+        {
+          featureType: "water",
+          elementType: "geometry",
+          stylers: [{ color: "#17263c" }],
+        },
+        {
+          featureType: "water",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#515c6d" }],
+        },
+        {
+          featureType: "water",
+          elementType: "labels.text.stroke",
+          stylers: [{ color: "#17263c" }],
+        },
+      ];
+    }
   },
   computed: {
     filteredDestination() {

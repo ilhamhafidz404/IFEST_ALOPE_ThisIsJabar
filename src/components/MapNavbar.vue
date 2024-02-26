@@ -9,11 +9,11 @@ const toggleDark = useToggle(isDark);
 </script>
 <template>
   <nav
-    class="fixed flex left-0 right-0 justify-between py-7 duration-300 xl:px-20 md:px-10 px-5 z-20 dark:text-white"
+    class="fixed flex left-0 right-0 justify-between py-7 duration-300 xl:px-20 md:px-10 px-5 z-20 bg-[#34e0a1]"
   >
     <router-link to="/" class="flex items-center gap-5">
       <span
-        class="bg-[#34e0a1] w-[40px] h-[40px] md:flex hidden items-center justify-center rounded-full"
+        class="bg-white w-[40px] h-[40px] md:flex hidden items-center justify-center rounded-full"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -30,18 +30,19 @@ const toggleDark = useToggle(isDark);
           />
         </svg>
       </span>
-      <h1 class="font-bold">INI JABAR</h1>
+      <h1 class="font-bold text-white">INI JABAR</h1>
     </router-link>
     <div class="flex md:gap-10 gap-5">
       <button
         @click="toggleDark()"
-        class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center dark:hidden"
+        class="bg-white dark:bg-slate-800 dark:text-gray-200 hover:bg-white/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center dark:hidden"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
           class="w-6 h-6"
+          @click="toggleDarkMap()"
         >
           <path
             fill-rule="evenodd"
@@ -52,13 +53,14 @@ const toggleDark = useToggle(isDark);
       </button>
       <button
         @click="toggleDark()"
-        class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] dark:flex hidden items-center justify-center"
+        class="bg-white dark:bg-slate-800 dark:text-gray-200 hover:bg-white/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] dark:flex hidden items-center justify-center"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
           class="w-6 h-6"
+          @click="toggleDarkMap()"
         >
           <path
             d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
@@ -66,13 +68,13 @@ const toggleDark = useToggle(isDark);
         </svg>
       </button>
       <button
-        class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center"
+        class="bg-white dark:bg-slate-800 dark:text-gray-200 hover:bg-white/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center"
         @click="toggleSearch()"
       >
         <magnifyingGlassIcon myClass="md:w-7 w-4" />
       </button>
       <button
-        class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center"
+        class="bg-white dark:bg-slate-800 dark:text-gray-200 hover:bg-white/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center"
         @click="toggleSidebar()"
       >
         <bars3Icon myClass="md:w-7 w-4" />
@@ -81,7 +83,7 @@ const toggleDark = useToggle(isDark);
   </nav>
 
   <aside
-    class="fixed xl:w-1/3 md:w-2/3 w-screen bg-white dark:bg-slate-900 dark:text-gray-100 h-screen -right-[1000px] top-0 z-20 shadow transition-all duration-300"
+    class="fixed xl:w-1/3 md:w-2/3 w-screen dark:bg-slate-900 bg-white h-screen -right-[1000px] top-0 z-20 shadow transition-all duration-300 dark:text-gray-100"
   >
     <button
       class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center absolute right-0 xl:mr-20 md:mr-10 mr-5 mt-5"
@@ -133,24 +135,22 @@ const toggleDark = useToggle(isDark);
 
   <section
     id="searchModal"
-    class="fixed inset-0 z-20 hidden items-center justify-center bg-green-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100 dark:border-slate-900"
+    class="fixed inset-0 z-20 hidden items-center justify-center bg-green-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100"
   >
-    <div
-      class="bg-white dark:bg-slate-900 dark:text-gray-100 rounded p-5 shadow md:w-2/3 w-full md:mx-0 mx-5 z-50"
-    >
+    <div class="bg-white rounded p-5 shadow md:w-2/3 w-full md:mx-0 mx-5 z-50">
       <div class="flex items-center gap-5">
         <magnifyingGlassIcon myClass="w-6" />
         <input
           type="text"
           placeholder="Cari sesuatu..."
-          class="py-2 focus:outline-none w-full dark:bg-slate-900 dark:text-gray-100"
+          class="py-2 focus:outline-none w-full"
           @keypress.enter="redirectToSearch()"
         />
         <button @click="toggleSearch()">
           <xMarkIcon myClass="w-6" />
         </button>
       </div>
-      <hr class="my-5 dark:border-slate-700" />
+      <hr class="my-5" />
       <div class="flex items-center flex-wrap gap-5">
         <h4 class="font-bold mr-5 flex items-center gap-2">
           <solidTagIcon myClass="w-5 text-[#34e0a1]" /> Tag :
@@ -197,6 +197,9 @@ export default {
     xMarkIcon,
     solidTagIcon,
   },
+  data() {
+    darkMode: false;
+  },
   methods: {
     toggleSidebar() {
       const aside = document.querySelector("aside");
@@ -210,6 +213,12 @@ export default {
     },
     redirectToSearch() {
       router.push({ path: "/search" });
+    },
+    toggleDarkMap() {
+      this.darkMode = !this.darkMode;
+      localStorage.setItem("darkMode", JSON.stringify(this.darkMode));
+
+      location.reload();
     },
   },
 };

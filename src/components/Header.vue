@@ -39,7 +39,7 @@
         <!--  -->
 
         <div
-          class="absolute -right-0 bg-[#34e0a1] w-1/2 py-5 pr-10 translate-x-full h-full top-0"
+          class="absolute -right-0 bg-[#34e0a1] w-1/2 py-5 pr-10 translate-x-full h-full top-0 z-10"
         >
           <h4 class="text-xl font-semibold mb-3">Buka Pada</h4>
           <p>Setiap hari pada jam 8 Pagi - 6 Sore</p>
@@ -68,13 +68,14 @@
       </div>
     </div>
 
-    <div>
+    <div class="relative">
       <img
         id="headerImage"
         src="./../assets/images/header/1.jpg"
         alt=""
         class="xl:h-screen lg:h-[800px] h-screen w-full object-cover"
       />
+      <span class="bg-slate-900/40 absolute inset-0 dark:block hidden"></span>
     </div>
 
     <div
