@@ -79,8 +79,14 @@
                 {{ tag }}
               </span>
             </div>
-            <h5 class="font-semibold mb-2 dark:text-gray-100">
-              {{ activity.title }}
+            <h5
+              class="font-semibold mb-2 dark:text-gray-100"
+              v-if="(lang = 'id')"
+            >
+              {{ activity.title.id }}
+            </h5>
+            <h5 class="font-semibold mb-2 dark:text-gray-100" v-else>
+              {{ activity.title.en }}
             </h5>
 
             <p class="text-xs mt-4 dark:text-gray-200">
@@ -96,6 +102,7 @@
 <script>
 import chevronRightIcon from "./icons/chevronRight.vue";
 export default {
+  props: ["lang"],
   components: {
     chevronRightIcon,
   },
@@ -103,7 +110,10 @@ export default {
     return {
       activities: [
         {
-          title: "Main Skateboard Beratraksi & Menonton",
+          title: {
+            id: "Main Skateboard Beratraksi & Menonton",
+            en: "ewf",
+          },
           description:
             "Kumpul, jajan dan nonton bareng anak-anak Skateboard sambil beratraksi dan membangun ekspresei kebebasan.",
           tags: ["Weekend", "Olahraga"],

@@ -156,13 +156,13 @@
         <div>
           <a href="">
             <img
-              src="./../assets/img/a1.jpg"
-              class="md:w-[350px] w-full rounded"
+              src="https://images.unsplash.com/photo-1618681850501-6e1aae4f916f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="md:w-[350px] w-full h-[280px] object-cover rounded"
             />
           </a>
         </div>
         <div class="text-box">
-          <h3 class="text-xl font-semibold">Waduk Darma</h3>
+          <h3 class="text-xl font-semibold">Kolam Renang Zam Zam Pool</h3>
           <div class="flex mb-4">
             <solidStarIcon myClass="w-4 text-yellow-500" />
             <solidStarIcon myClass="w-4 text-yellow-500" />
@@ -179,21 +179,24 @@
             <calendarDaysIcon myClass="w-5" /> Sekarang Buka
           </p>
           <p class="flex mt-2 gap-2 text-xs items-center">
-            <solidMapPinIcon myClass="w-5" /> Desa Jagara, Kecamatan Darma,
-            Kabupaten Kuningan
+            <solidMapPinIcon myClass="w-5" /> Jl. Veteran BLOK PAKUWON DESA,
+            Manislor, Kec. Jalaksana, Kabupaten Kuningan
           </p>
 
           <div class="flex gap-3 md:mt-10 mt-5">
-            <button
+            <router-link
+              to="/detail"
               class="xl:px-10 px-5 py-2 rounded bg-[#34e0a1] border border-[#34e0a1] hover:bg-[#34e0a1]/80 text-white xl:text-sm text-xs"
             >
               Lihat Detail
-            </button>
-            <button
+            </router-link>
+            <a
+              href="https://maps.app.goo.gl/NTfNrvi8wmCmCDgX7"
+              target="_blank"
               class="xl:px-10 px-5 py-2 rounded border border-[#34e0a1] text-[#34e0a1] hover:bg-[#34e0a1] hover:text-white xl:text-sm text-xs"
             >
               Lihat Lokasi Map
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -203,13 +206,13 @@
         <div>
           <a href="">
             <img
-              src="./../assets/img/a1.jpg"
-              class="md:w-[350px] w-full rounded"
+              src="https://images.unsplash.com/photo-1585938389612-a552a28d6914?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="md:w-[350px] w-full h-[280px] object-cover rounded"
             />
           </a>
         </div>
         <div class="text-box">
-          <h3 class="text-xl font-semibold">Waduk Darma</h3>
+          <h3 class="text-xl font-semibold">Kebun Raya Bogor</h3>
           <div class="flex mb-4">
             <solidStarIcon myClass="w-4 text-yellow-500" />
             <solidStarIcon myClass="w-4 text-yellow-500" />
@@ -220,27 +223,30 @@
           <span
             class="text-xs bg-gray-200 dark:bg-slate-700 px-5 py-1 rounded-full"
           >
-            Taman Air
+            Taman
           </span>
           <p class="flex mt-5 gap-2 text-xs items-center">
             <calendarDaysIcon myClass="w-5" /> Sekarang Buka
           </p>
           <p class="flex mt-2 gap-2 text-xs items-center">
-            <solidMapPinIcon myClass="w-5" /> Desa Jagara, Kecamatan Darma,
-            Kabupaten Kuningan
+            <solidMapPinIcon myClass="w-5" /> Jl. Ir. H. Juanda No.13, Paledang,
+            Kecamatan Bogor Tengah, Kota Bogor
           </p>
 
           <div class="flex gap-3 md:mt-10 mt-5">
-            <button
+            <router-link
+              to="/detail"
               class="xl:px-10 px-5 py-2 rounded bg-[#34e0a1] border border-[#34e0a1] hover:bg-[#34e0a1]/80 text-white xl:text-sm text-xs"
             >
               Lihat Detail
-            </button>
-            <button
+            </router-link>
+            <a
+              href="https://maps.app.goo.gl/ao3V6daAe6bh3vDy9"
+              target="_blank"
               class="xl:px-10 px-5 py-2 rounded border border-[#34e0a1] text-[#34e0a1] hover:bg-[#34e0a1] hover:text-white xl:text-sm text-xs"
             >
               Lihat Lokasi Map
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -250,13 +256,13 @@
         <div>
           <a href="">
             <img
-              src="./../assets/img/a1.jpg"
-              class="md:w-[350px] w-full rounded"
+              src="https://plus.unsplash.com/premium_photo-1687428554454-27aa5358b78b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="md:w-[350px] w-full h-[280px] object-cover rounded"
             />
           </a>
         </div>
         <div class="text-box">
-          <h3 class="text-xl font-semibold">Waduk Darma</h3>
+          <h3 class="text-xl font-semibold">Curug Cukang Taneuh</h3>
           <div class="flex mb-4">
             <solidStarIcon myClass="w-4 text-yellow-500" />
             <solidStarIcon myClass="w-4 text-yellow-500" />
@@ -273,21 +279,124 @@
             <calendarDaysIcon myClass="w-5" /> Sekarang Buka
           </p>
           <p class="flex mt-2 gap-2 text-xs items-center">
-            <solidMapPinIcon myClass="w-5" /> Desa Jagara, Kecamatan Darma,
-            Kabupaten Kuningan
+            <solidMapPinIcon myClass="w-5" /> Jl. Ir. H. Juanda, Desa Kertayasa,
+            Kecamatan Cijulang, Kabupaten Pangandaran,
           </p>
 
           <div class="flex gap-3 md:mt-10 mt-5">
-            <button
+            <router-link
+              to="/detail"
               class="xl:px-10 px-5 py-2 rounded bg-[#34e0a1] border border-[#34e0a1] hover:bg-[#34e0a1]/80 text-white xl:text-sm text-xs"
             >
               Lihat Detail
-            </button>
-            <button
+            </router-link>
+            <a
+              href="https://maps.app.goo.gl/3NdfFkz2KTYGi9LHA"
+              target="_blank"
               class="xl:px-10 px-5 py-2 rounded border border-[#34e0a1] text-[#34e0a1] hover:bg-[#34e0a1] hover:text-white xl:text-sm text-xs"
             >
               Lihat Lokasi Map
-            </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex md:flex-row flex-col items-center gap-5 mt-10 dark:text-gray-100"
+      >
+        <div>
+          <a href="">
+            <img
+              src="https://images.unsplash.com/photo-1708649290066-5f617003b93f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="md:w-[350px] w-full h-[280px] object-cover rounded"
+            />
+          </a>
+        </div>
+        <div class="text-box">
+          <h3 class="text-xl font-semibold">Pantai Karang Tawulan</h3>
+          <div class="flex mb-4">
+            <solidStarIcon myClass="w-4 text-yellow-500" />
+            <solidStarIcon myClass="w-4 text-yellow-500" />
+            <solidStarIcon myClass="w-4 text-yellow-500" />
+            <solidStarIcon myClass="w-4 text-yellow-500" />
+            <solidStarIcon myClass="w-4 text-yellow-500" />
+          </div>
+          <span
+            class="text-xs bg-gray-200 dark:bg-slate-700 px-5 py-1 rounded-full"
+          >
+            Pantai
+          </span>
+          <p class="flex mt-5 gap-2 text-xs items-center">
+            <calendarDaysIcon myClass="w-5" /> Sekarang Buka
+          </p>
+          <p class="flex mt-2 gap-2 text-xs items-center">
+            <solidMapPinIcon myClass="w-5" /> Cimanuk, Kalapagenep, Kec.
+            Cikalong, Kabupaten Tasikmalaya
+          </p>
+
+          <div class="flex gap-3 md:mt-10 mt-5">
+            <router-link
+              to="/detail"
+              class="xl:px-10 px-5 py-2 rounded bg-[#34e0a1] border border-[#34e0a1] hover:bg-[#34e0a1]/80 text-white xl:text-sm text-xs"
+            >
+              Lihat Detail
+            </router-link>
+            <a
+              href="https://maps.app.goo.gl/vygPWu8Gy7X5H8M66"
+              target="_blank"
+              class="xl:px-10 px-5 py-2 rounded border border-[#34e0a1] text-[#34e0a1] hover:bg-[#34e0a1] hover:text-white xl:text-sm text-xs"
+            >
+              Lihat Lokasi Map
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex md:flex-row flex-col items-center gap-5 mt-10 dark:text-gray-100"
+      >
+        <div>
+          <a href="">
+            <img
+              src="https://images.unsplash.com/photo-1677508901350-cb3c96d7009d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="md:w-[350px] w-full h-[280px] object-cover rounded"
+            />
+          </a>
+        </div>
+        <div class="text-box">
+          <h3 class="text-xl font-semibold">Museum Geologi Bandung</h3>
+          <div class="flex mb-4">
+            <solidStarIcon myClass="w-4 text-yellow-500" />
+            <solidStarIcon myClass="w-4 text-yellow-500" />
+            <solidStarIcon myClass="w-4 text-yellow-500" />
+            <solidStarIcon myClass="w-4 text-yellow-500" />
+            <solidStarIcon myClass="w-4 text-yellow-500" />
+          </div>
+          <span
+            class="text-xs bg-gray-200 dark:bg-slate-700 px-5 py-1 rounded-full"
+          >
+            Sejarah
+          </span>
+          <p class="flex mt-5 gap-2 text-xs items-center">
+            <calendarDaysIcon myClass="w-5" /> Sekarang Buka
+          </p>
+          <p class="flex mt-2 gap-2 text-xs items-center">
+            <solidMapPinIcon myClass="w-5" /> Jl. Diponegoro No.57, Cihaur
+            Geulis, Kec. Cibeunying Kaler, Kota Bandung
+          </p>
+
+          <div class="flex gap-3 md:mt-10 mt-5">
+            <router-link
+              to="/detail"
+              class="xl:px-10 px-5 py-2 rounded bg-[#34e0a1] border border-[#34e0a1] hover:bg-[#34e0a1]/80 text-white xl:text-sm text-xs"
+            >
+              Lihat Detail
+            </router-link>
+            <a
+              href="https://maps.app.goo.gl/kU1KxgPwSTSubeNSA"
+              target="_blank"
+              class="xl:px-10 px-5 py-2 rounded border border-[#34e0a1] text-[#34e0a1] hover:bg-[#34e0a1] hover:text-white xl:text-sm text-xs"
+            >
+              Lihat Lokasi Map
+            </a>
           </div>
         </div>
       </div>

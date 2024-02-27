@@ -108,7 +108,11 @@
       <div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15839.718463060848!2d108.4060311!3d-7.01755955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f3e35a5e2448b%3A0x86ab9c7d17ce2d8c!2sWaduk%20Darma%2C%20Kec.%20Darma%2C%20Kabupaten%20Kuningan%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1708247780751!5m2!1sid!2sid"
-          style="border: 0; filter: grayscale(50%) invert(92%) contrast(83%)"
+          :style="[
+            getMode != 'light'
+              ? { filter: 'grayscale(50%) invert(92%) contrast(83%)' }
+              : {},
+          ]"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
@@ -137,6 +141,11 @@ export default {
     TopFooter,
     Footer,
     TrendActivities,
+  },
+  computed: {
+    getMode() {
+      return localStorage.getItem("vueuse-color-scheme");
+    },
   },
   mounted() {
     window.scrollTo(0, 0);

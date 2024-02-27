@@ -142,7 +142,7 @@
               href="#interactive"
               v-for="marker in filteredDestination"
               :key="marker.name"
-              class="hover:bg-[#5ae6b3]/20 md:py-5 md:px-7 px-4 cursor-pointer inline-block w-full"
+              class="hover:bg-[#5ae6b3]/20 md:py-5 md:px-7 px-4 py-3 cursor-pointer inline-block w-full"
               @click="setFocus(marker.position)"
             >
               <h6 class="md:text-xl text-base font-semibold">
@@ -205,7 +205,7 @@
   <section id="detail" class="scroll-mt-16">
     <div
       v-if="detail.title"
-      class="grid xl:grid-cols-8 rounded mt-20 gap-8 border border-[#5ae6b2] md:mx-20 mx-5 mb-20"
+      class="grid xl:grid-cols-8 rounded mt-20 gap-8 border border-[#5ae6b2] md:mx-20 mx-5 mb-20 dark:bg-slate-800"
     >
       <div class="xl:col-span-3">
         <img
@@ -215,18 +215,24 @@
       </div>
       <div class="xl:col-span-5 flex items-center">
         <div class="xl:px-0 xl:pb-0 md:px-10 px-5 pb-5">
-          <h5 class="text-2xl font-bold mb-4 mt-3">Waduk Darma</h5>
+          <h5 class="text-2xl font-bold mb-4 mt-3 dark:text-gray-100">
+            Waduk Darma
+          </h5>
           <div>
-            <p class="md:text-sm text-xs mb-2 flex items-center gap-2">
+            <p
+              class="md:text-sm text-xs mb-2 flex items-center gap-2 dark:text-gray-200"
+            >
               <SolidMapPinIcon myClass="w-4 md:inline-block hidden" />
               Desa Megamendung, Kecamatan Megamendung, Kabupaten Bogor
             </p>
-            <p class="md:text-sm text-xs mb-2 flex items-center gap-2">
+            <p
+              class="md:text-sm text-xs mb-2 flex items-center gap-2 dark:text-gray-100"
+            >
               <SolidBankNotesIcon myClass="w-4 md:inline-block hidden" />
               Rp 10.000 / Orang
             </p>
           </div>
-          <p class="mb-10 mt-7 md:text-base text-sm">
+          <p class="mb-10 mt-7 md:text-base text-sm dark:text-gray-100">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
             inventore eum, recusandae beatae culpa quisquam amet laborum
             accusantium, obcaecati maiores sit et expedita, molestiae adipisci
@@ -239,11 +245,12 @@
           >
             Batal
           </a>
-          <button
+          <router-link
+            to="/detail"
             class="bg-[#5ae6b2] hover:bg-[#5ae6b2]/80 px-5 py-2 rounded text-sm text-white"
           >
             Lihat Artikel
-          </button>
+          </router-link>
         </div>
       </div>
     </div>
@@ -286,7 +293,7 @@ export default defineComponent({
   },
   data() {
     return {
-      filterSearch: "",
+      filterSearch: "w",
       filterCategory: "all",
       detail: {
         title: "",
