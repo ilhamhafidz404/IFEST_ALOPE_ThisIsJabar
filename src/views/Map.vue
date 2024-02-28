@@ -293,7 +293,7 @@ export default defineComponent({
   },
   data() {
     return {
-      filterSearch: "w",
+      filterSearch: "",
       filterCategory: "all",
       detail: {
         title: "",

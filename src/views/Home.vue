@@ -484,12 +484,13 @@
         </div>
       </div>
 
-      <button
+      <router-link
+        to="/list"
         class="bg-[#34e0a1] hover:bg-[#34e0a1]/80 text-white font-semibold px-5 py-2 text-sm rounded mx-auto xl:col-span-4 lg:col-span-3 xl:mt-0 mt-10"
       >
         <span v-if="lang == 'id'">Lihat Kategori Lainnya</span>
         <span v-else>See More Category</span>
-      </button>
+      </router-link>
     </section>
     <section class="mt-20">
       <div class="md:flex items-center gap-10 xl:mb-16 mb-0 dark:text-gray-100">

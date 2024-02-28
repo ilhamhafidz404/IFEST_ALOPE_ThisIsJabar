@@ -94,7 +94,7 @@ const toggleDark = useToggle(isDark);
   </nav>
 
   <aside
-    class="fixed xl:w-1/3 md:w-2/3 w-screen dark:bg-slate-900 bg-white h-screen -right-[1000px] top-0 z-20 shadow transition-all duration-300 dark:text-gray-100"
+    class="fixed xl:w-1/3 md:w-2/3 w-screen dark:bg-slate-900 bg-white h-screen -right-[1000px] top-0 shadow transition-all duration-300 dark:text-gray-100 z-50"
   >
     <button
       class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center absolute right-0 xl:mr-20 md:mr-10 mr-5 mt-5"
