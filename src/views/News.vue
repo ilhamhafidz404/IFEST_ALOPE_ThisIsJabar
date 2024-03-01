@@ -1,5 +1,5 @@
 <template>
-  <Navbar />
+  <Navbar @changeLanguageRequest="changeLanguage" />
 
   <br /><br /><br />
 
@@ -29,7 +29,7 @@
         >
           ALAM
         </h6>
-        <router-link to="/search">
+        <router-link to="/detail">
           <h2 class="xl:text-3xl md:text-2xl font-bold text-white">
             Gunung Ciremai Menjadi Daya Tarik Pendaki Gunung Indonesia
           </h2>
@@ -56,7 +56,7 @@
       <div>
         <div class="xl:my-5 my-3">
           <small class="text-[#34e0a1]">UPACARA</small>
-          <router-link to="/search">
+          <router-link to="/detail">
             <h5
               class="font-semibold xl:text-2xl text-base text-gray-800 dark:text-gray-200"
             >
@@ -66,7 +66,7 @@
         </div>
         <div class="xl:my-5 my-3">
           <small class="text-indigo-500">FUN EVENT</small>
-          <router-link to="/search">
+          <router-link to="/detail">
             <h5
               class="font-semibold xl:text-2xl tex-base text-gray-800 dark:text-gray-200"
             >
@@ -78,7 +78,7 @@
           <small class="text-yellow-500 uppercase">
             Indonesia Dimata Dunia
           </small>
-          <router-link to="/search">
+          <router-link to="/detail">
             <h5
               class="font-semibold xl:text-2xl tex-base text-gray-800 dark:text-gray-200"
             >
@@ -125,7 +125,7 @@
                 alt="subheader1"
                 class="w-full h-[200px] object-cover rounded"
               />
-              <router-link to="/search">
+              <router-link to="/detail">
                 <h3 class="font-bold mt-2 dark:text-gray-200">
                   Bahasa Indonesia Menjadi Bahasa Resmi ke-10 di UNIESCO
                 </h3>
@@ -137,7 +137,7 @@
                 alt="subheader2"
                 class="w-full h-[200px] object-cover rounded"
               />
-              <router-link to="/search">
+              <router-link to="/detail">
                 <h3 class="font-bold mt-2 dark:text-gray-200">
                   Pertunjukkan Budaya Indonesia Pukau Warga Turki
                 </h3>
@@ -149,7 +149,7 @@
                 alt="subheader3"
                 class="w-full h-[200px] rounded object-cover"
               />
-              <router-link to="/search">
+              <router-link to="/detail">
                 <h3 class="font-bold mt-2 dark:text-gray-200">
                   Candi Borobudur Situs Warisan Dunia
                 </h3>
@@ -171,7 +171,7 @@
             class="border w-full py-3 px-3 dark:bg-gray-800 dark:border-gray-900 dark:text-gray-200"
             placeholder="Email Address"
           />
-          <router-link to="/search">
+          <router-link to="/detail">
             <button
               class="bg-[#34e0a1] px-10 py-2 rounded-full text-white mt-5 text-sm"
             >
@@ -196,7 +196,7 @@
           <div class="md:col-span-3 md:mt-0 mt-3">
             <small class="text-[#34e0a1] font-semibold"> BUDAYA </small>
 
-            <router-link to="/search">
+            <router-link to="/detail">
               <h3 class="text-xl font-bold mb-3 dark:text-gray-200">
                 Upacara Seren Taun Akan Diadakan Tanggal 20 Maret Mendatang!
               </h3>
@@ -238,7 +238,7 @@
             <small class="text-[#34e0a1] font-semibold uppercase">
               ATRAKSI
             </small>
-            <router-link to="/search">
+            <router-link to="/detail">
               <h3 class="text-xl font-bold mb-3 dark:text-gray-200">
                 Selancar di Pinggir Pantai Pangandatan
               </h3>
@@ -279,7 +279,7 @@
           </div>
           <div class="md:col-span-3 md:mt-0 mt-3">
             <small class="text-[#34e0a1] font-semibold">ALAM</small>
-            <router-link to="/search">
+            <router-link to="/detail">
               <h3 class="text-xl font-bold mb-3 dark:text-gray-200">
                 Curug Leuwi Hejo, Curug dengan Nuansa Alam Memukau
               </h3>
@@ -338,6 +338,7 @@ import CalendarDaysIcon from "@/components/icons/calendarDays.vue";
 import SolidEnvelopeIcon from "@/components/icons/solidEnvelope.vue";
 
 export default {
+  props: ["language"],
   components: {
     Navbar,
     TopFooter,
@@ -351,6 +352,21 @@ export default {
   },
   mounted() {
     window.scrollTo(0, 0);
+  },
+  data() {
+    return {
+      lang: "id",
+    };
+  },
+  methods: {
+    changeLanguage() {
+      if (this.lang == "id") {
+        this.lang = "en";
+      } else {
+        this.lang = "id";
+      }
+      this.$emit("reqChangeLanguage");
+    },
   },
 };
 </script>

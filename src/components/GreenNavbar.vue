@@ -9,7 +9,7 @@ const toggleDark = useToggle(isDark);
 </script>
 <template>
   <nav
-    class="fixed flex left-0 right-0 justify-between py-7 duration-300 xl:px-20 md:px-10 px-5 z-20 bg-[#34e0a1]"
+    class="fixed flex left-0 right-0 justify-between py-7 duration-300 xl:px-20 md:px-10 px-5 z-40 bg-[#34e0a1]"
   >
     <router-link to="/" class="flex items-center gap-5">
       <span
@@ -32,7 +32,18 @@ const toggleDark = useToggle(isDark);
       </span>
       <h1 class="font-bold text-white">INI JABAR</h1>
     </router-link>
-    <div class="flex md:gap-10 gap-5">
+    <div class="flex md:gap-5 gap-3">
+      <button
+        @click="changeLanguage()"
+        class="border-2 border-[#34e0a1] rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center"
+      >
+        <img
+          v-if="lang == 'id'"
+          src="./../assets/images/icon/indonesia.png"
+          alt=""
+        />
+        <img v-else src="./../assets/images/icon/united-kingdom.png" alt="" />
+      </button>
       <button
         @click="toggleDark()"
         class="bg-white dark:bg-slate-800 dark:text-gray-200 hover:bg-white/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center dark:hidden"
@@ -68,7 +79,7 @@ const toggleDark = useToggle(isDark);
         </svg>
       </button>
       <button
-        class="bg-white dark:bg-slate-800 dark:text-gray-200 hover:bg-white/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center"
+        class="bg-white dark:bg-slate-800 dark:text-gray-200 hover:bg-white/90 md:p-2 p-1 rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center md:mr-10 mr-3"
         @click="toggleSearch()"
       >
         <magnifyingGlassIcon myClass="md:w-7 w-4" />
@@ -83,7 +94,7 @@ const toggleDark = useToggle(isDark);
   </nav>
 
   <aside
-    class="fixed xl:w-1/3 md:w-2/3 w-screen dark:bg-slate-900 bg-white h-screen -right-[1000px] top-0 z-20 shadow transition-all duration-300 dark:text-gray-100"
+    class="fixed xl:w-1/3 md:w-2/3 w-screen dark:bg-slate-900 bg-white h-screen -right-[1000px] top-0 z-50 shadow transition-all duration-300 dark:text-gray-100"
   >
     <button
       class="bg-[#34e0a1] hover:bg-[#34e0a1]/90 md:p-2 p-1 md:w-auto md:h-auto w-[30px] h-[30px] flex items-center justify-center absolute right-0 xl:mr-20 md:mr-10 mr-5 mt-5"
@@ -217,6 +228,15 @@ export default {
     toggleDarkMap() {
       this.darkMode = !this.darkMode;
       localStorage.setItem("darkMode", JSON.stringify(this.darkMode));
+    },
+    changeLanguage() {
+      if (this.lang == "id") {
+        this.lang = "en";
+      } else {
+        this.lang = "id";
+      }
+
+      this.$emit("changeLanguageRequest");
     },
   },
 };
