@@ -52,25 +52,38 @@
         <p
           class="mt-3 md:text-sm text-xs text-gray-700 dark:text-gray-300 lg:w-[700px] w-full"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          officiis perferendis, optio adipisci veritatis reiciendis natus, porro
-          incidunt, facere recusandae expedita atque distinctio maiores hic
-          reprehenderit odio architecto suscipit ab.
+          Nikmati keindahan budaya Indonesia dengan mengunjungi tempat-tempat
+          bersejarah yang memukau. Jelajahi warisan budaya yang kaya akan cerita
+          dan kekayaan arsitektur. Temukan pengalaman yang mendalam dan
+          inspiratif di setiap sudut destinasi wisata budaya.
         </p>
         <button class="flex text-sm mt-5 items-center gap-2 dark:text-gray-300">
           <span
             class="bg-[#34e0a1] w-[30px] h-[30px] rounded-full flex items-center justify-center"
           >
-            <arrowRightIcon myClass="w-6 text-white" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
           </span>
           <span>Lihat Wisata Budaya Lainnya</span>
         </button>
       </div>
+
       <div
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90 xl:block hidden"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://banhub.jabarprov.go.id/wp-content/uploads/2020/12/angklung-day-01.jpg"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -78,21 +91,20 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          Hari Angklung
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">Hari Angklung</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Rayakan Hari Angklung di Anjungan Jawa Barat dan rasakan keajaiban
+            musik bambu. Saksikan pertunjukan budaya yang memukau dan nikmati
+            pengalaman penuh warna dari warisan budaya yang kaya.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -100,7 +112,7 @@
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://banhub.jabarprov.go.id/wp-content/uploads/2020/12/parade-musik-daerah-08.jpg"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -108,21 +120,20 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          Parade Musik Daerah
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">Parade Musik Daerah</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Nikmati Parade Musik Daerah di Anjungan Jawa Barat yang memukau.
+            Temukan kekayaan budaya dari berbagai genre musik tradisional yang
+            menampilkan keindahan khas daerah.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -130,7 +141,7 @@
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://banhub.jabarprov.go.id/wp-content/uploads/2020/12/pameran-kuliner-02.jpg"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -138,21 +149,21 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          Pameran Kuliner
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">Pameran Kuliner</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Jelajahi kelezatan kuliner Jawa Barat melalui Pameran Kuliner di
+            Anjungan Jawa Barat. Nikmati beragam hidangan tradisional yang
+            menggugah selera dan ciptakan pengalaman kuliner yang tak
+            terlupakan.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -160,7 +171,7 @@
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://banhub.jabarprov.go.id/wp-content/uploads/2020/12/gelar-semarak-tahun-baru-010.jpg"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -168,21 +179,19 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          Gelar Semarak Tahun Baru
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">Gelar Semarak Tahun Baru</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Sambut Tahun Baru dengan semarak di Anjungan Jawa Barat. Nikmati
+            pertunjukan budaya, kuliner, dan kegiatan menarik lainnya.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -220,10 +229,10 @@
         <p
           class="mt-3 md:text-sm text-xs text-gray-700 lg:w-[700px] w-full dark:text-gray-300 md:text-left text-start"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          officiis perferendis, optio adipisci veritatis reiciendis natus, porro
-          incidunt, facere recusandae expedita atque distinctio maiores hic
-          reprehenderit odio architecto suscipit ab.
+          Jelajahi keindahan alam yang menakjubkan di tepi pantai yang memukau.
+          Rasakan sensasi angin sepoi-sepoi yang menyegarkan dan nikmati
+          panorama laut yang memukau. Temukan ketenangan dan keindahan yang tak
+          terlupakan di destinasi pantai terbaik kami.
         </p>
         <button class="flex text-sm mt-5 items-center gap-2 dark:text-gray-300">
           <span
@@ -234,11 +243,12 @@
           <span>Lihat Pantai Lainnya</span>
         </button>
       </div>
+
       <div
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90 xl:block hidden"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://asset.kompas.com/crops/jGIL7uNqglJUu4mhlZw2eN-FxQU=/27x0:1106x719/750x500/data/photo/2023/04/25/6447846b3dd27.png"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -246,21 +256,20 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          Pantai Batu Hiu
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">Pantai Batu Hiu</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Rasakan keindahan alam di Pantai Batu Hiu. Nikmati ombak yang
+            menghantam karang-karang menjulang dan eksplorasi kehidupan laut
+            yang menakjubkan.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -268,7 +277,7 @@
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://live.staticflickr.com/5496/12713713454_a912416ed0_z.jpg"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -276,21 +285,19 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          Pantai Sayang Heulang
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">Pantai Sayang Heulang</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Jelajahi keindahan alam di Pantai Sayang Heulang. Rasakan angin
+            sepoi-sepoi yang menyegarkan dan panorama pantai yang memikat hati.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -298,7 +305,7 @@
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://assets.kompasiana.com/statics/crawl/556507710423bd364a8b4567.jpeg?t=o&v=770"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -306,21 +313,20 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          Pantai Santolo
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">Pantai Santolo</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Sambut deburan ombak dan pesona alam yang menakjubkan di Pantai
+            Santolo. Nikmati keindahan pasir putih, air biru yang jernih, dan
+            suasana pantai yang menyejukkan.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -328,7 +334,7 @@
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/944/2023/12/12/FotoJet-2023-12-12T091157782-1633934275.jpg"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -336,21 +342,20 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          Pantai Madasari
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">Pantai Madasari</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Temukan pesona eksotis di Pantai Madasari. Rasakan keindahan alam
+            yang memikat dengan pasir putihnya, air laut yang jernih, dan
+            pemandangan matahari terbenam yang menakjubkan.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -388,10 +393,10 @@
         <p
           class="mt-3 md:text-sm text-xs text-gray-700 lg:w-[700px] w-full dark:text-gray-300 md:text-left text-start"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          officiis perferendis, optio adipisci veritatis reiciendis natus, porro
-          incidunt, facere recusandae expedita atque distinctio maiores hic
-          reprehenderit odio architecto suscipit ab.
+          Nikmati petualangan seru di Taman Main Anak yang penuh dengan
+          kegembiraan dan keceriaan! Rasakan sensasi kebebasan di antara riuhnya
+          tawa dan canda di tempat ini. Temukan keindahan alam sambil bermain
+          bersama keluarga dan teman-teman terdekat.
         </p>
         <button class="flex text-sm mt-5 items-center gap-2 dark:text-gray-300">
           <span
@@ -402,11 +407,12 @@
           <span>Lihat Taman Main Lainnya</span>
         </button>
       </div>
+
       <div
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90 xl:block hidden"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_869/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/vijuqpmzdwthfdykyuhl/TiketMasukTheJungleWaterparkAdventure.jpg"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -414,21 +420,20 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          The Jungle Waterpark
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">The Jungle Waterpark</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Rasakan keseruan di The Jungle Waterpark. Nikmati wahana air yang
+            mengasyikkan, kolam renang yang menyegarkan, dan beragam atraksi
+            seru untuk semua umur.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -436,7 +441,7 @@
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://awsimages.detik.net.id/community/media/visual/2023/06/28/trans-snow-world-bekasi_169.jpeg?w=1200"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -444,21 +449,19 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          Trans Studio Bandung
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">Trans Studio Bandung</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Nikmati petualangan seru di Trans Studio Bandung dengan wahana
+            menarik dan pertunjukan menghibur.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -466,7 +469,7 @@
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://i.pinimg.com/originals/51/fa/32/51fa3256435afd2b817275af13acea24.png"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -474,21 +477,20 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          Orchid Forest Cikole
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">Orchid Forest Cikole</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Temukan keindahan alam di Orchid Forest Cikole. Nikmati suasana
+            hutan yang sejuk dan indah, sambil menikmati kecantikan ribuan
+            anggrek yang bermekaran.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -496,7 +498,7 @@
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://i0.wp.com/traveldiva.id/wp-content/uploads/2021/06/Taman-Safari-Prigen.jpg"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -504,21 +506,20 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          Taman Safari Bandung
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">Taman Safari Bandung</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Jelajahi kehidupan liar di Taman Safari Bandung. Nikmati petualangan
+            seru melihat berbagai spesies hewan yang berkeliaran bebas dalam
+            habitat alaminya.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -556,10 +557,11 @@
         <p
           class="mt-3 md:text-sm text-xs text-gray-700 lg:w-[700px] w-full dark:text-gray-300 md:text-left text-start"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          officiis perferendis, optio adipisci veritatis reiciendis natus, porro
-          incidunt, facere recusandae expedita atque distinctio maiores hic
-          reprehenderit odio architecto suscipit ab.
+          Nikmati suasana santai dan cita rasa istimewa di kafe-kafe terbaik
+          kota. Dari kopi aromatik hingga kue-kue lezat, setiap sudut kafe ini
+          menjanjikan pengalaman yang menggugah selera dan memanjakan indra.
+          Temukan tempat favoritmu dan buat momen berharga bersama orang-orang
+          terkasih!
         </p>
         <button class="flex text-sm mt-5 items-center gap-2 dark:text-gray-300">
           <span
@@ -570,11 +572,12 @@
           <span>Lihat Kafe Lainnya</span>
         </button>
       </div>
+
       <div
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90 xl:block hidden"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/119/2023/07/24/Screenshot-2023-07-24-111828-355040835.png"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -582,21 +585,19 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          Arunika Eatery
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">Arunika Eatery</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Rasakan lezatnya hidangan di Arunika Eatery. Nikmati sajian makanan
+            khas dengan citarasa yang autentik dan suasana yang menyenangkan.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -604,7 +605,7 @@
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://assets.pikiran-rakyat.com/crop/0x271:1024x1189/750x500/photo/2023/06/07/2305627910.jpg"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -612,21 +613,20 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          Teduh Coffe
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">Teduh Coffee</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Temukan kedamaian dan kenikmatan di Teduh Coffee. Nikmati suasana
+            yang tenang sambil menyeruput kopi berkualitas tinggi dan camilan
+            lezat.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -634,7 +634,7 @@
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://radarcirebon.disway.id/upload/da912a42113e4159f171a8dfe4f88df0.jpg"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -642,21 +642,19 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          Botanika
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">Botanika</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Rasakan sensasi yang unik di Botanika. Nikmati suasana yang
+            menyegarkan dengan kopi berkualitas dan pilihan hidangan yang lezat.
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -664,7 +662,7 @@
         class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
       >
         <img
-          src="./../assets/images/wisataBudaya/gedungSate.jpg"
+          src="https://assets-pergikuliner.com/RLmeJhFlWMhDcFYoRZ_Ge6YNU0g=/fit-in/1366x768/smart/filters:no_upscale()/https://assets-pergikuliner.com/uploads/image/picture/2352362/picture-1636528335.JPG"
           alt=""
           class="w-full h-[300px] object-cover"
         />
@@ -672,21 +670,19 @@
         <h5
           class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
         >
-          Gedung Sate
+          BBQ Mountain Boys
         </h5>
 
         <div
           class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
         >
-          <h5 class="font-semibold text-base">Gedung Sate</h5>
+          <h5 class="font-semibold text-base">BBQ Mountain Boys</h5>
           <p class="mt-2 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, amet!
+            Nikmati BBQ autentik di BBQ Mountain Boys. Aroma dan rasa yang
+            menggugah selera menanti Anda!
           </p>
-
           <span class="flex items-center gap-3">
-            Lihat
-            <arrowRightIcon myClass="w-5" />
+            Lihat <arrowRightIcon myClass="w-5" />
           </span>
         </div>
       </div>
@@ -721,5 +717,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
