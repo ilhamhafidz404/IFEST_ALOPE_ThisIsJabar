@@ -7,18 +7,18 @@
     class="grid xl:grid-cols-2 xl:h-screen lg:max-h-[800px] h-screen relative items-center overflow-hidden"
   >
     <div
-      class="xl:p-16 xl:pb-20 xl:mt-32 xl:static absolute xl:w-auto md:w-2/3 xl:bg-transparent bg-white/40 dark:bg-[#0f172a]/40 md:p-10 md:pb-10 md:bottom-auto bottom-[100px] p-5 pb-20"
+      class="xl:p-16 xl:pb-20 xl:mt-20 xl:static absolute xl:w-auto md:w-2/3 xl:bg-transparent bg-white/40 dark:bg-[#0f172a]/40 md:p-10 md:pb-10 md:bottom-auto bottom-[100px] p-5 pb-20"
     >
       <h1
         v-if="lang == 'id'"
-        class="xl:text-5xl md:text-4xl text-2xl font-[500] dark:text-gray-100"
+        class="xl:text-[43px] md:text-4xl text-2xl font-[500] dark:text-gray-100"
       >
         {{ content.header.title1.id }} <br />
         {{ content.header.title2 }}
       </h1>
       <h1
         v-else
-        class="xl:text-5xl md:text-4xl text-2xl font-[500] dark:text-gray-100"
+        class="xl:text-[43px] md:text-4xl text-2xl font-[500] dark:text-gray-100"
       >
         {{ content.header.title1.en }} <br />
         {{ content.header.title2 }}
@@ -35,7 +35,7 @@
       </p>
       <a
         href=""
-        class="text-[#34e0a1] mt-7 inline-block font-semibold md:text-base text-sm"
+        class="text-[#34e0a1] mt-7 inline-block font-semibold md:text-sm text-xs"
       >
         <span v-if="lang == 'id'">Lihat Lebih Lengkap</span>
         <span v-else>See More</span>
@@ -43,19 +43,19 @@
 
       <!-- desktop -->
       <div
-        class="gap-10 mt-16 bg-[#34e0a1] text-white py-5 px-10 relative xl:flex hidden"
+        class="gap-10 mt-20 bg-[#34e0a1] text-white py-5 px-10 relative xl:flex hidden"
       >
         <div class="w-2/3">
           <h4 v-if="lang == 'id'" class="text-xl font-semibold mb-3">Lokasi</h4>
           <h4 v-else class="text-xl font-semibold mb-3">Location</h4>
-          <p class="text-sm">
+          <p class="text-xs">
             {{ content.header.address }}
           </p>
         </div>
         <div class="w-1/3">
           <h4 v-if="lang == 'id'" class="text-xl font-semibold mb-3">Harga</h4>
           <h4 v-else class="text-xl font-semibold mb-3">Fee</h4>
-          <p>FREE</p>
+          <p class="text-xs">FREE</p>
         </div>
 
         <!--  -->
@@ -67,7 +67,7 @@
             Buka Pada
           </h4>
           <h4 v-else class="text-xl font-semibold mb-3">Open On</h4>
-          <p>Setiap hari pada jam 8 Pagi - 6 Sore</p>
+          <p class="text-xs">Setiap hari pada jam 8 Pagi - 6 Sore</p>
         </div>
       </div>
     </div>
@@ -1065,8 +1065,8 @@ export default {
           },
           title2: "PANGANDARAN",
           subtitle: {
-            id: "Pantai Pangandaran merupakan sebuah objek wisata andalan Kabupaten Pangandaran yang terletak di sebelah tenggara Jawa Barat, tepatnya di Desa Pangandaran dan Pananjung, sekitar 222 km dari selatan Bandung, Kecamatan Pangandaran, Kabupaten Pangandaran, Provinsi Jawa Barat.",
-            en: "Pangandaran Beach is a mainstay tourist attraction of Pangandaran Regency which is located in the southeast of West Java, precisely in Pangandaran and Pananjung Villages, about 222 km south of Bandung, Pangandaran District, Pangandaran Regency, West Java Province.",
+            id: "Pantai Pangandaran merupakan sebuah objek wisata andalan Kabupaten Pangandaran yang terletak di sebelah tenggara Jawa Barat",
+            en: "Pangandaran Beach is a mainstay tourist attraction of Pangandaran Regency which is located in the southeast of West Java",
           },
           address: "Kecamatan Pangandaran, Kabupaten Pangandaran",
           active: 1,
@@ -1298,8 +1298,8 @@ export default {
           },
           title2: "BOGOR",
           subtitle: {
-            id: "Leuwi Hejo memiliki beberapa curug dengan total jumlahnya ada lima. Mulai dari Curug Leuwi Hejo, Curug Leuwi Liek, Curug Leuwi Ciung, Curug Leuwi Cepet dan Curug Baliung.",
-            en: "Leuwi Hejo has several waterfalls with a total of five. Starting from Waterfall Leuwi Hejo, Waterfall Leuwi Liek, Waterfall Leuwi Ciung, Waterfall Leuwi Cepet and Waterfall Baliung.",
+            id: "Leuwi Hejo memiliki beberapa curug dengan total jumlahnya ada lima. Mulai dari Curug Leuwi Hejo, Curug Leuwi Liek.",
+            en: "Leuwi Hejo has several waterfalls with a total of five. Starting from Waterfall Leuwi Hejo, Waterfall Leuwi Liek.",
           },
           address: "Jalan raya, Cibadak, Kec. Sukamakmur, Kabupaten Bogor",
           active: 2,
@@ -1308,10 +1308,10 @@ export default {
       } else if (this.content.header.active == 2) {
         this.content.header = {
           title1: {
-            id: "PANTAI UJUNG GENTENG, ",
-            en: "UJUNG GENTENG BEACH, ",
+            id: "PANTAI UJUNG GENTENG ",
+            en: "UJUNG GENTENG BEACH ",
           },
-          title2: "SUKABUMI",
+          title2: "",
           subtitle: {
             id: "Pantai berpasir putih yang dikelilingi terumbu karang yang terkenal dengan konservasi penyu & panorama sunset",
             en: "White sandy beach surrounded by coral reefs which is famous for turtle conservation & panoramic sunset views",
@@ -1331,8 +1331,8 @@ export default {
           },
           title2: "BOGOR",
           subtitle: {
-            id: "Leuwi Hejo memiliki beberapa curug dengan total jumlahnya ada lima. Mulai dari Curug Leuwi Hejo, Curug Leuwi Liek, Curug Leuwi Ciung, Curug Leuwi Cepet dan Curug Baliung.",
-            en: "Leuwi Hejo has several waterfalls with a total of five. Starting from Waterfall Leuwi Hejo, Waterfall Leuwi Liek, Waterfall Leuwi Ciung, Waterfall Leuwi Cepet and Waterfall Baliung.",
+            id: "Leuwi Hejo memiliki beberapa curug dengan total jumlahnya ada lima. Mulai dari Curug Leuwi Hejo, Curug Leuwi Liek.",
+            en: "Leuwi Hejo has several waterfalls with a total of five. Starting from Waterfall Leuwi Hejo, Waterfall Leuwi Liek.",
           },
           address: "Jalan raya, Cibadak, Kec. Sukamakmur, Kabupaten Bogor",
           active: 2,
@@ -1346,8 +1346,8 @@ export default {
           },
           title2: "PANGANDARAN",
           subtitle: {
-            id: "Pantai Pangandaran merupakan sebuah objek wisata andalan Kabupaten Pangandaran yang terletak di sebelah tenggara Jawa Barat, tepatnya di Desa Pangandaran dan Pananjung, sekitar 222 km dari selatan Bandung, Kecamatan Pangandaran, Kabupaten Pangandaran, Provinsi Jawa Barat.",
-            en: "Pangandaran Beach is a mainstay tourist attraction of Pangandaran Regency which is located in the southeast of West Java, precisely in Pangandaran and Pananjung Villages, about 222 km south of Bandung, Pangandaran District, Pangandaran Regency, West Java Province.",
+            id: "Pantai Pangandaran merupakan sebuah objek wisata andalan Kabupaten Pangandaran yang terletak di sebelah tenggara Jawa Barat,",
+            en: "Pangandaran Beach is a mainstay tourist attraction of Pangandaran Regency which is located in the southeast of West Java",
           },
           address: "Kecamatan Pangandaran, Kabupaten Pangandaran",
           active: 1,
