@@ -313,8 +313,8 @@
       </div>
       <div class="xl:block hidden">
         <img
-          src="./../assets/img/a1.jpg"
-          alt="kabarBudayaBanner"
+          src="./../assets/images/banner.png"
+          alt="iniJabarBanner"
           class="rounded"
         />
       </div>

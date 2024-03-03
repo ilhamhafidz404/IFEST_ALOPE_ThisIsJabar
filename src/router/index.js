@@ -7,7 +7,6 @@ import Activity from "../views/Activity.vue";
 import News from "../views/News.vue";
 import Map from "../views/Map.vue";
 import Subscription from "../views/Subscription.vue";
-import Component from "../views/Components.vue";
 import List from "../views/List.vue";
 import About from "../views/About.vue";
 
@@ -48,11 +47,6 @@ const router = createRouter({
       path: "/map",
       name: "map",
       component: Map,
-    },
-    {
-      path: "/component",
-      name: "component",
-      component: Component,
     },
     {
       path: "/list",
