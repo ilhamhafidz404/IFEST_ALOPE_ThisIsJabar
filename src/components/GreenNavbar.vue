@@ -37,12 +37,7 @@ const toggleDark = useToggle(isDark);
         @click="changeLanguage()"
         class="border-2 border-[#34e0a1] rounded-full md:w-[40px] md:h-[40px] w-[30px] h-[30px] flex items-center justify-center"
       >
-        <img
-          v-if="lang == 'id'"
-          src="./../assets/images/icon/indonesia.png"
-          alt=""
-        />
-        <img v-else src="./../assets/images/icon/united-kingdom.png" alt="" />
+        <img src="./../assets/images/icon/indonesia.png" alt="" />
       </button>
       <button
         @click="toggleDark()"

@@ -3,7 +3,7 @@
 
   <header class="relative">
     <img
-      src="./../assets/images/header/1.jpg"
+      src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       class="w-full h-[700px] object-cover"
     />
     <span class="bg-slate-900/40 absolute inset-0 dark:block hidden"></span>
