@@ -259,7 +259,7 @@
 
 <script>
 // components
-import Navbar from "./../components/MapNavbar.vue";
+import Navbar from "./../components/GreenNavbar.vue";
 import TopFooter from "./../components/TopFooter.vue";
 import Footer from "./../components/Footer.vue";
 

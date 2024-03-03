@@ -48,14 +48,14 @@
         <div class="w-2/3">
           <h4 v-if="lang == 'id'" class="text-xl font-semibold mb-3">Lokasi</h4>
           <h4 v-else class="text-xl font-semibold mb-3">Location</h4>
-          <p class="text-xs">
+          <p class="text-sm">
             {{ content.header.address }}
           </p>
         </div>
         <div class="w-1/3">
           <h4 v-if="lang == 'id'" class="text-xl font-semibold mb-3">Harga</h4>
           <h4 v-else class="text-xl font-semibold mb-3">Fee</h4>
-          <p class="text-xs">FREE</p>
+          <p class="text-sm">FREE</p>
         </div>
 
         <!--  -->
@@ -67,7 +67,7 @@
             Buka Pada
           </h4>
           <h4 v-else class="text-xl font-semibold mb-3">Open On</h4>
-          <p class="text-xs">Setiap hari pada jam 8 Pagi - 6 Sore</p>
+          <p class="text-sm">Setiap hari pada jam 8 Pagi - 6 Sore</p>
         </div>
       </div>
     </div>
