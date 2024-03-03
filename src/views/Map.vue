@@ -183,10 +183,7 @@
             <h1 class="text-xl font-bold">{{ marker.name }}</h1>
             <div class="mt-3">
               <p class="mb-5">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dolorem inventore eum, recusandae beatae culpa quisquam amet
-                laborum accusantium, obcaecati maiores sit et expedita,
-                molestiae adipisci ducimus. Repellat exercitationem quos nobis.
+                {{ marker.location }}
               </p>
               <a
                 href="#detail"
