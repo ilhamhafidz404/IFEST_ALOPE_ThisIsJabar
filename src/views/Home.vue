@@ -1032,7 +1032,6 @@
 <script>
 // components
 import Navbar from "./../components/Navbar.vue";
-import Header from "./../components/Header.vue";
 import Category from "./../components/Category.vue";
 import TrendActivities from "./../components/TrendActivities.vue";
 import Footer from "./../components/Footer.vue";
