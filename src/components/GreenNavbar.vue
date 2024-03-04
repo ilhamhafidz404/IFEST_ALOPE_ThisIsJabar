@@ -117,6 +117,13 @@ const toggleDark = useToggle(isDark);
       </li>
       <li class="mb-5">
         <router-link
+          to="/list"
+          class="text-2xl hover:text-3xl duration-300 hover:text-[#34e0a1]"
+          >Destinasi Wisata</router-link
+        >
+      </li>
+      <li class="mb-5">
+        <router-link
           to="/news"
           class="text-2xl hover:text-3xl duration-300 hover:text-[#34e0a1] whitespace-nowrap"
           >Informasi Destinasi</router-link
@@ -237,5 +244,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
