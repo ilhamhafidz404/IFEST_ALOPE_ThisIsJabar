@@ -47,7 +47,7 @@
           class="xl:h-[250px] h-[230px] after:rounded relative after:ontent-[''] after:bg-black/40 after:absolute after:inset-0"
         >
           <img
-            src="https://images.unsplash.com/photo-1513415756790-2ac1db1297d0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://images.unsplash.com/photo-1683471619890-fb7e51c3201c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             class="w-full xl:h-[250px] h-[230px] rounded object-cover"
           />
         </div>
@@ -55,34 +55,32 @@
 
       <div>
         <div class="xl:my-5 my-3">
-          <small class="text-[#34e0a1]">UPACARA</small>
+          <small class="text-[#34e0a1]">BUDAYA</small>
           <router-link to="/detail">
             <h5
               class="font-semibold xl:text-2xl text-base text-gray-800 dark:text-gray-200"
             >
-              Peringati 32 Tahun Candi Borobudur
+              Gedung Sate Kantor Gubernur
             </h5>
           </router-link>
         </div>
         <div class="xl:my-5 my-3">
-          <small class="text-indigo-500">FUN EVENT</small>
+          <small class="text-[#34e0a1]">FUN EVENT</small>
           <router-link to="/detail">
             <h5
               class="font-semibold xl:text-2xl tex-base text-gray-800 dark:text-gray-200"
             >
-              2.000 Pelari Meriahkan "Borobudur Fun Run"
+              2.000 Pelari Meriahkan "Bandung Fun Run"
             </h5>
           </router-link>
         </div>
         <div class="xl:my-5 my-3">
-          <small class="text-yellow-500 uppercase">
-            Indonesia Dimata Dunia
-          </small>
+          <small class="text-[#34e0a1] uppercase"> MAKANAN </small>
           <router-link to="/detail">
             <h5
               class="font-semibold xl:text-2xl tex-base text-gray-800 dark:text-gray-200"
             >
-              Candi Borobudur Situs Warisan Dunia
+              Rasakan Nikmatnya Batagor, Makanan Khas Bandung
             </h5>
           </router-link>
         </div>
@@ -127,7 +125,8 @@
               />
               <router-link to="/detail">
                 <h3 class="font-bold mt-2 dark:text-gray-200">
-                  Bahasa Indonesia Menjadi Bahasa Resmi ke-10 di UNIESCO
+                  Sawah Lope, Wisata Bagi Para Pasangan Agar Hubungan Makin
+                  Harmonis
                 </h3>
               </router-link>
             </div>
@@ -139,7 +138,7 @@
               />
               <router-link to="/detail">
                 <h3 class="font-bold mt-2 dark:text-gray-200">
-                  Pertunjukkan Budaya Indonesia Pukau Warga Turki
+                  Saung Abah Bogor Menjadi Tempat Favorit Anak Muda Saat Ini
                 </h3>
               </router-link>
             </div>
@@ -151,7 +150,7 @@
               />
               <router-link to="/detail">
                 <h3 class="font-bold mt-2 dark:text-gray-200">
-                  Candi Borobudur Situs Warisan Dunia
+                  Curug Landung, Punya 7 Curug yang Indah
                 </h3>
               </router-link>
             </div>

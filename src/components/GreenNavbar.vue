@@ -12,24 +12,18 @@ const toggleDark = useToggle(isDark);
     class="fixed flex left-0 right-0 justify-between py-7 duration-300 xl:px-20 md:px-10 px-5 z-40 bg-[#34e0a1]"
   >
     <router-link to="/" class="flex items-center gap-5">
-      <span
-        class="bg-white w-[40px] h-[40px] md:flex hidden items-center justify-center rounded-full"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-[50px]"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
-          />
-        </svg>
-      </span>
+      <img
+        src="../assets/images/icon/logoputih.png"
+        id="greenNavLogoPutih"
+        alt="logo"
+        class="w-[30px] -mt-3"
+      />
+      <img
+        id="greenNavLogo"
+        src="../assets/images/icon/logo.png"
+        alt="logo"
+        class="w-[30px] -mt-3 hidden"
+      />
       <h1 class="font-bold text-white">INI JABAR</h1>
     </router-link>
     <div class="flex md:gap-5 gap-3">
@@ -148,22 +142,24 @@ const toggleDark = useToggle(isDark);
 
   <section
     id="searchModal"
-    class="fixed inset-0 z-20 hidden items-center justify-center bg-green-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100"
+    class="fixed inset-0 z-20 hidden items-center justify-center bg-green-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100 dark:border-slate-900"
   >
-    <div class="bg-white rounded p-5 shadow md:w-2/3 w-full md:mx-0 mx-5 z-50">
+    <div
+      class="bg-white dark:bg-slate-900 dark:text-gray-100 rounded p-5 shadow md:w-2/3 w-full md:mx-0 mx-5 z-50"
+    >
       <div class="flex items-center gap-5">
         <magnifyingGlassIcon myClass="w-6" />
         <input
           type="text"
           placeholder="Cari sesuatu..."
-          class="py-2 focus:outline-none w-full"
+          class="py-2 focus:outline-none w-full dark:bg-slate-900 dark:text-gray-100"
           @keypress.enter="redirectToSearch()"
         />
         <button @click="toggleSearch()">
           <xMarkIcon myClass="w-6" />
         </button>
       </div>
-      <hr class="my-5" />
+      <hr class="my-5 dark:border-slate-700" />
       <div class="flex items-center flex-wrap gap-5">
         <h4 class="font-bold mr-5 flex items-center gap-2">
           <solidTagIcon myClass="w-5 text-[#34e0a1]" /> Tag :

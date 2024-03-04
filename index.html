@@ -44,6 +44,8 @@
       window.addEventListener("scroll", function () {
         const nav = document.querySelector("nav");
         const navHeader = document.querySelector("nav h1");
+        const navLogo = document.querySelector("nav #greenNavLogo");
+        const navLogoPutih = document.querySelector("nav #greenNavLogoPutih");
 
         nav.classList.toggle("bg-white", window.scrollY > 50);
         nav.classList.toggle("dark:bg-slate-900", window.scrollY > 50);
@@ -53,6 +55,9 @@
 
         navHeader.classList.toggle("!text-gray-800", window.scrollY > 50);
         navHeader.classList.toggle("dark:!text-gray-200", window.scrollY > 50);
+
+        navLogo.classList.toggle("hidden", window.scrollY < 50);
+        navLogoPutih.classList.toggle("hidden", window.scrollY > 50);
       });
     </script>
   </body>

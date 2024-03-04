@@ -21,11 +21,12 @@
       </p>
     </div>
     <div class="relative z-10 lg:mt-0 mt-10 flex justify-center">
-      <button
+      <router-link
+        to="/map"
         class="bg-white md:px-7 px-5 md:py-3 py-2 md:text-base text-sm border-2 border-white rounded-full text-[#48e3aa] font-semibold hover:bg-transparent hover:text-white"
       >
         Explorasi Sekarang
-      </button>
+      </router-link>
     </div>
   </section>
 </template>

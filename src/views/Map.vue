@@ -179,10 +179,14 @@
         :options="{ position: marker.position }"
       >
         <InfoWindow>
-          <div id="content">
+          <div class="text-center">
+            <img
+              :src="marker.img"
+              class="w-[300px] h-[200px] object-cover mx-auto rounded"
+            />
             <h1 class="text-xl font-bold">{{ marker.name }}</h1>
-            <div class="mt-3">
-              <p class="mb-5">
+            <div class="mt-1">
+              <p class="mb-5 text-sm">
                 {{ marker.location }}
               </p>
               <a
@@ -220,7 +224,7 @@
               class="md:text-sm text-xs mb-2 flex items-center gap-2 dark:text-gray-200"
             >
               <SolidMapPinIcon myClass="w-4 md:inline-block hidden" />
-              Desa Megamendung, Kecamatan Megamendung, Kabupaten Bogor
+              Desa Jagara, Kecamatan Darma, Kabupaten Kuningan
             </p>
             <p
               class="md:text-sm text-xs mb-2 flex items-center gap-2 dark:text-gray-100"
@@ -229,11 +233,14 @@
               Rp 10.000 / Orang
             </p>
           </div>
-          <p class="mb-10 mt-7 md:text-base text-sm dark:text-gray-100">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
-            inventore eum, recusandae beatae culpa quisquam amet laborum
-            accusantium, obcaecati maiores sit et expedita, molestiae adipisci
-            ducimus. Repellat exercitationem quos nobis.
+          <p class="mb-3 mt-7 md:text-base text-sm dark:text-gray-100">
+            Waduk Darma memiliki kedalaman 100 meter dan digunakan sebagai
+            ladang perikanan, sistem irigasi sawah, dan kebutuhan air minum oleh
+            Perusahaan Daerah Air Minum (PDAM).
+          </p>
+          <p class="mb-10 mt-3 md:text-base text-sm dark:text-gray-100">
+            Pembangunan Waduk Darma dimulai pada tahun 1923 saat Belanda
+            melakukan perencanaan dan penelitian.
           </p>
           <a
             href="#interactive"
@@ -303,18 +310,17 @@ export default defineComponent({
         {
           name: "Curug Panjang",
           keyword: "curug",
+          img: "https://images.unsplash.com/photo-1564500601744-d5dfe4e7ab72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location: "Desa Megamendung, Kecamatan Megamendung, Kabupaten Bogor",
           position: {
             lat: -6.6462737,
             lng: 106.9452167,
           },
-          InfoWindow: {
-            content: "",
-          },
         },
         {
           name: "Waduk Darma",
           keyword: "waduk",
+          img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location: "Desa Jagara, Kecamatan Darma, Kabupaten Kuningan",
           position: {
             lat: -7.0175595,
@@ -324,6 +330,7 @@ export default defineComponent({
         {
           name: "Waduk Jatiluhur",
           keyword: "waduk",
+          img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location: "Desa Citarum, Kecamatan Jatiluhur, Kabupaten Purwakarta",
           position: {
             lat: -6.5236008,
@@ -333,6 +340,7 @@ export default defineComponent({
         {
           name: "Waduk Jatigede",
           keyword: "waduk",
+          img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location: "Desa Cijeunjing, Kecamatan Jatigede, Sumedang",
           position: {
             lat: -6.861977,
@@ -342,6 +350,7 @@ export default defineComponent({
         {
           name: "Taman Safari",
           keyword: "taman",
+          img: "https://images.unsplash.com/photo-1585938389612-a552a28d6914?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location: "Cibeureum, Kec. Cisarua, Kabupaten Bogor",
           position: {
             lat: -6.7206149,
@@ -351,6 +360,7 @@ export default defineComponent({
         {
           name: "Pantai Ujung Genteng",
           keyword: "pantai",
+          img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location:
             "Jl. Cipaku 5 No.4, Ujung Genteng, Kec. Ciracap, Kabupaten Sukabumi",
           position: {
@@ -361,6 +371,7 @@ export default defineComponent({
         {
           name: "Pantai Pangandaran",
           keyword: "pantai",
+          img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location: "Desa Pangandaran dan Pananjung",
           position: {
             lat: -7.6875308,
@@ -371,6 +382,7 @@ export default defineComponent({
         {
           name: "Curug Putri",
           keyword: "alam",
+          img: "https://images.unsplash.com/photo-1564500601744-d5dfe4e7ab72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location:
             "Jl. Palutungan, Cisantana, Kec. Cigugur, Kabupaten Kuningan",
           position: {
@@ -381,6 +393,7 @@ export default defineComponent({
         {
           name: "Kebun Raya Kuningan",
           keyword: "alam",
+          img: "https://images.unsplash.com/photo-1564500601744-d5dfe4e7ab72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location: "Desa Padabeunghar, Pasawahan, Kuningan.",
           position: {
             lat: -6.8134092,
@@ -390,6 +403,7 @@ export default defineComponent({
         {
           name: "Curug Bangkong",
           keyword: "alam",
+          img: "https://images.unsplash.com/photo-1564500601744-d5dfe4e7ab72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location:
             "Kertawirama, Kec. Nusaherang, Kabupaten Kuningan, Jawa Barat 45563",
           position: {
@@ -400,6 +414,7 @@ export default defineComponent({
         {
           name: "Sanggar Tri Tunggal Budaya",
           keyword: "budaya",
+          img: "https://images.unsplash.com/photo-1559628151-ef85aab5bb21?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location: "Tegalwangi, Kec. Weru, Kabupaten Cirebon",
           position: {
             lat: -6.7070876,
@@ -409,6 +424,7 @@ export default defineComponent({
         {
           name: "Paseban Tri Panca Tunggal",
           keyword: "budaya",
+          img: "https://images.unsplash.com/photo-1559628151-ef85aab5bb21?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location: "Jalan, Sukamulya, Cigugur, Kuningan",
           position: {
             lat: -6.9694539,
@@ -418,6 +434,7 @@ export default defineComponent({
         {
           name: "Sanggar Seni Putra Budaya",
           keyword: "budaya",
+          img: "https://images.unsplash.com/photo-1559628151-ef85aab5bb21?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location:
             "Muara Karang Anyar, Mertasinga, Kec. Gunungjati, Kabupaten Cirebon",
           position: {
@@ -428,6 +445,7 @@ export default defineComponent({
         {
           name: "Rujak Kangkung Dan Tutut",
           keyword: "kuliner",
+          img: "https://images.unsplash.com/photo-1643357749912-b0b7ebc5c663?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location:
             "Jl. RE. Martadinata No.111, Ciporang, Kec. Kuningan, Kabupaten Kuningan",
           position: {
@@ -438,6 +456,7 @@ export default defineComponent({
         {
           name: "Nasi Jamblang Ibu Nur",
           keyword: "kuliner",
+          img: "https://images.unsplash.com/photo-1643357749912-b0b7ebc5c663?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location:
             "Jl. Cangkring 2 No.34, Kejaksan, Kec. Kejaksan, Kota Cirebon",
           position: {
@@ -448,6 +467,7 @@ export default defineComponent({
         {
           name: "Batagor Bandung",
           keyword: "kuliner",
+          img: "https://images.unsplash.com/photo-1643357749912-b0b7ebc5c663?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location:
             "Jl. Ir. H. Juanda No.91, Dago, Kec. Cimenyan, Kota Bandung",
           position: {
@@ -458,6 +478,7 @@ export default defineComponent({
         {
           name: "Taman Kota Kuningan",
           keyword: "taman",
+          img: "https://images.unsplash.com/photo-1585938389612-a552a28d6914?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location:
             "Jl. Veteran No.36, Kuningan, Kec. Kuningan, Kabupaten Kuningan",
           position: {
@@ -468,6 +489,7 @@ export default defineComponent({
         {
           name: "Taman Cisantana",
           keyword: "taman",
+          img: "https://images.unsplash.com/photo-1585938389612-a552a28d6914?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location:
             "Cisantana, Kec. Cigugur, Kabupaten Kuningan, Jawa Barat 45552",
           position: {
@@ -478,6 +500,7 @@ export default defineComponent({
         {
           name: "Pantai Jayanti",
           keyword: "pantai",
+          img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           location:
             "Jl. Pantai Jayanti, Cidamar, Kec. Cidaun, Kabupaten Cianjur",
           position: {

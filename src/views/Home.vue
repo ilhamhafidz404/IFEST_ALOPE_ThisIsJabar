@@ -154,186 +154,194 @@
         <div
           class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 md:gap-5 gap-2"
         >
-          <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
-          >
-            <img
-              src="./../assets/images/wisataBudaya/gedungSate.jpg"
-              alt=""
-              class="w-full h-[300px] object-cover"
-            />
-
-            <h5
-              v-if="lang == 'id'"
-              class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
-            >
-              {{ content.category.culture.item1.title.id }}
-            </h5>
-            <h5
-              v-else
-              class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
-            >
-              {{ content.category.culture.item1.title.en }}
-            </h5>
-
+          <router-link to="/detail">
             <div
-              class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
+              class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
             >
-              <h5 v-if="lang == 'id'" class="font-semibold text-base">
+              <img
+                src="./../assets/images/wisataBudaya/gedungSate.jpg"
+                alt=""
+                class="w-full h-[300px] object-cover"
+              />
+
+              <h5
+                v-if="lang == 'id'"
+                class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
+              >
                 {{ content.category.culture.item1.title.id }}
               </h5>
-              <h5 v-else class="font-semibold text-base">
+              <h5
+                v-else
+                class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
+              >
                 {{ content.category.culture.item1.title.en }}
               </h5>
-              <p v-if="lang == 'id'" class="mt-2 mb-4">
-                {{ content.category.culture.item1.description.id }}
-              </p>
-              <p v-else class="mt-2 mb-4">
-                {{ content.category.culture.item1.description.en }}
-              </p>
 
-              <span class="flex items-center gap-3">
-                <span v-if="lang == 'id'">Lihat</span>
-                <span v-else>See</span>
-                <arrowRightIcon myClass="w-5" />
-              </span>
+              <div
+                class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
+              >
+                <h5 v-if="lang == 'id'" class="font-semibold text-base">
+                  {{ content.category.culture.item1.title.id }}
+                </h5>
+                <h5 v-else class="font-semibold text-base">
+                  {{ content.category.culture.item1.title.en }}
+                </h5>
+                <p v-if="lang == 'id'" class="mt-2 mb-4">
+                  {{ content.category.culture.item1.description.id }}
+                </p>
+                <p v-else class="mt-2 mb-4">
+                  {{ content.category.culture.item1.description.en }}
+                </p>
+
+                <span class="flex items-center gap-3">
+                  <span v-if="lang == 'id'">Lihat</span>
+                  <span v-else>See</span>
+                  <arrowRightIcon myClass="w-5" />
+                </span>
+              </div>
             </div>
-          </div>
-          <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
-          >
-            <img
-              src="./../assets/images/wisataBudaya/kampungNaga.jpg"
-              alt=""
-              class="w-full h-[300px] object-cover"
-            />
-
-            <h5
-              v-if="lang == 'id'"
-              class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
-            >
-              {{ content.category.culture.item2.title.id }}
-            </h5>
-            <h5
-              v-else
-              class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
-            >
-              {{ content.category.culture.item2.title.en }}
-            </h5>
-
+          </router-link>
+          <router-link to="/detail">
             <div
-              class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
+              class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
             >
-              <h5 v-if="lang == 'id'" class="font-semibold text-base">
+              <img
+                src="./../assets/images/wisataBudaya/kampungNaga.jpg"
+                alt=""
+                class="w-full h-[300px] object-cover"
+              />
+
+              <h5
+                v-if="lang == 'id'"
+                class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
+              >
                 {{ content.category.culture.item2.title.id }}
               </h5>
-              <h5 v-else class="font-semibold text-base">
+              <h5
+                v-else
+                class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
+              >
                 {{ content.category.culture.item2.title.en }}
               </h5>
-              <p v-if="lang == 'id'" class="mt-2 mb-4">
-                {{ content.category.culture.item2.description.id }}
-              </p>
-              <p v-else class="mt-2 mb-4">
-                {{ content.category.culture.item2.description.en }}
-              </p>
 
-              <span class="flex items-center gap-3">
-                <span v-if="lang == 'id'">Lihat</span>
-                <span v-else>See</span>
-                <arrowRightIcon myClass="w-5" />
-              </span>
+              <div
+                class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
+              >
+                <h5 v-if="lang == 'id'" class="font-semibold text-base">
+                  {{ content.category.culture.item2.title.id }}
+                </h5>
+                <h5 v-else class="font-semibold text-base">
+                  {{ content.category.culture.item2.title.en }}
+                </h5>
+                <p v-if="lang == 'id'" class="mt-2 mb-4">
+                  {{ content.category.culture.item2.description.id }}
+                </p>
+                <p v-else class="mt-2 mb-4">
+                  {{ content.category.culture.item2.description.en }}
+                </p>
+
+                <span class="flex items-center gap-3">
+                  <span v-if="lang == 'id'">Lihat</span>
+                  <span v-else>See</span>
+                  <arrowRightIcon myClass="w-5" />
+                </span>
+              </div>
             </div>
-          </div>
-          <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90 xl:block hidden"
-          >
-            <img
-              src="./../assets/images/wisataBudaya/keratonKasepuhanCirebon.jpg"
-              alt=""
-              class="w-full h-[300px] object-cover"
-            />
-
-            <h5
-              v-if="lang == 'id'"
-              class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
-            >
-              {{ content.category.culture.item3.title.id }}
-            </h5>
-            <h5
-              v-else
-              class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#33e0a1]"
-            >
-              {{ content.category.culture.item3.title.en }}
-            </h5>
-
+          </router-link>
+          <router-link to="/detail">
             <div
-              class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
+              class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90 xl:block hidden"
             >
-              <h5 v-if="lang == 'id'" class="font-semibold text-base">
+              <img
+                src="./../assets/images/wisataBudaya/keratonKasepuhanCirebon.jpg"
+                alt=""
+                class="w-full h-[300px] object-cover"
+              />
+
+              <h5
+                v-if="lang == 'id'"
+                class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
+              >
                 {{ content.category.culture.item3.title.id }}
               </h5>
-              <h5 v-else class="font-semibold text-base">
+              <h5
+                v-else
+                class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#33e0a1]"
+              >
                 {{ content.category.culture.item3.title.en }}
               </h5>
-              <p v-if="lang == 'id'" class="mt-2 mb-4">
-                {{ content.category.culture.item3.description.id }}
-              </p>
-              <p v-else class="mt-2 mb-4">
-                {{ content.category.culture.item3.description.en }}
-              </p>
 
-              <span class="flex items-center gap-3">
-                <span v-if="lang == 'id'">Lihat</span>
-                <span v-else>See</span>
-                <arrowRightIcon myClass="w-5" />
-              </span>
+              <div
+                class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
+              >
+                <h5 v-if="lang == 'id'" class="font-semibold text-base">
+                  {{ content.category.culture.item3.title.id }}
+                </h5>
+                <h5 v-else class="font-semibold text-base">
+                  {{ content.category.culture.item3.title.en }}
+                </h5>
+                <p v-if="lang == 'id'" class="mt-2 mb-4">
+                  {{ content.category.culture.item3.description.id }}
+                </p>
+                <p v-else class="mt-2 mb-4">
+                  {{ content.category.culture.item3.description.en }}
+                </p>
+
+                <span class="flex items-center gap-3">
+                  <span v-if="lang == 'id'">Lihat</span>
+                  <span v-else>See</span>
+                  <arrowRightIcon myClass="w-5" />
+                </span>
+              </div>
             </div>
-          </div>
-          <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90 lg:block hidden"
-          >
-            <img
-              src="./../assets/images/wisataBudaya/saungUdjo.jpeg"
-              alt=""
-              class="w-full h-[300px] object-cover"
-            />
-
-            <h5
-              v-if="lang == 'id'"
-              class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
-            >
-              {{ content.category.culture.item4.title.id }}
-            </h5>
-            <h5
-              v-else
-              class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
-            >
-              {{ content.category.culture.item4.title.en }}
-            </h5>
-
+          </router-link>
+          <router-link to="/detail">
             <div
-              class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
+              class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90 lg:block hidden"
             >
-              <h5 v-if="lang == 'id'" class="font-semibold text-base">
+              <img
+                src="./../assets/images/wisataBudaya/saungUdjo.jpeg"
+                alt=""
+                class="w-full h-[300px] object-cover"
+              />
+
+              <h5
+                v-if="lang == 'id'"
+                class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
+              >
                 {{ content.category.culture.item4.title.id }}
               </h5>
-              <h5 v-else class="font-semibold text-base">
+              <h5
+                v-else
+                class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
+              >
                 {{ content.category.culture.item4.title.en }}
               </h5>
-              <p v-if="lang == 'id'" class="mt-2 mb-4">
-                {{ content.category.culture.item4.description.id }}
-              </p>
-              <p v-else class="mt-2 mb-4">
-                {{ content.category.culture.item4.description.en }}
-              </p>
 
-              <span class="flex items-center gap-3">
-                <span v-if="lang == 'id'">Lihat</span>
-                <span v-else>See</span>
-                <arrowRightIcon myClass="w-5" />
-              </span>
+              <div
+                class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
+              >
+                <h5 v-if="lang == 'id'" class="font-semibold text-base">
+                  {{ content.category.culture.item4.title.id }}
+                </h5>
+                <h5 v-else class="font-semibold text-base">
+                  {{ content.category.culture.item4.title.en }}
+                </h5>
+                <p v-if="lang == 'id'" class="mt-2 mb-4">
+                  {{ content.category.culture.item4.description.id }}
+                </p>
+                <p v-else class="mt-2 mb-4">
+                  {{ content.category.culture.item4.description.en }}
+                </p>
+
+                <span class="flex items-center gap-3">
+                  <span v-if="lang == 'id'">Lihat</span>
+                  <span v-else>See</span>
+                  <arrowRightIcon myClass="w-5" />
+                </span>
+              </div>
             </div>
-          </div>
+          </router-link>
         </div>
       </div>
     </section>
@@ -371,116 +379,122 @@
 
       <div class="lg:col-span-3 lg:mt-0 mt-10">
         <div class="grid lg:grid-cols-3 sm:grid-cols-2 md:gap-5 gap-2">
-          <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
-          >
-            <img
-              src="./../assets/images/makananKhas/nasiTimbel.jpg"
-              alt=""
-              class="w-full h-[300px] object-cover"
-            />
-
-            <h5
-              v-if="lang == 'id'"
-              class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
-            >
-              Nasi Timbel
-            </h5>
-            <h5
-              v-else
-              class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
-            >
-              Timbel Rice
-            </h5>
-
+          <router-link to="/detail">
             <div
-              class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
+              class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
             >
-              <h5 v-if="lang == 'id'" class="font-semibold text-base">
+              <img
+                src="./../assets/images/makananKhas/nasiTimbel.jpg"
+                alt=""
+                class="w-full h-[300px] object-cover"
+              />
+
+              <h5
+                v-if="lang == 'id'"
+                class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
+              >
                 Nasi Timbel
               </h5>
-              <h5 v-else class="font-semibold text-base">Timbel Rice</h5>
+              <h5
+                v-else
+                class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
+              >
+                Timbel Rice
+              </h5>
 
-              <p v-if="lang == 'id'" class="mt-2 mb-4">
-                {{ content.category.culinary.item1.description.id }}
-              </p>
-              <p v-else class="mt-2 mb-4">
-                {{ content.category.culinary.item1.description.en }}
-              </p>
+              <div
+                class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
+              >
+                <h5 v-if="lang == 'id'" class="font-semibold text-base">
+                  Nasi Timbel
+                </h5>
+                <h5 v-else class="font-semibold text-base">Timbel Rice</h5>
 
-              <span class="flex items-center gap-3">
-                <span v-if="lang == 'id'">Lihat</span>
-                <span v-else>See</span>
-                <arrowRightIcon myClass="w-5" />
-              </span>
+                <p v-if="lang == 'id'" class="mt-2 mb-4">
+                  {{ content.category.culinary.item1.description.id }}
+                </p>
+                <p v-else class="mt-2 mb-4">
+                  {{ content.category.culinary.item1.description.en }}
+                </p>
+
+                <span class="flex items-center gap-3">
+                  <span v-if="lang == 'id'">Lihat</span>
+                  <span v-else>See</span>
+                  <arrowRightIcon myClass="w-5" />
+                </span>
+              </div>
             </div>
-          </div>
-          <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
-          >
-            <img
-              src="./../assets/images/makananKhas/surabi.jpg"
-              alt=""
-              class="w-full h-[300px] object-cover"
-            />
-
-            <h5
-              class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
-            >
-              Surabi
-            </h5>
-
+          </router-link>
+          <router-link to="/detail">
             <div
-              class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
+              class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90"
             >
-              <h5 class="font-semibold text-base">Surabi</h5>
-              <p v-if="lang == 'id'" class="mt-2 mb-4">
-                {{ content.category.culinary.item2.description.id }}
-              </p>
-              <p v-else class="mt-2 mb-4">
-                {{ content.category.culinary.item2.description.en }}
-              </p>
+              <img
+                src="./../assets/images/makananKhas/surabi.jpg"
+                alt=""
+                class="w-full h-[300px] object-cover"
+              />
 
-              <span class="flex items-center gap-3">
-                <span v-if="lang == 'id'">Lihat</span>
-                <span v-else>See</span>
-                <arrowRightIcon myClass="w-5" />
-              </span>
+              <h5
+                class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
+              >
+                Surabi
+              </h5>
+
+              <div
+                class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
+              >
+                <h5 class="font-semibold text-base">Surabi</h5>
+                <p v-if="lang == 'id'" class="mt-2 mb-4">
+                  {{ content.category.culinary.item2.description.id }}
+                </p>
+                <p v-else class="mt-2 mb-4">
+                  {{ content.category.culinary.item2.description.en }}
+                </p>
+
+                <span class="flex items-center gap-3">
+                  <span v-if="lang == 'id'">Lihat</span>
+                  <span v-else>See</span>
+                  <arrowRightIcon myClass="w-5" />
+                </span>
+              </div>
             </div>
-          </div>
-          <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90 lg:block hidden"
-          >
-            <img
-              src="./../assets/images/makananKhas/batagor.jpg"
-              alt=""
-              class="w-full h-[300px] object-cover"
-            />
-
-            <h5
-              class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
-            >
-              Batagor
-            </h5>
-
+          </router-link>
+          <router-link to="/detail">
             <div
-              class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
+              class="hoverCard relative rounded overflow-hidden cursor-pointer after:content-[''] hover:after:absolute after:inset-0 after:bg-[#34e0a1]/90 lg:block hidden"
             >
-              <h5 class="font-semibold text-base">Batagor</h5>
-              <p v-if="lang == 'id'" class="mt-2 mb-4">
-                {{ content.category.culinary.item3.description.id }}
-              </p>
-              <p v-else class="mt-2 mb-4">
-                {{ content.category.culinary.item3.description.en }}
-              </p>
+              <img
+                src="./../assets/images/makananKhas/batagor.jpg"
+                alt=""
+                class="w-full h-[300px] object-cover"
+              />
 
-              <span class="flex items-center gap-3">
-                <span v-if="lang == 'id'">Lihat</span>
-                <span v-else>See</span>
-                <arrowRightIcon myClass="w-5" />
-              </span>
+              <h5
+                class="titleHoverCard absolute bottom-5 pl-5 pr-3 rounded-r py-1 font-semibold text-white bg-[#34e0a1]"
+              >
+                Batagor
+              </h5>
+
+              <div
+                class="contentHoverCard hidden text-xs absolute bottom-0 lg:p-5 p-3 z-10 text-white"
+              >
+                <h5 class="font-semibold text-base">Batagor</h5>
+                <p v-if="lang == 'id'" class="mt-2 mb-4">
+                  {{ content.category.culinary.item3.description.id }}
+                </p>
+                <p v-else class="mt-2 mb-4">
+                  {{ content.category.culinary.item3.description.en }}
+                </p>
+
+                <span class="flex items-center gap-3">
+                  <span v-if="lang == 'id'">Lihat</span>
+                  <span v-else>See</span>
+                  <arrowRightIcon myClass="w-5" />
+                </span>
+              </div>
             </div>
-          </div>
+          </router-link>
         </div>
       </div>
 
