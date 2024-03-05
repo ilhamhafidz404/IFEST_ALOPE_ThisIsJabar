@@ -211,7 +211,7 @@
       <div class="xl:col-span-3">
         <img
           src="https://images.unsplash.com/photo-1439066290691-510066268af5?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          class="rounded-l border shadow"
+          class="rounded-l border shadow h-[350px] object-cover lg:w-[400px] w-full"
         />
       </div>
       <div class="xl:col-span-5 flex items-center">
@@ -220,25 +220,21 @@
             Waduk Darma
           </h5>
           <div>
-            <p
-              class="md:text-sm text-xs mb-2 flex items-center gap-2 dark:text-gray-200"
-            >
+            <p class="text-xs mb-2 flex items-center gap-2 dark:text-gray-200">
               <SolidMapPinIcon myClass="w-4 md:inline-block hidden" />
               Desa Jagara, Kecamatan Darma, Kabupaten Kuningan
             </p>
-            <p
-              class="md:text-sm text-xs mb-2 flex items-center gap-2 dark:text-gray-100"
-            >
+            <p class="text-xs mb-2 flex items-center gap-2 dark:text-gray-100">
               <SolidBankNotesIcon myClass="w-4 md:inline-block hidden" />
               Rp 10.000 / Orang
             </p>
           </div>
-          <p class="mb-3 mt-7 md:text-base text-sm dark:text-gray-100">
+          <p class="mb-3 mt-7 md:text-sm text-xs dark:text-gray-100">
             Waduk Darma memiliki kedalaman 100 meter dan digunakan sebagai
             ladang perikanan, sistem irigasi sawah, dan kebutuhan air minum oleh
             Perusahaan Daerah Air Minum (PDAM).
           </p>
-          <p class="mb-10 mt-3 md:text-base text-sm dark:text-gray-100">
+          <p class="mb-10 mt-3 md:text-sm text-xs dark:text-gray-100">
             Pembangunan Waduk Darma dimulai pada tahun 1923 saat Belanda
             melakukan perencanaan dan penelitian.
           </p>
@@ -552,91 +548,91 @@ export default defineComponent({
     // L
     const gmapdark = localStorage.getItem("vueuse-color-scheme");
 
-    if (gmapdark != "light") {
-      this.mapStyles = [
-        { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
-        {
-          elementType: "labels.text.stroke",
-          stylers: [{ color: "#242f3e" }],
-        },
-        { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
-        {
-          featureType: "administrative.locality",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#d59563" }],
-        },
-        {
-          featureType: "poi",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#d59563" }],
-        },
-        {
-          featureType: "poi.park",
-          elementType: "geometry",
-          stylers: [{ color: "#263c3f" }],
-        },
-        {
-          featureType: "poi.park",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#6b9a76" }],
-        },
-        {
-          featureType: "road",
-          elementType: "geometry",
-          stylers: [{ color: "#38414e" }],
-        },
-        {
-          featureType: "road",
-          elementType: "geometry.stroke",
-          stylers: [{ color: "#212a37" }],
-        },
-        {
-          featureType: "road",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#9ca5b3" }],
-        },
-        {
-          featureType: "road.highway",
-          elementType: "geometry",
-          stylers: [{ color: "#746855" }],
-        },
-        {
-          featureType: "road.highway",
-          elementType: "geometry.stroke",
-          stylers: [{ color: "#1f2835" }],
-        },
-        {
-          featureType: "road.highway",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#f3d19c" }],
-        },
-        {
-          featureType: "transit",
-          elementType: "geometry",
-          stylers: [{ color: "#2f3948" }],
-        },
-        {
-          featureType: "transit.station",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#d59563" }],
-        },
-        {
-          featureType: "water",
-          elementType: "geometry",
-          stylers: [{ color: "#17263c" }],
-        },
-        {
-          featureType: "water",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#515c6d" }],
-        },
-        {
-          featureType: "water",
-          elementType: "labels.text.stroke",
-          stylers: [{ color: "#17263c" }],
-        },
-      ];
-    }
+    // if (gmapdark != "light") {
+    //   this.mapStyles = [
+    //     { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+    //     {
+    //       elementType: "labels.text.stroke",
+    //       stylers: [{ color: "#242f3e" }],
+    //     },
+    //     { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+    //     {
+    //       featureType: "administrative.locality",
+    //       elementType: "labels.text.fill",
+    //       stylers: [{ color: "#d59563" }],
+    //     },
+    //     {
+    //       featureType: "poi",
+    //       elementType: "labels.text.fill",
+    //       stylers: [{ color: "#d59563" }],
+    //     },
+    //     {
+    //       featureType: "poi.park",
+    //       elementType: "geometry",
+    //       stylers: [{ color: "#263c3f" }],
+    //     },
+    //     {
+    //       featureType: "poi.park",
+    //       elementType: "labels.text.fill",
+    //       stylers: [{ color: "#6b9a76" }],
+    //     },
+    //     {
+    //       featureType: "road",
+    //       elementType: "geometry",
+    //       stylers: [{ color: "#38414e" }],
+    //     },
+    //     {
+    //       featureType: "road",
+    //       elementType: "geometry.stroke",
+    //       stylers: [{ color: "#212a37" }],
+    //     },
+    //     {
+    //       featureType: "road",
+    //       elementType: "labels.text.fill",
+    //       stylers: [{ color: "#9ca5b3" }],
+    //     },
+    //     {
+    //       featureType: "road.highway",
+    //       elementType: "geometry",
+    //       stylers: [{ color: "#746855" }],
+    //     },
+    //     {
+    //       featureType: "road.highway",
+    //       elementType: "geometry.stroke",
+    //       stylers: [{ color: "#1f2835" }],
+    //     },
+    //     {
+    //       featureType: "road.highway",
+    //       elementType: "labels.text.fill",
+    //       stylers: [{ color: "#f3d19c" }],
+    //     },
+    //     {
+    //       featureType: "transit",
+    //       elementType: "geometry",
+    //       stylers: [{ color: "#2f3948" }],
+    //     },
+    //     {
+    //       featureType: "transit.station",
+    //       elementType: "labels.text.fill",
+    //       stylers: [{ color: "#d59563" }],
+    //     },
+    //     {
+    //       featureType: "water",
+    //       elementType: "geometry",
+    //       stylers: [{ color: "#17263c" }],
+    //     },
+    //     {
+    //       featureType: "water",
+    //       elementType: "labels.text.fill",
+    //       stylers: [{ color: "#515c6d" }],
+    //     },
+    //     {
+    //       featureType: "water",
+    //       elementType: "labels.text.stroke",
+    //       stylers: [{ color: "#17263c" }],
+    //     },
+    //   ];
+    // }
   },
   computed: {
     filteredDestination() {

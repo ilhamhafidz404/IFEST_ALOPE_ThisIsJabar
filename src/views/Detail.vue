@@ -21,7 +21,7 @@
   </header>
 
   <main class="lg:px-20 md:px-10 px-5 pt-20 mb-20">
-    <section class="grid xl:grid-cols-3 gap-20 mb-20 relative">
+    <section class="grid xl:grid-cols-3 gap-16 mb-20 relative">
       <div class="xl:col-span-2">
         <h1
           class="font-semibold md:text-5xl text-3xl mb-10 md:leading-[60px] dark:text-gray-100"
@@ -132,13 +132,13 @@
         </p>
       </div>
       <div>
+        <!-- :style="[
+          getMode != 'light'
+            ? { filter: 'grayscale(50%) invert(92%) contrast(83%)' }
+            : {},
+        ]" -->
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15839.718463060848!2d108.4060311!3d-7.01755955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f3e35a5e2448b%3A0x86ab9c7d17ce2d8c!2sWaduk%20Darma%2C%20Kec.%20Darma%2C%20Kabupaten%20Kuningan%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1708247780751!5m2!1sid!2sid"
-          :style="[
-            getMode != 'light'
-              ? { filter: 'grayscale(50%) invert(92%) contrast(83%)' }
-              : {},
-          ]"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"

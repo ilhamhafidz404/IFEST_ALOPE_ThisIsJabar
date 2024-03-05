@@ -94,42 +94,42 @@ const toggleDark = useToggle(isDark);
       <li class="mb-5">
         <router-link
           to="/"
-          class="text-2xl hover:text-3xl duration-300 hover:text-[#34e0a1]"
+          class="text-xl hover:text-2xl duration-300 hover:text-[#34e0a1]"
           >Beranda</router-link
         >
       </li>
       <li class="mb-5">
         <router-link
           to="/search"
-          class="text-2xl hover:text-3xl duration-300 hover:text-[#34e0a1]"
+          class="text-xl hover:text-2xl duration-300 hover:text-[#34e0a1]"
           >Search</router-link
         >
       </li>
       <li class="mb-5">
         <router-link
           to="/list"
-          class="text-2xl hover:text-3xl duration-300 hover:text-[#34e0a1]"
+          class="text-xl hover:text-2xl duration-300 hover:text-[#34e0a1]"
           >Destinasi Wisata</router-link
         >
       </li>
       <li class="mb-5">
         <router-link
           to="/news"
-          class="text-2xl hover:text-3xl duration-300 hover:text-[#34e0a1] whitespace-nowrap"
+          class="text-xl hover:text-2xl duration-300 hover:text-[#34e0a1] whitespace-nowrap"
           >Informasi Destinasi</router-link
         >
       </li>
       <li class="mb-5">
         <router-link
           to="/map"
-          class="text-2xl hover:text-3xl duration-300 hover:text-[#34e0a1]"
+          class="text-xl hover:text-2xl duration-300 hover:text-[#34e0a1]"
           >Peta Interaktif</router-link
         >
       </li>
       <li class="mb-5">
         <router-link
           to="/subscription"
-          class="text-2xl hover:text-3xl duration-300 hover:text-[#34e0a1]"
+          class="text-xl hover:text-2xl duration-300 hover:text-[#34e0a1]"
           >Subscription</router-link
         >
       </li>

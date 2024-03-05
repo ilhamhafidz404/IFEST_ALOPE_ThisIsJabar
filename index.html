@@ -56,8 +56,10 @@
         navHeader.classList.toggle("!text-gray-800", window.scrollY > 50);
         navHeader.classList.toggle("dark:!text-gray-200", window.scrollY > 50);
 
-        navLogo.classList.toggle("hidden", window.scrollY < 50);
-        navLogoPutih.classList.toggle("hidden", window.scrollY > 50);
+        if (navLogo) {
+          navLogo.classList.toggle("hidden", window.scrollY < 50);
+          navLogoPutih.classList.toggle("hidden", window.scrollY > 50);
+        }
       });
     </script>
   </body>

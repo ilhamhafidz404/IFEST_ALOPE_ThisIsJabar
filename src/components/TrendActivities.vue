@@ -79,14 +79,8 @@
                 {{ tag }}
               </span>
             </div>
-            <h5
-              class="font-semibold mb-2 dark:text-gray-100"
-              v-if="(lang = 'id')"
-            >
-              {{ activity.title.id }}
-            </h5>
-            <h5 class="font-semibold mb-2 dark:text-gray-100" v-else>
-              {{ activity.title.en }}
+            <h5 class="font-semibold mb-2 dark:text-gray-100">
+              {{ activity.title }}
             </h5>
 
             <p class="text-xs mt-4 dark:text-gray-200">
@@ -110,15 +104,12 @@ export default {
     return {
       activities: [
         {
-          title: {
-            id: "Main Skateboard Beratraksi & Menonton",
-            en: "ewf",
-          },
+          title: "Main Skateboard Beratraksi & Menonton",
           description:
             "Kumpul, jajan dan nonton bareng anak-anak Skateboard sambil beratraksi dan membangun ekspresei kebebasan.",
           tags: ["Weekend", "Olahraga"],
           location: "Buqiet Skatepark",
-          img: "./src/assets/images/activities/skate.jpg",
+          img: "https://images.unsplash.com/photo-1544364493-4ff9efeabce3?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
           title: "Lihat Sunset Indah Bareng Para Anak Senja",
@@ -126,7 +117,7 @@ export default {
             "Lihat keindahan alam di sore hari dengan cahaya matahari yang mulai redup.",
           tags: ["Alam Liar"],
           location: "Bukit Moko",
-          img: "./src/assets/images/activities/sunset.jpg",
+          img: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
           title: "Nyanyi Bareng Sama Penyanyi Dadakan",
@@ -135,6 +126,7 @@ export default {
           tags: ["Live Musik"],
           location: "Alun-alun Bandung",
           img: "./src/assets/images/activities/liveMusik.jpg",
+          img: "https://images.unsplash.com/photo-1509561419210-1f3fc1332258?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHN0cmVldCUyMG11c2ljfGVufDB8fDB8fHww",
         },
         {
           title: "Nikmati Nikmatnya Barbekyu-an Bareng Teman atau Keluarga",
@@ -142,7 +134,7 @@ export default {
             "Nikmati Nikmatnya Barbekyu-an Bareng Teman atau Keluarga",
           tags: ["Weekend"],
           location: "Pago Restaurant",
-          img: "./src/assets/images/activities/bbq.jpg",
+          img: "https://images.unsplash.com/photo-1466220549276-aef9ce186540?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
       ],
     };
