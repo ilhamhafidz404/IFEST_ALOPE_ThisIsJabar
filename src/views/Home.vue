@@ -96,7 +96,10 @@
           Buka Pada
         </h4>
         <h4 v-else class="text-xl font-semibold mb-3">Open On</h4>
-        <p>Setiap hari pada jam 8 Pagi - 6 Sore</p>
+        <p class="text-sm" v-if="lang == 'id'">
+          Setiap hari pada jam 8 Pagi - 6 Sore
+        </p>
+        <p class="text-sm" v-else>every day 8 AM - 6 PM</p>
       </div>
     </div>
 
