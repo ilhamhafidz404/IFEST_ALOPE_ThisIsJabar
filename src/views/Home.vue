@@ -111,7 +111,7 @@
     </div>
 
     <div
-      class="absolute flex items-center justify-center lg:right-10 right-0 bottom-[100px] bg-white dark:bg-slate-900 dark:text-gray-200"
+      class="absolute flex items-center justify-center lg:right-10 right-0 xl:bottom-[100px] bottom-[150px] bg-white dark:bg-slate-900 dark:text-gray-200"
     >
       <button class="md:p-5 p-3 hover:bg-[#34e0a1]" @click="prevHeader()">
         <chevronLeftIcon myClass="w-6" />
